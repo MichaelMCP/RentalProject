@@ -1,46 +1,83 @@
 package com.revature.beans;
 
-public class User 
+public class Renter extends User 
 {
-	private int id;
-	private int role;
-	private String full_name;
-	private String email;
-	private String password;
+
+	private int id, role;
+	private String full_name, email, password;
+	
+	public Renter() 
+	{
+		super();
+	}
+
+	public Renter(int id, int role, String full_name, String email, String password)
+	{
+		super(id, role, full_name, email, password);
+		
+	}
+
 	public int getId() {
 		return id;
 	}
+
 	public void setId(int id) {
 		this.id = id;
 	}
+
 	public int getRole() {
 		return role;
 	}
+
 	public void setRole(int role) {
 		this.role = role;
 	}
+
 	public String getFull_name() {
 		return full_name;
 	}
+
 	public void setFull_name(String full_name) {
 		this.full_name = full_name;
 	}
+
 	public String getEmail() {
 		return email;
 	}
+
 	public void setEmail(String email) {
 		this.email = email;
 	}
+
 	public String getPassword() {
 		return password;
 	}
+
 	public void setPassword(String password) {
 		this.password = password;
 	}
+
+	@Override
+	public String toString() {
+		StringBuilder builder = new StringBuilder();
+		builder.append("Renter [id=");
+		builder.append(id);
+		builder.append(", role=");
+		builder.append(role);
+		builder.append(", full_name=");
+		builder.append(full_name);
+		builder.append(", email=");
+		builder.append(email);
+		builder.append(", password=");
+		builder.append(password);
+		builder.append("]");
+		return builder.toString();
+	}
+
 	@Override
 	public int hashCode() {
 		final int prime = 31;
-		int result = 1;
+		int result = super.hashCode();
 		result = prime * result + ((email == null) ? 0 : email.hashCode());
 		result = prime * result + ((full_name == null) ? 0 : full_name.hashCode());
 		result = prime * result + id;
@@ -48,15 +85,16 @@ public class User
 		result = prime * result + role;
 		return result;
 	}
+
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
 			return true;
-		if (obj == null)
+		if (!super.equals(obj))
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		User other = (User) obj;
+		Renter other = (Renter) obj;
 		if (email == null) {
 			if (other.email != null)
 				return false;
@@ -78,22 +116,5 @@ public class User
 			return false;
 		return true;
 	}
-	@Override
-	public String toString() {
-		return "User [id=" + id + ", role=" + role + ", full_name=" + full_name + ", email=" + email + ", password="
-				+ password + "]";
-	}
-	public User() {
-		super();
-		// TODO Auto-generated constructor stub
-	}
-	public User(int id, int role, String full_name, String email, String password) {
-		super();
-		this.id = id;
-		this.role = role;
-		this.full_name = full_name;
-		this.email = email;
-		this.password = password;
-	}
-	
+
 }
