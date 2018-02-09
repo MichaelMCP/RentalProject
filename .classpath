@@ -18,10 +18,14 @@
 		</attributes>
 	</classpathentry>
 <<<<<<< HEAD
+<<<<<<< HEAD
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8">
 =======
 	<classpathentry excluding="**" kind="src" output="target/test-classes" path="src/test/resources">
 >>>>>>> 8a758885a59e7db3d0c5af42266701cfe98a3f35
+=======
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8">
+>>>>>>> fda3852ba9b1913740dadab919abad5544d4f298
 		<attributes>
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
@@ -33,13 +37,20 @@
 		</attributes>
 	</classpathentry>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8">
+=======
+	<classpathentry excluding="**" kind="src" output="target/test-classes" path="src/test/resources">
+>>>>>>> fda3852ba9b1913740dadab919abad5544d4f298
 		<attributes>
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
+<<<<<<< HEAD
 	<classpathentry kind="lib" path="C:/Users/Michael/Documents/External jars/ojdbc7.jar"/>
 >>>>>>> 8a758885a59e7db3d0c5af42266701cfe98a3f35
+=======
+>>>>>>> fda3852ba9b1913740dadab919abad5544d4f298
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
