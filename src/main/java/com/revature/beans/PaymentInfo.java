@@ -1,10 +1,32 @@
 package com.revature.beans;
 
-public class PaymentInfo {
+import javax.persistence.CascadeType;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
+import javax.persistence.SequenceGenerator;
+import javax.persistence.Table;
 
+@Entity
+@Table(name="payment_info")
+public class PaymentInfo {
+	@Id
+	@Column(name="id")
+	@SequenceGenerator(name="payment_info_id",sequenceName="paymentInfo_seq", allocationSize=1)
+	@GeneratedValue(generator="payment_info_id",strategy=GenerationType.SEQUENCE)
 	private int id;
 	private double cost;
+	@Column(name="user_Id")
 	private int userId;
+	@Column(name="credit_Card_Number")
+	@ManyToOne(fetch=FetchType.EAGER, cascade=CascadeType.ALL)
+	@JoinColumn(name="user_Id")
 	private int creditCardNumber;
 	
 	public PaymentInfo() {

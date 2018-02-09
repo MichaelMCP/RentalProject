@@ -1,25 +1,24 @@
 package com.revature.beans;
 
-public class Employee extends User{
-	
-	private int employeeId;
+public class Renter {
+	private int renterId;
 	private int role;
 	private String full_name;
 	private String email;
 	private String password;
-	public Employee(int employeeId, int role, String full_name, String email, String password) {
+	public Renter(int renterId, int role, String full_name, String email, String password) {
 		super();
-		this.employeeId = employeeId;
+		this.renterId = renterId;
 		this.role = role;
 		this.full_name = full_name;
 		this.email = email;
 		this.password = password;
 	}
-	public int getEmployeeId() {
-		return employeeId;
+	public int getRenterId() {
+		return renterId;
 	}
-	public void setEmployeeId(int employeeId) {
-		this.employeeId = employeeId;
+	public void setRenterId(int renterId) {
+		this.renterId = renterId;
 	}
 	public int getRole() {
 		return role;
@@ -48,11 +47,11 @@ public class Employee extends User{
 	@Override
 	public int hashCode() {
 		final int prime = 31;
-		int result = super.hashCode();
+		int result = 1;
 		result = prime * result + ((email == null) ? 0 : email.hashCode());
-		result = prime * result + employeeId;
 		result = prime * result + ((full_name == null) ? 0 : full_name.hashCode());
 		result = prime * result + ((password == null) ? 0 : password.hashCode());
+		result = prime * result + renterId;
 		result = prime * result + role;
 		return result;
 	}
@@ -60,17 +59,15 @@ public class Employee extends User{
 	public boolean equals(Object obj) {
 		if (this == obj)
 			return true;
-		if (!super.equals(obj))
+		if (obj == null)
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		Employee other = (Employee) obj;
+		Renter other = (Renter) obj;
 		if (email == null) {
 			if (other.email != null)
 				return false;
 		} else if (!email.equals(other.email))
-			return false;
-		if (employeeId != other.employeeId)
 			return false;
 		if (full_name == null) {
 			if (other.full_name != null)
@@ -82,13 +79,15 @@ public class Employee extends User{
 				return false;
 		} else if (!password.equals(other.password))
 			return false;
+		if (renterId != other.renterId)
+			return false;
 		if (role != other.role)
 			return false;
 		return true;
 	}
 	@Override
 	public String toString() {
-		return "Employee [employeeId=" + employeeId + ", role=" + role + ", full_name=" + full_name + ", email=" + email
+		return "Renter [renterId=" + renterId + ", role=" + role + ", full_name=" + full_name + ", email=" + email
 				+ ", password=" + password + "]";
 	}
 	
