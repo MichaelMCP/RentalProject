@@ -1,0 +1,4 @@
+[submodule "Rental-App-Angular"]
+	path = Rental-App-Angular
+	url = https://github.com/MichaelMCP/Rental-App-Angular
+	branch = master
