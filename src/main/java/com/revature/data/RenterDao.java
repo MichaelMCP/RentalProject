@@ -22,22 +22,22 @@ public interface RenterDao
 	 * @return the Customer from the database that matches the id,
 	 * an empty customer object if no customer exists with that id.
 	 */
-	public Renter getCustomer(Renter renter);
+	public Renter getRenter(Renter renter);
 	
 	/**
 	 * returns a list of all renters in database
 	 * 
 	 * @return list of renters in database
 	 */
-	public Set<Renter> getCustomers();
+	public Set<Renter> getRenters();
 	
 	/**
 	 * deletes a Renter from the database
 	 * 
 	 * @param Renter the Renter to be deleted
 	 */
-	public void deleteCustomer(Renter customer);
+	public void deleteRenter(Renter renter);
 	
-	public void updateCustomer(Renter customer);
+	public void updateRenter(Renter renter);
 }
 

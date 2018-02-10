@@ -17,25 +17,25 @@ public class RenterHibernate implements RenterDao {
 	}
 
 	@Override
-	public Renter getCustomer(Renter renter) {
+	public Renter getRenter(Renter renter) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public Set<Renter> getCustomers() {
+	public Set<Renter> getRenters() {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public void deleteCustomer(Renter customer) {
+	public void deleteRenter(Renter renter) {
 		// TODO Auto-generated method stub
 
 	}
 
 	@Override
-	public void updateCustomer(Renter customer) {
+	public void updateRenter(Renter renter) {
 		// TODO Auto-generated method stub
 
 	}
