@@ -4,8 +4,8 @@
     <session-factory>
         <!-- Configure our database -->
         <property name="hibernate.connection.driver_class">oracle.jdbc.OracleDriver</property>
-        <property name="hibernate.connection.url">jdbc:oracle:thin:@http://18.219.120.2:8080</property>
-        <property name="hibernate.connection.username">tomcat</property>
+        <property name="hibernate.connection.url">jdbc:oracle:thin:@rentalproject.cptyc64r16fz.us-east-2.rds.amazonaws.com:ORCL</property>
+        <property name="hibernate.connection.username">admin</property>
         <property name="hibernate.connection.password">password</property>
         <property name="hibernate.dialect">org.hibernate.dialect.Oracle10gDialect</property>
         
@@ -13,6 +13,12 @@
         <property name="show_sql">true</property>
         <property name="hibernate.format_sql">true</property>
         
-        <mapping class="com.revature.beans.users"></mapping>
+        <mapping class="com.revature.beans.User"></mapping>
+        <mapping class="com.revature.beans.Employee"></mapping>
+        <mapping class="com.revature.beans.PropertyOwner"></mapping>
+        <mapping class="com.revature.beans.Renter"></mapping>
+        <mapping class="com.revature.beans.Receipt"></mapping>
+        <mapping class="com.revature.beans.PaymentInfo"></mapping>
+        <mapping class="com.revature.beans.Property"></mapping>
     </session-factory>
 </hibernate-configuration>
