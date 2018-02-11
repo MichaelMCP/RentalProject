@@ -71,6 +71,17 @@ create table receipts
 );
 
 
+drop sequence users_key;
+create sequence users_key;
+drop sequence properties_key;
+create sequence properties_key;
+drop sequence payment_info_key;
+create sequence payment_info_key;
+drop sequence services_key;
+create sequence services_key;
+drop sequence receipts_key;
+create sequence receipts_key;
+
 insert into users (role, full_name, email, password) values (1, 'King', 'king@test.com', 123);
 insert into payment_info (cost, user_id, credit_Card_Number) values (200, 1, 55555555);
 commit;
