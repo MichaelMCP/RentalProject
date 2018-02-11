@@ -82,9 +82,4 @@ create sequence services_key;
 drop sequence receipts_key;
 create sequence receipts_key;
 
-insert into users (role, full_name, email, password) values (1, 'King', 'king@test.com', 123);
-insert into payment_info (cost, user_id, credit_Card_Number) values (200, 1, 55555555);
 commit;
-
-select * from users;
-select * from payment_info;
