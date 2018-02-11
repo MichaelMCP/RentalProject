@@ -1,10 +1,21 @@
 package com.revature.beans;
 
+import javax.persistence.Entity;
+import javax.persistence.PrimaryKeyJoinColumn;
+import javax.persistence.Table;
+
+
+@Entity
+@Table(name="users")
+@PrimaryKeyJoinColumn(name="ID")
 public class Renter extends User 
 {
 
-	private int id, role;
-	private String full_name, email, password;
+	private int id;
+	private int role;
+	private String full_name;
+	private String email;
+	private String password;
 	
 	public Renter() 
 	{

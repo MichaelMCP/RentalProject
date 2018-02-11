@@ -1,7 +1,22 @@
 package com.revature.beans;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Inheritance;
+import javax.persistence.InheritanceType;
+import javax.persistence.SequenceGenerator;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="users")
+@Inheritance(strategy=InheritanceType.JOINED)
 public class User 
 {
+	@Id
+	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="users")
+	@SequenceGenerator(name="users", sequenceName="users_key", allocationSize=1)
 	private int id;
 	private int role;
 	private String full_name;
@@ -83,7 +98,8 @@ public class User
 		return "User [id=" + id + ", role=" + role + ", full_name=" + full_name + ", email=" + email + ", password="
 				+ password + "]";
 	}
-	public User() {
+	public User() 
+	{
 		super();
 		// TODO Auto-generated constructor stub
 	}

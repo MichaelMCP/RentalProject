@@ -1,7 +1,25 @@
 package com.revature.beans;
 
-public class Property {
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.SequenceGenerator;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="properties")
+public class Property 
+{
+	@Id
+	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="prop_id")
+	@SequenceGenerator(name="prop_id", sequenceName="prop_seq", allocationSize=1)
 	private int property_id;
+	@ManyToOne(fetch=FetchType.EAGER)
+	@JoinColumn(name="owner_id")
 	private int owner_id;
 	private String address1;
 	private String address2;
@@ -10,12 +28,14 @@ public class Property {
 	private int zipcode;
 	private double current_Rent_Price;
 	private double rating;
-	public Property() {
+	
+	public Property() 
+	{
 		super();
-		// TODO Auto-generated constructor stub
 	}
 	public Property(int property_id, int owner_id, String address1, String address2, String city, String state,
-			int zipcode, double current_Rent_Price, double rating) {
+			int zipcode, double current_Rent_Price, double rating) 
+	{
 		super();
 		this.property_id = property_id;
 		this.owner_id = owner_id;
@@ -27,6 +47,7 @@ public class Property {
 		this.current_Rent_Price = current_Rent_Price;
 		this.rating = rating;
 	}
+	
 	@Override
 	public String toString() {
 		return "Property [property_id=" + property_id + ", owner_id=" + owner_id + ", address1=" + address1
