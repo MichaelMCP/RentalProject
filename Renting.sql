@@ -71,61 +71,6 @@ create table receipts
 );
 
 
-drop sequence users_key;
-create sequence users_key;
-
-create or replace trigger user_key_trigger
-before insert on users
-for each row
-begin
-    Select users_key.nextval into :new.id from dual;
-end;
-/
-
-drop sequence properties_key;
-create sequence properties_key;
-
-create or replace trigger properties_key_trigger
-before insert on properties
-for each row
-begin
-    Select properties_key.nextval into :new.property_id from dual;
-end;
-/
-
-drop sequence payment_info_key;
-create sequence payment_info_key;
-
-create or replace trigger payment_info_key_trigger
-before insert on payment_info
-for each row
-begin
-    Select payment_info_key.nextval into :new.id from dual;
-end;
-/
-
-drop sequence services_key;
-create sequence services_key;
-
-create or replace trigger services_key_trigger
-before insert on services
-for each row
-begin
-    Select services_key.nextval into :new.id from dual;
-end;
-/
-
-drop sequence receipts_key;
-create sequence receipts_key;
-
-create or replace trigger receipts_key_trigger
-before insert on receipts
-for each row
-begin
-    Select receipts_key.nextval into :new.receipt_id from dual;
-end;
-/
-
 insert into users (role, full_name, email, password) values (1, 'King', 'king@test.com', 123);
 insert into payment_info (cost, user_id, credit_Card_Number) values (200, 1, 55555555);
 commit;
