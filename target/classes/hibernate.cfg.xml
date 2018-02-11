@@ -20,5 +20,6 @@
         <mapping class="com.revature.beans.Receipt"></mapping>
         <mapping class="com.revature.beans.PaymentInfo"></mapping>
         <mapping class="com.revature.beans.Property"></mapping>
+        <mapping class="com.revature.beans.Service"></mapping>
     </session-factory>
 </hibernate-configuration>
