@@ -1,5 +1,6 @@
 package com.revature.beans;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
@@ -20,10 +21,12 @@ public class PaymentInfo
 	@SequenceGenerator(name="payment", sequenceName="payment_info_key", allocationSize=1)
 	private int id;
 	private double cost;
+	@Column(name="user_Id")
 	@OneToOne(fetch=FetchType.EAGER)
 	@JoinColumn(name="user_Id")
-	private int user_Id;
-	private int credit_Card_Number;
+	private int userId;
+	@Column(name="credit_Card_Numer")
+	private int creditCardNumber;
 	
 	public PaymentInfo() 
 	{
@@ -34,8 +37,8 @@ public class PaymentInfo
 		super();
 		this.id = id;
 		this.cost = cost;
-		this.user_Id = userId;
-		this.credit_Card_Number = creditCardNumber;
+		this.userId = userId;
+		this.creditCardNumber = creditCardNumber;
 	}
 
 	public int getId() {
@@ -55,19 +58,19 @@ public class PaymentInfo
 	}
 
 	public int getUserId() {
-		return user_Id;
+		return userId;
 	}
 
 	public void setUserId(int userId) {
-		this.user_Id = userId;
+		this.userId = userId;
 	}
 
 	public int getCreditCardNumber() {
-		return credit_Card_Number;
+		return creditCardNumber;
 	}
 
 	public void setCreditCardNumber(int creditCardNumber) {
-		this.credit_Card_Number = creditCardNumber;
+		this.creditCardNumber = creditCardNumber;
 	}
 
 	@Override
@@ -77,9 +80,9 @@ public class PaymentInfo
 		long temp;
 		temp = Double.doubleToLongBits(cost);
 		result = prime * result + (int) (temp ^ (temp >>> 32));
-		result = prime * result + credit_Card_Number;
+		result = prime * result + creditCardNumber;
 		result = prime * result + id;
-		result = prime * result + user_Id;
+		result = prime * result + userId;
 		return result;
 	}
 
@@ -94,18 +97,18 @@ public class PaymentInfo
 		PaymentInfo other = (PaymentInfo) obj;
 		if (Double.doubleToLongBits(cost) != Double.doubleToLongBits(other.cost))
 			return false;
-		if (credit_Card_Number != other.credit_Card_Number)
+		if (creditCardNumber != other.creditCardNumber)
 			return false;
 		if (id != other.id)
 			return false;
-		if (user_Id != other.user_Id)
+		if (userId != other.userId)
 			return false;
 		return true;
 	}
 
 	@Override
 	public String toString() {
-		return "PaymentInfo [id=" + id + ", cost=" + cost + ", userId=" + user_Id + ", creditCardNumber="
-				+ credit_Card_Number + "]";
+		return "PaymentInfo [id=" + id + ", cost=" + cost + ", userId=" + userId + ", creditCardNumber="
+				+ creditCardNumber + "]";
 	}
 }

@@ -14,7 +14,7 @@ public class Service {
 	
 	@Id
 	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="service")
-	@SequenceGenerator(name="service", sequenceName="service_key", allocationSize=1)
+	@SequenceGenerator(name="service", sequenceName="services_key", allocationSize=1)
 	private int id;
 	@Column(name="service_name")
 	private String serviceName;
