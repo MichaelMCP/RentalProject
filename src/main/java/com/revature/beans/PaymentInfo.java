@@ -21,8 +21,7 @@ public class PaymentInfo
 	@SequenceGenerator(name="payment", sequenceName="payment_info_key", allocationSize=1)
 	private int id;
 	private double cost;
-	@Column(name="user_Id")
-	@OneToOne(fetch=FetchType.EAGER)
+	@OneToOne(fetch=FetchType.EAGER, targetEntity = User.class)
 	@JoinColumn(name="user_Id")
 	private int userId;
 	@Column(name="credit_Card_Numer")

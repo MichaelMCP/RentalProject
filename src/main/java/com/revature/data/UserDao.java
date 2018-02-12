@@ -1,5 +1,7 @@
 package com.revature.data;
 
+import java.util.List;
+
 import com.revature.beans.User;
 
 public interface UserDao 
@@ -33,18 +35,24 @@ public interface UserDao
 	 * @param u previously created user object for updating with user information
 	 * @return the user from the database that matches the username and password
 	 */
-	public User getUserById(User u);
+	public User getUserById(int i);
+	/**
+	 * returns a List of all users from the database
+	 * 
+	 * @return all users in the database
+	 */
+	public List<User>getAllUsers();
 	/**
 	 * deletes a User from the database
 	 * 
 	 * @param user the User to be deleted
 	 */
-	public void deleteUser(User user);
+	public int deleteUser(User user);
 	
 	/**
 	 * updates a User in the database
 	 * 
 	 * @param user the User to be updated
 	 */
-	public void updateUser(User user);
+	public User updateUser(User user);
 }

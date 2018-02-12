@@ -11,7 +11,8 @@ id number(20) primary key,
 role number(1) not null,
 full_name varchar2(100) not null,
 email varchar2(100) not null unique,
-password varchar2(100) not null
+password varchar2(100) not null,
+DTYPE varchar2(100)
 );
 
 
@@ -70,6 +71,17 @@ create table receipts
   
 );
 
+alter table
+   receipts
+add constraint
+   fk_renter_user_id FOREIGN KEY (renter_user_id)
+references users (id);
+
+alter table
+   receipts
+add constraint
+   fk_owner_user_id FOREIGN KEY (owner_user_id)
+references users (id);
 
 drop sequence users_key;
 create sequence users_key;

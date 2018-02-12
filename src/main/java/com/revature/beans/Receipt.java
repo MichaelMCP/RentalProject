@@ -24,12 +24,10 @@ public class Receipt
 	private int receiptId;
 	@Column(name="payments_time")
 	private Timestamp paymentsTime;
-	@Column(name="renter_user_id")
-	@OneToOne(fetch=FetchType.EAGER)
+	@OneToOne(fetch=FetchType.EAGER, targetEntity = User.class)
 	@JoinColumn(name="rent_user_id")
 	private int renterUserId;
-	@Column(name="owner_user_id")
-	@OneToOne(fetch=FetchType.EAGER)
+	@OneToOne(fetch=FetchType.EAGER, targetEntity = User.class)
 	@JoinColumn(name="owner_user_id")
 	private int ownerUserId;
 	@Column(name="user_rating")

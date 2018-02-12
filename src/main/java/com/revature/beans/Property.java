@@ -20,8 +20,7 @@ public class Property
 	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="prop_id")
 	@SequenceGenerator(name="prop_id", sequenceName="prop_seq", allocationSize=1)
 	private int propertyId;
-	@Column(name="owner_id")
-	@ManyToOne(fetch=FetchType.EAGER)
+	@ManyToOne(fetch=FetchType.EAGER, targetEntity = User.class)
 	@JoinColumn(name="owner_id")
 	private int ownerId;
 	private String address1;
