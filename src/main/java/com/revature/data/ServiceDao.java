@@ -1,6 +1,6 @@
 package com.revature.data;
 
-import java.util.Set;
+import java.util.List;
 
 import com.revature.beans.Service;
 
@@ -22,6 +22,6 @@ public interface ServiceDao {
 	 * @return list of Services in database
 	 */
 	
-	public Set<Service> getServices();
+	public List<Service> getServices();
 
 }
