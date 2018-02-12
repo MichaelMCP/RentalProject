@@ -2,6 +2,7 @@ package com.revature.beans;
 
 import java.sql.Timestamp;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
@@ -17,27 +18,32 @@ import javax.persistence.Table;
 public class Receipt 
 {
 	@Id
+	@Column(name="receipt_id")
 	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="receipt")
 	@SequenceGenerator(name="receipt", sequenceName="receipts_key", allocationSize=1)
-	private int receipt_id;
-	private Timestamp payments_time;
+	private int receiptId;
+	@Column(name="payments_time")
+	private Timestamp paymentsTime;
+	@Column(name="renter_user_id")
 	@OneToOne(fetch=FetchType.EAGER)
 	@JoinColumn(name="rent_user_id")
-	private int renter_user_id;
+	private int renterUserId;
+	@Column(name="owner_user_id")
 	@OneToOne(fetch=FetchType.EAGER)
 	@JoinColumn(name="owner_user_id")
-	private int owner_user_id;
-	private int user_rating;
+	private int ownerUserId;
+	@Column(name="user_rating")
+	private int userRating;
 	private double amount;
 	
-	public Receipt(int receipt_id, Timestamp payments_time, int renter_user_id, int owner_user_id, int user_rating,
+	public Receipt(int receiptId, Timestamp paymentsTime, int renterUserId, int ownerUserId, int userRating,
 			double amount) {
 		super();
-		this.receipt_id = receipt_id;
-		this.payments_time = payments_time;
-		this.renter_user_id = renter_user_id;
-		this.owner_user_id = owner_user_id;
-		this.user_rating = user_rating;
+		this.receiptId = receiptId;
+		this.paymentsTime = paymentsTime;
+		this.renterUserId = renterUserId;
+		this.ownerUserId = ownerUserId;
+		this.userRating = userRating;
 		this.amount = amount;
 	}
 
@@ -46,44 +52,44 @@ public class Receipt
 		super();
 	}
 
-	public int getReceipt_id() {
-		return receipt_id;
+	public int getReceiptId() {
+		return receiptId;
 	}
 
-	public void setReceipt_id(int receipt_id) {
-		this.receipt_id = receipt_id;
+	public void setReceiptId(int receiptId) {
+		this.receiptId = receiptId;
 	}
 
-	public Timestamp getPayments_time() {
-		return payments_time;
+	public Timestamp getPaymentsTime() {
+		return paymentsTime;
 	}
 
-	public void setPayments_time(Timestamp payments_time) {
-		this.payments_time = payments_time;
+	public void setPaymentsTime(Timestamp paymentsTime) {
+		this.paymentsTime = paymentsTime;
 	}
 
-	public int getRenter_user_id() {
-		return renter_user_id;
+	public int getRenterUserId() {
+		return renterUserId;
 	}
 
-	public void setRenter_user_id(int renter_user_id) {
-		this.renter_user_id = renter_user_id;
+	public void setRenter_user_id(int renterUserId) {
+		this.renterUserId = renterUserId;
 	}
 
-	public int getOwner_user_id() {
-		return owner_user_id;
+	public int getOwnerUserId() {
+		return ownerUserId;
 	}
 
-	public void setOwner_user_id(int owner_user_id) {
-		this.owner_user_id = owner_user_id;
+	public void setOwnerUserId(int ownerUserId) {
+		this.ownerUserId = ownerUserId;
 	}
 
-	public int getUser_rating() {
-		return user_rating;
+	public int getUserRating() {
+		return userRating;
 	}
 
-	public void setUser_rating(int user_rating) {
-		this.user_rating = user_rating;
+	public void setUserRating(int userRating) {
+		this.userRating = userRating;
 	}
 
 	public double getAmount() {
@@ -101,11 +107,11 @@ public class Receipt
 		long temp;
 		temp = Double.doubleToLongBits(amount);
 		result = prime * result + (int) (temp ^ (temp >>> 32));
-		result = prime * result + owner_user_id;
-		result = prime * result + ((payments_time == null) ? 0 : payments_time.hashCode());
-		result = prime * result + receipt_id;
-		result = prime * result + renter_user_id;
-		result = prime * result + user_rating;
+		result = prime * result + ownerUserId;
+		result = prime * result + ((paymentsTime == null) ? 0 : paymentsTime.hashCode());
+		result = prime * result + receiptId;
+		result = prime * result + renterUserId;
+		result = prime * result + userRating;
 		return result;
 	}
 
@@ -120,18 +126,18 @@ public class Receipt
 		Receipt other = (Receipt) obj;
 		if (Double.doubleToLongBits(amount) != Double.doubleToLongBits(other.amount))
 			return false;
-		if (owner_user_id != other.owner_user_id)
+		if (ownerUserId != other.ownerUserId)
 			return false;
-		if (payments_time == null) {
-			if (other.payments_time != null)
+		if (paymentsTime == null) {
+			if (other.paymentsTime != null)
 				return false;
-		} else if (!payments_time.equals(other.payments_time))
+		} else if (!paymentsTime.equals(other.paymentsTime))
 			return false;
-		if (receipt_id != other.receipt_id)
+		if (receiptId != other.receiptId)
 			return false;
-		if (renter_user_id != other.renter_user_id)
+		if (renterUserId != other.renterUserId)
 			return false;
-		if (user_rating != other.user_rating)
+		if (userRating != other.userRating)
 			return false;
 		return true;
 	}
@@ -139,16 +145,16 @@ public class Receipt
 	@Override
 	public String toString() {
 		StringBuilder builder = new StringBuilder();
-		builder.append("Receipt [receipt_id=");
-		builder.append(receipt_id);
-		builder.append(", payments_time=");
-		builder.append(payments_time);
-		builder.append(", renter_user_id=");
-		builder.append(renter_user_id);
-		builder.append(", owner_user_id=");
-		builder.append(owner_user_id);
-		builder.append(", user_rating=");
-		builder.append(user_rating);
+		builder.append("Receipt [receiptId=");
+		builder.append(receiptId);
+		builder.append(", paymentsTime=");
+		builder.append(paymentsTime);
+		builder.append(", renterUserId=");
+		builder.append(renterUserId);
+		builder.append(", ownerUserId=");
+		builder.append(ownerUserId);
+		builder.append(", userRating=");
+		builder.append(userRating);
 		builder.append(", amount=");
 		builder.append(amount);
 		builder.append("]");

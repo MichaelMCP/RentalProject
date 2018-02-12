@@ -1,5 +1,6 @@
 package com.revature.beans;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.PrimaryKeyJoinColumn;
 import javax.persistence.Table;
@@ -13,7 +14,8 @@ public class Renter extends User
 
 	private int id;
 	private int role;
-	private String full_name;
+	@Column(name="full_name")
+	private String fullName;
 	private String email;
 	private String password;
 	
@@ -22,9 +24,9 @@ public class Renter extends User
 		super();
 	}
 
-	public Renter(int id, int role, String full_name, String email, String password)
+	public Renter(int id, int role, String fullName, String email, String password)
 	{
-		super(id, role, full_name, email, password);
+		super(id, role, fullName, email, password);
 		
 	}
 
@@ -44,12 +46,12 @@ public class Renter extends User
 		this.role = role;
 	}
 
-	public String getFull_name() {
-		return full_name;
+	public String getFullName() {
+		return fullName;
 	}
 
-	public void setFull_name(String full_name) {
-		this.full_name = full_name;
+	public void setFullName(String fullName) {
+		this.fullName = fullName;
 	}
 
 	public String getEmail() {
@@ -75,8 +77,8 @@ public class Renter extends User
 		builder.append(id);
 		builder.append(", role=");
 		builder.append(role);
-		builder.append(", full_name=");
-		builder.append(full_name);
+		builder.append(", fullName=");
+		builder.append(fullName);
 		builder.append(", email=");
 		builder.append(email);
 		builder.append(", password=");
@@ -90,7 +92,7 @@ public class Renter extends User
 		final int prime = 31;
 		int result = super.hashCode();
 		result = prime * result + ((email == null) ? 0 : email.hashCode());
-		result = prime * result + ((full_name == null) ? 0 : full_name.hashCode());
+		result = prime * result + ((fullName == null) ? 0 : fullName.hashCode());
 		result = prime * result + id;
 		result = prime * result + ((password == null) ? 0 : password.hashCode());
 		result = prime * result + role;
@@ -111,10 +113,10 @@ public class Renter extends User
 				return false;
 		} else if (!email.equals(other.email))
 			return false;
-		if (full_name == null) {
-			if (other.full_name != null)
+		if (fullName == null) {
+			if (other.fullName != null)
 				return false;
-		} else if (!full_name.equals(other.full_name))
+		} else if (!fullName.equals(other.fullName))
 			return false;
 		if (id != other.id)
 			return false;

@@ -1,5 +1,6 @@
 package com.revature.beans;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -20,7 +21,8 @@ public class User
 	@SequenceGenerator(name="users", sequenceName="users_key", allocationSize=1)
 	private int id;
 	private int role;
-	private String full_name;
+	@Column(name="full_name")
+	private String fullName;
 	private String email;
 	private String password;
 	
@@ -37,11 +39,11 @@ public class User
 	public void setRole(int role) {
 		this.role = role;
 	}
-	public String getFull_name() {
-		return full_name;
+	public String getFullName() {
+		return fullName;
 	}
-	public void setFull_name(String full_name) {
-		this.full_name = full_name;
+	public void setFullName(String fullName) {
+		this.fullName = fullName;
 	}
 	public String getEmail() {
 		return email;
@@ -60,7 +62,7 @@ public class User
 		final int prime = 31;
 		int result = 1;
 		result = prime * result + ((email == null) ? 0 : email.hashCode());
-		result = prime * result + ((full_name == null) ? 0 : full_name.hashCode());
+		result = prime * result + ((fullName == null) ? 0 : fullName.hashCode());
 		result = prime * result + id;
 		result = prime * result + ((password == null) ? 0 : password.hashCode());
 		result = prime * result + role;
@@ -80,10 +82,10 @@ public class User
 				return false;
 		} else if (!email.equals(other.email))
 			return false;
-		if (full_name == null) {
-			if (other.full_name != null)
+		if (fullName == null) {
+			if (other.fullName != null)
 				return false;
-		} else if (!full_name.equals(other.full_name))
+		} else if (!fullName.equals(other.fullName))
 			return false;
 		if (id != other.id)
 			return false;
@@ -98,7 +100,7 @@ public class User
 	}
 	@Override
 	public String toString() {
-		return "User [id=" + id + ", role=" + role + ", full_name=" + full_name + ", email=" + email + ", password="
+		return "User [id=" + id + ", role=" + role + ", fullName=" + fullName + ", email=" + email + ", password="
 				+ password + "]";
 	}
 	public User() 
@@ -106,11 +108,11 @@ public class User
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	public User(int id, int role, String full_name, String email, String password) {
+	public User(int id, int role, String fullName, String email, String password) {
 		super();
 		this.id = id;
 		this.role = role;
-		this.full_name = full_name;
+		this.fullName = fullName;
 		this.email = email;
 		this.password = password;
 	}

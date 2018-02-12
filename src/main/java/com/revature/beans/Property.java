@@ -1,5 +1,6 @@
 package com.revature.beans;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
@@ -15,44 +16,47 @@ import javax.persistence.Table;
 public class Property 
 {
 	@Id
+	@Column(name="property_id")
 	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="prop_id")
 	@SequenceGenerator(name="prop_id", sequenceName="prop_seq", allocationSize=1)
-	private int property_id;
+	private int propertyId;
+	@Column(name="owner_id")
 	@ManyToOne(fetch=FetchType.EAGER)
 	@JoinColumn(name="owner_id")
-	private int owner_id;
+	private int ownerId;
 	private String address1;
 	private String address2;
 	private String city;
 	private String state;
 	private int zipcode;
-	private double current_Rent_Price;
+	@Column(name="current_Rent_Price")
+	private double currentRentPrice;
 	private double rating;
 	
 	public Property() 
 	{
 		super();
 	}
-	public Property(int property_id, int owner_id, String address1, String address2, String city, String state,
-			int zipcode, double current_Rent_Price, double rating) 
+	public Property(int propertyId, int ownerId, String address1, String address2, String city, String state,
+			int zipcode, double currentRentPrice, double rating) 
 	{
 		super();
-		this.property_id = property_id;
-		this.owner_id = owner_id;
+		this.propertyId = propertyId;
+		this.ownerId = ownerId;
 		this.address1 = address1;
 		this.address2 = address2;
 		this.city = city;
 		this.state = state;
 		this.zipcode = zipcode;
-		this.current_Rent_Price = current_Rent_Price;
+		this.currentRentPrice = currentRentPrice;
 		this.rating = rating;
 	}
 	
 	@Override
 	public String toString() {
-		return "Property [property_id=" + property_id + ", owner_id=" + owner_id + ", address1=" + address1
+		return "Property [property_id=" + propertyId + ", ownerId=" + ownerId + ", address1=" + address1
 				+ ", address2=" + address2 + ", city=" + city + ", state=" + state + ", zipcode=" + zipcode
-				+ ", current_Rent_Price=" + current_Rent_Price + ", rating=" + rating + "]";
+				+ ", currentRentPrice=" + currentRentPrice + ", rating=" + rating + "]";
 	}
 	@Override
 	public int hashCode() {
@@ -62,10 +66,10 @@ public class Property
 		result = prime * result + ((address2 == null) ? 0 : address2.hashCode());
 		result = prime * result + ((city == null) ? 0 : city.hashCode());
 		long temp;
-		temp = Double.doubleToLongBits(current_Rent_Price);
+		temp = Double.doubleToLongBits(currentRentPrice);
 		result = prime * result + (int) (temp ^ (temp >>> 32));
-		result = prime * result + owner_id;
-		result = prime * result + property_id;
+		result = prime * result + ownerId;
+		result = prime * result + propertyId;
 		temp = Double.doubleToLongBits(rating);
 		result = prime * result + (int) (temp ^ (temp >>> 32));
 		result = prime * result + ((state == null) ? 0 : state.hashCode());
@@ -96,11 +100,11 @@ public class Property
 				return false;
 		} else if (!city.equals(other.city))
 			return false;
-		if (Double.doubleToLongBits(current_Rent_Price) != Double.doubleToLongBits(other.current_Rent_Price))
+		if (Double.doubleToLongBits(currentRentPrice) != Double.doubleToLongBits(other.currentRentPrice))
 			return false;
-		if (owner_id != other.owner_id)
+		if (ownerId != other.ownerId)
 			return false;
-		if (property_id != other.property_id)
+		if (propertyId != other.propertyId)
 			return false;
 		if (Double.doubleToLongBits(rating) != Double.doubleToLongBits(other.rating))
 			return false;
@@ -113,17 +117,17 @@ public class Property
 			return false;
 		return true;
 	}
-	public int getProperty_id() {
-		return property_id;
+	public int getPropertyId() {
+		return propertyId;
 	}
-	public void setProperty_id(int property_id) {
-		this.property_id = property_id;
+	public void setPropertyId(int propertyId) {
+		this.propertyId = propertyId;
 	}
-	public int getOwner_id() {
-		return owner_id;
+	public int getOwnerId() {
+		return ownerId;
 	}
-	public void setOwner_id(int owner_id) {
-		this.owner_id = owner_id;
+	public void setOwnerId(int ownerId) {
+		this.ownerId = ownerId;
 	}
 	public String getAddress1() {
 		return address1;
@@ -155,11 +159,11 @@ public class Property
 	public void setZipcode(int zipcode) {
 		this.zipcode = zipcode;
 	}
-	public double getCurrent_Rent_Price() {
-		return current_Rent_Price;
+	public double getCurrentRentPrice() {
+		return currentRentPrice;
 	}
-	public void setCurrent_Rent_Price(double current_Rent_Price) {
-		this.current_Rent_Price = current_Rent_Price;
+	public void setCurrentRentPrice(double currentRentPrice) {
+		this.currentRentPrice = currentRentPrice;
 	}
 	public double getRating() {
 		return rating;
