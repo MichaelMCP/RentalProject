@@ -13,7 +13,6 @@ public interface UserDao
 	 * @return the id of the user object inserted
 	 */
 	public int createUser(User user);
-	
 	/**
 	 * returns a login object from the database
 	 * 
