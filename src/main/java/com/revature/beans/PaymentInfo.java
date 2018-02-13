@@ -24,7 +24,7 @@ public class PaymentInfo
 	private int id;
 	private double cost;
 //	@Column(name="user_Id")
-	@OneToOne(fetch=FetchType.EAGER, cascade=CascadeType.ALL, targetEntity=User.class)
+	@OneToOne(fetch=FetchType.EAGER, cascade=CascadeType.ALL)
 	@JoinColumn(name="user_id")
 	private User user;
 	@Column(name="credit_Card_Number")

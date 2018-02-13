@@ -1687,3 +1687,82 @@
 2018-02-13 14:25:27 WARN  PaymentInfoHibernate:24 - The payment info is: PaymentInfo [id=0, cost=10.0, user=User [id=5, role=1, fullName=Bob, email=test2@test.com, password=123], creditCardNumber=1]
 2018-02-13 14:25:27 WARN  PaymentInfoHibernate:26 - Created payment info will have an id of 5
 2018-02-13 14:25:27 WARN  PaymentInfoHibernate:27 - The payment info is: PaymentInfo [id=5, cost=10.0, user=User [id=5, role=1, fullName=Bob, email=test2@test.com, password=123], creditCardNumber=1]
+2018-02-13 14:34:48 DEBUG logging:109 - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2018-02-13 14:34:49 INFO  Version:45 - HHH000412: Hibernate Core {5.2.12.Final}
+2018-02-13 14:34:49 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2018-02-13 14:34:49 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-02-13 14:34:49 WARN  pooling:70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2018-02-13 14:34:49 INFO  pooling:126 - HHH10001005: using driver [oracle.jdbc.OracleDriver] at URL [jdbc:oracle:thin:@rentalproject.cptyc64r16fz.us-east-2.rds.amazonaws.com:1521:ORCL]
+2018-02-13 14:34:49 INFO  pooling:135 - HHH10001001: Connection properties: {user=admin, password=****}
+2018-02-13 14:34:49 INFO  pooling:140 - HHH10001003: Autocommit mode: false
+2018-02-13 14:34:49 INFO  DriverManagerConnectionProviderImpl:41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2018-02-13 14:34:49 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2018-02-13 14:34:50 WARN  AnnotationBinder:1259 - HHH000137: Root entity should not hold an PrimaryKeyJoinColum(s), will be ignored: com.revature.beans.Employee
+2018-02-13 14:34:50 WARN  AnnotationBinder:613 - HHH000139: Illegal use of @Table in a subclass of a SINGLE_TABLE hierarchy: com.revature.beans.Employee
+2018-02-13 14:34:50 WARN  AnnotationBinder:1259 - HHH000137: Root entity should not hold an PrimaryKeyJoinColum(s), will be ignored: com.revature.beans.PropertyOwner
+2018-02-13 14:34:50 WARN  AnnotationBinder:613 - HHH000139: Illegal use of @Table in a subclass of a SINGLE_TABLE hierarchy: com.revature.beans.PropertyOwner
+2018-02-13 14:34:50 WARN  AnnotationBinder:1259 - HHH000137: Root entity should not hold an PrimaryKeyJoinColum(s), will be ignored: com.revature.beans.Renter
+2018-02-13 14:34:50 WARN  AnnotationBinder:613 - HHH000139: Illegal use of @Table in a subclass of a SINGLE_TABLE hierarchy: com.revature.beans.Renter
+2018-02-13 14:34:50 WARN  UserHibernate:30 - The user is: User [id=0, role=1, fullName=Bob, email=test4@test.com, password=123]
+2018-02-13 14:34:50 WARN  UserHibernate:32 - Created user will have an id of 1
+2018-02-13 14:34:50 WARN  UserHibernate:33 - The user is: User [id=1, role=1, fullName=Bob, email=test4@test.com, password=123]
+2018-02-13 14:34:50 WARN  PaymentInfoHibernate:24 - The payment info is: PaymentInfo [id=0, cost=10.0, user=User [id=1, role=1, fullName=Bob, email=test4@test.com, password=123], creditCardNumber=1]
+2018-02-13 14:34:50 WARN  PaymentInfoHibernate:26 - Created payment info will have an id of 1
+2018-02-13 14:34:50 WARN  PaymentInfoHibernate:27 - The payment info is: PaymentInfo [id=1, cost=10.0, user=User [id=1, role=1, fullName=Bob, email=test4@test.com, password=123], creditCardNumber=1]
+2018-02-13 14:34:51 WARN  UserHibernate:30 - The user is: User [id=0, role=1, fullName=Bob, email=test3@test.com, password=123]
+2018-02-13 14:34:51 WARN  UserHibernate:32 - Created user will have an id of 2
+2018-02-13 14:34:51 WARN  UserHibernate:33 - The user is: User [id=2, role=1, fullName=Bob, email=test3@test.com, password=123]
+2018-02-13 14:34:51 WARN  PaymentInfoHibernate:24 - The payment info is: PaymentInfo [id=0, cost=10.0, user=User [id=2, role=1, fullName=Bob, email=test3@test.com, password=123], creditCardNumber=1]
+2018-02-13 14:34:51 WARN  PaymentInfoHibernate:26 - Created payment info will have an id of 2
+2018-02-13 14:34:51 WARN  PaymentInfoHibernate:27 - The payment info is: PaymentInfo [id=2, cost=10.0, user=User [id=2, role=1, fullName=Bob, email=test3@test.com, password=123], creditCardNumber=1]
+2018-02-13 14:34:51 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2018-02-13 14:34:51 WARN  UserHibernate:30 - The user is: User [id=0, role=1, fullName=Bob, email=test5@test.com, password=123]
+2018-02-13 14:34:51 WARN  UserHibernate:32 - Created user will have an id of 3
+2018-02-13 14:34:51 WARN  UserHibernate:33 - The user is: User [id=3, role=1, fullName=Bob, email=test5@test.com, password=123]
+2018-02-13 14:34:51 WARN  PaymentInfoHibernate:24 - The payment info is: PaymentInfo [id=0, cost=10.0, user=User [id=3, role=1, fullName=Bob, email=test5@test.com, password=123], creditCardNumber=1]
+2018-02-13 14:34:51 WARN  PaymentInfoHibernate:26 - Created payment info will have an id of 3
+2018-02-13 14:34:51 WARN  PaymentInfoHibernate:27 - The payment info is: PaymentInfo [id=3, cost=10.0, user=User [id=3, role=1, fullName=Bob, email=test5@test.com, password=123], creditCardNumber=1]
+2018-02-13 14:34:51 WARN  UserHibernate:30 - The user is: User [id=0, role=1, fullName=Bob, email=test@test.com, password=123]
+2018-02-13 14:34:51 WARN  UserHibernate:32 - Created user will have an id of 4
+2018-02-13 14:34:51 WARN  UserHibernate:33 - The user is: User [id=4, role=1, fullName=Bob, email=test@test.com, password=123]
+2018-02-13 14:34:51 WARN  PaymentInfoHibernate:24 - The payment info is: PaymentInfo [id=0, cost=10.0, user=User [id=4, role=1, fullName=Bob, email=test@test.com, password=123], creditCardNumber=1]
+2018-02-13 14:34:51 WARN  PaymentInfoHibernate:26 - Created payment info will have an id of 4
+2018-02-13 14:34:51 WARN  PaymentInfoHibernate:27 - The payment info is: PaymentInfo [id=4, cost=10.0, user=User [id=4, role=1, fullName=Bob, email=test@test.com, password=123], creditCardNumber=1]
+2018-02-13 14:34:51 WARN  UserHibernate:30 - The user is: User [id=0, role=1, fullName=Bob, email=test2@test.com, password=123]
+2018-02-13 14:34:51 WARN  UserHibernate:32 - Created user will have an id of 5
+2018-02-13 14:34:51 WARN  UserHibernate:33 - The user is: User [id=5, role=1, fullName=Bob, email=test2@test.com, password=123]
+2018-02-13 14:34:51 WARN  PaymentInfoHibernate:24 - The payment info is: PaymentInfo [id=0, cost=10.0, user=User [id=5, role=1, fullName=Bob, email=test2@test.com, password=123], creditCardNumber=1]
+2018-02-13 14:34:51 WARN  PaymentInfoHibernate:26 - Created payment info will have an id of 5
+2018-02-13 14:34:51 WARN  PaymentInfoHibernate:27 - The payment info is: PaymentInfo [id=5, cost=10.0, user=User [id=5, role=1, fullName=Bob, email=test2@test.com, password=123], creditCardNumber=1]
+2018-02-13 14:35:01 DEBUG logging:109 - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2018-02-13 14:35:01 INFO  Version:45 - HHH000412: Hibernate Core {5.2.12.Final}
+2018-02-13 14:35:01 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2018-02-13 14:35:01 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-02-13 14:35:01 WARN  pooling:70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2018-02-13 14:35:01 INFO  pooling:126 - HHH10001005: using driver [oracle.jdbc.OracleDriver] at URL [jdbc:oracle:thin:@rentalproject.cptyc64r16fz.us-east-2.rds.amazonaws.com:1521:ORCL]
+2018-02-13 14:35:01 INFO  pooling:135 - HHH10001001: Connection properties: {user=admin, password=****}
+2018-02-13 14:35:01 INFO  pooling:140 - HHH10001003: Autocommit mode: false
+2018-02-13 14:35:01 INFO  DriverManagerConnectionProviderImpl:41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2018-02-13 14:35:02 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2018-02-13 14:35:02 WARN  AnnotationBinder:1259 - HHH000137: Root entity should not hold an PrimaryKeyJoinColum(s), will be ignored: com.revature.beans.Employee
+2018-02-13 14:35:02 WARN  AnnotationBinder:613 - HHH000139: Illegal use of @Table in a subclass of a SINGLE_TABLE hierarchy: com.revature.beans.Employee
+2018-02-13 14:35:02 WARN  AnnotationBinder:1259 - HHH000137: Root entity should not hold an PrimaryKeyJoinColum(s), will be ignored: com.revature.beans.PropertyOwner
+2018-02-13 14:35:02 WARN  AnnotationBinder:613 - HHH000139: Illegal use of @Table in a subclass of a SINGLE_TABLE hierarchy: com.revature.beans.PropertyOwner
+2018-02-13 14:35:02 WARN  AnnotationBinder:1259 - HHH000137: Root entity should not hold an PrimaryKeyJoinColum(s), will be ignored: com.revature.beans.Renter
+2018-02-13 14:35:02 WARN  AnnotationBinder:613 - HHH000139: Illegal use of @Table in a subclass of a SINGLE_TABLE hierarchy: com.revature.beans.Renter
+2018-02-13 14:35:02 WARN  UserHibernate:30 - The user is: User [id=0, role=1, fullName=Bob, email=test5@test.com, password=123]
+2018-02-13 14:35:02 WARN  UserHibernate:32 - Created user will have an id of 1
+2018-02-13 14:35:02 WARN  UserHibernate:33 - The user is: User [id=1, role=1, fullName=Bob, email=test5@test.com, password=123]
+2018-02-13 14:35:03 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2018-02-13 14:35:03 WARN  UserHibernate:30 - The user is: User [id=0, role=1, fullName=Bob, email=test3@test.com, password=123]
+2018-02-13 14:35:03 WARN  UserHibernate:32 - Created user will have an id of 2
+2018-02-13 14:35:03 WARN  UserHibernate:33 - The user is: User [id=2, role=1, fullName=Bob, email=test3@test.com, password=123]
+2018-02-13 14:35:03 WARN  UserHibernate:30 - The user is: User [id=0, role=1, fullName=Bob, email=test2@test.com, password=123]
+2018-02-13 14:35:03 WARN  UserHibernate:32 - Created user will have an id of 3
+2018-02-13 14:35:03 WARN  UserHibernate:33 - The user is: User [id=3, role=1, fullName=Bob, email=test2@test.com, password=123]
+2018-02-13 14:35:03 WARN  UserHibernate:30 - The user is: User [id=0, role=1, fullName=Bob, email=test@test.com, password=123]
+2018-02-13 14:35:03 WARN  UserHibernate:32 - Created user will have an id of 4
+2018-02-13 14:35:03 WARN  UserHibernate:33 - The user is: User [id=4, role=1, fullName=Bob, email=test@test.com, password=123]
+2018-02-13 14:35:03 WARN  UserHibernate:30 - The user is: User [id=0, role=1, fullName=Bob, email=test4@test.com, password=123]
+2018-02-13 14:35:03 WARN  UserHibernate:32 - Created user will have an id of 5
+2018-02-13 14:35:03 WARN  UserHibernate:33 - The user is: User [id=5, role=1, fullName=Bob, email=test4@test.com, password=123]
