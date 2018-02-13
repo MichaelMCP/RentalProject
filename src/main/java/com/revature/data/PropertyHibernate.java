@@ -15,31 +15,16 @@ public class PropertyHibernate implements PropertyDao {
 	private static Logger log = Logger.getLogger(UserHibernate.class);
 	private static HibernateUtil hu = HibernateUtil.getInstance();
 	
-	public static void main(String[] args) {
-		PropertyDao ph = new PropertyHibernate();
-		Property prop = new Property();
-		prop.setPropertyId(2);
-		prop.setOwnerId(1);
-		prop.setAddress1("9384 Rocky Road.");
-		prop.setAddress2(" ");
-		prop.setCity("Glendale");
-		prop.setZipcode(83302);
-		prop.setCurrentRentPrice(132.00);
-		prop.setRating(4.5);
-		
-		System.out.println(ph.registerProperty(prop));
-	}
-	
 	@Override
 	public int registerProperty(Property property) {
 		Session session = hu.getSession();
 		Transaction tx = null;
 		try{
 			tx = session.beginTransaction();
-			log.warn("The user is: "+property);
+			log.warn("The property is: "+property);
 			int i = (Integer) session.save(property);
-			log.warn("Created user will have an id of "+i);
-			log.warn("The user is: "+property);
+			log.warn("Created property will have an id of "+i);
+			log.warn("The property is: "+property);
 			
 			
 			tx.commit();
@@ -74,7 +59,7 @@ public class PropertyHibernate implements PropertyDao {
 	@Override
 	public List<Property> getAllPropertiesByOwnerId(int id) {
 		Session s = hu.getSession();
-		String hquery = "from com.revature.beans.User where id = " + id;
+		String hquery = "from com.revature.beans.Property where id = " + id;
 		Query<Property> q = s.createQuery(hquery, Property.class);
 		List<Property> propertyList = q.getResultList();
 		s.close();
@@ -84,7 +69,7 @@ public class PropertyHibernate implements PropertyDao {
 	@Override
 	public List<Property> getAllProperties() {
 		Session s = hu.getSession();
-		String hquery = "from com.revature.beans.User";
+		String hquery = "from com.revature.beans.Property";
 		Query<Property> q = s.createQuery(hquery, Property.class);
 		List<Property> propertyList = q.getResultList();
 		s.close();
@@ -100,5 +85,4 @@ public class PropertyHibernate implements PropertyDao {
 		s.close();
 		return property;
 	}
-
 }
