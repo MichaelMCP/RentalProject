@@ -7,12 +7,20 @@ drop table users;
 
 create table users
 (
+drop table properties;
+drop table payment_info;
+drop table services;
+drop table roles_table;
+drop table receipts;
+drop table users;
+
+create table users
+(
 id number(20) primary key,
 role number(1) not null,
 full_name varchar2(100) not null,
 email varchar2(100) not null unique,
-password varchar2(100) not null,
-DTYPE varchar2(100)
+password varchar2(100) not null
 );
 
 
@@ -71,27 +79,10 @@ create table receipts
   
 );
 
-alter table
-   receipts
-add constraint
-   fk_renter_user_id FOREIGN KEY (renter_user_id)
-references users (id);
 
-alter table
-   receipts
-add constraint
-   fk_owner_user_id FOREIGN KEY (owner_user_id)
-references users (id);
-
-drop sequence users_key;
-create sequence users_key;
-drop sequence properties_key;
-create sequence properties_key;
-drop sequence payment_info_key;
-create sequence payment_info_key;
-drop sequence services_key;
-create sequence services_key;
-drop sequence receipts_key;
-create sequence receipts_key;
-
+insert into users (role, full_name, email, password) values (1, 'King', 'king@test.com', 123);
+insert into payment_info (cost, user_id, credit_Card_Number) values (200, 1, 55555555);
 commit;
+
+select * from users;
+select * from payment_info;
