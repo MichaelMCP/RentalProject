@@ -13,7 +13,7 @@ import com.revature.service.LoginService;
 
 @Controller
 @CrossOrigin(origins="http://50.207.204.190:4200")
-@RequestMapping(value="/login")
+@RequestMapping(value="http://18.219.120.2:8080/login")
 public class LoginController {
 	@Autowired
 	private LoginService login;
@@ -26,7 +26,7 @@ public class LoginController {
 	public String goLogin(HttpSession session) {
 		if(session.getAttribute("user")!=null)
 			return "home";
-		return "static/login.html";
+		return "login";
 	}
 	
 	@RequestMapping(method=RequestMethod.POST)
