@@ -25,7 +25,8 @@ create table properties(
   states varchar2 (30) not null,
   zipcode varchar2 (6) not null,
   current_Rent_Price number(36,2) not null,
-  rating number(3,2)
+  rating number(3,2),
+  availability number(1) not null
 );
 
 
