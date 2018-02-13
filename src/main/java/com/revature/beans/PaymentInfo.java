@@ -1,5 +1,6 @@
 package com.revature.beans;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
@@ -17,14 +18,16 @@ public class PaymentInfo
 {
 
 	@Id
+	@Column(name="payment_id")
 	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="payment")
 	@SequenceGenerator(name="payment", sequenceName="payment_info_key", allocationSize=1)
 	private int id;
 	private double cost;
-	@OneToOne(fetch=FetchType.EAGER, targetEntity = User.class)
-	@JoinColumn(name="user_Id")
-	private int userId;
-	@Column(name="credit_Card_Numer")
+//	@Column(name="user_Id")
+	@OneToOne(fetch=FetchType.EAGER, cascade=CascadeType.ALL, targetEntity=User.class)
+	@JoinColumn(name="user_id")
+	private User user;
+	@Column(name="credit_Card_Number")
 	private int creditCardNumber;
 	
 	public PaymentInfo() 
@@ -32,11 +35,11 @@ public class PaymentInfo
 		super();
 	}
 
-	public PaymentInfo(int id, double cost, int userId, int creditCardNumber) {
+	public PaymentInfo(int id, double cost, User user, int creditCardNumber) {
 		super();
 		this.id = id;
 		this.cost = cost;
-		this.userId = userId;
+		this.user = user;
 		this.creditCardNumber = creditCardNumber;
 	}
 
@@ -56,12 +59,12 @@ public class PaymentInfo
 		this.cost = cost;
 	}
 
-	public int getUserId() {
-		return userId;
+	public User getUser() {
+		return user;
 	}
 
-	public void setUserId(int userId) {
-		this.userId = userId;
+	public void setUser(User user) {
+		this.user = user;
 	}
 
 	public int getCreditCardNumber() {
@@ -81,7 +84,7 @@ public class PaymentInfo
 		result = prime * result + (int) (temp ^ (temp >>> 32));
 		result = prime * result + creditCardNumber;
 		result = prime * result + id;
-		result = prime * result + userId;
+		result = prime * result + ((user == null) ? 0 : user.hashCode());
 		return result;
 	}
 
@@ -100,14 +103,17 @@ public class PaymentInfo
 			return false;
 		if (id != other.id)
 			return false;
-		if (userId != other.userId)
+		if (user == null) {
+			if (other.user != null)
+				return false;
+		} else if (!user.equals(other.user))
 			return false;
 		return true;
 	}
 
 	@Override
 	public String toString() {
-		return "PaymentInfo [id=" + id + ", cost=" + cost + ", userId=" + userId + ", creditCardNumber="
+		return "PaymentInfo [id=" + id + ", cost=" + cost + ", user=" + user + ", creditCardNumber="
 				+ creditCardNumber + "]";
 	}
 }

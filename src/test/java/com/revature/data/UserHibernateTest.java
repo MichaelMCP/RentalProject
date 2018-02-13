@@ -70,7 +70,7 @@ public class UserHibernateTest {
 		u.setPassword("123");
 		ud.createUser(u);
 		List<User> test = ud.getAllUsers();
-		assertEquals(u, test.get(0));
+		assertTrue(test.contains(u));
 	}
 
 }

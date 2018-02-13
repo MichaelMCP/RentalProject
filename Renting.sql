@@ -36,9 +36,9 @@ add constraint
 references users (id);
 
 create table payment_info(
-    id number(20) primary key,
+    payment_id number(20) primary key,
     cost number(20,2) not null,
-    user_Id number(20) not null,
+    user_id number(20) not null,
     credit_Card_Number number(20) not null
 );
 
@@ -70,6 +70,12 @@ create table receipts
   property_id number(10) --fk
   
 );
+
+alter table
+   payment_info
+add constraint
+   fk_payment_info_user_id FOREIGN KEY (user_id)
+references users (id);
 
 alter table
    receipts
