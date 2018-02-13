@@ -31,6 +31,7 @@ public class PaymentInfoHibernateTest {
 		
 		int test = pd.createPaymentInfo(p);
 		assertEquals(p.getId(), test);
+		pd.deletePaymentInfo(p);
 	}
 
 	@Test
@@ -50,6 +51,7 @@ public class PaymentInfoHibernateTest {
 		
 		PaymentInfo test = pd.getPaymentInfoById(p.getId());
 		assertEquals(p, test);
+		pd.deletePaymentInfo(p);
 	}
 
 	@Test
@@ -69,6 +71,7 @@ public class PaymentInfoHibernateTest {
 		
 		List<PaymentInfo> test = pd.getAllPaymentInfo();
 		assertTrue(test.contains(p));
+		pd.deletePaymentInfo(p);
 	}
 
 	@Test
@@ -89,6 +92,7 @@ public class PaymentInfoHibernateTest {
 		p.setCost(20);
 		PaymentInfo test = pd.updatePaymentInfo(p);
 		assertEquals(p, test);
+		pd.deletePaymentInfo(p);
 	}
 
 	@Test

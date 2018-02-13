@@ -2907,3 +2907,271 @@ line 1:47: unexpected token: :
 2018-02-13 16:28:45 TRACE root:95 - User [id=7, role=1, fullName=Bob, email=test6@test.com, password=123]
 2018-02-13 16:28:45 TRACE UserHibernate:55 - SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])
 2018-02-13 16:28:45 TRACE UserHibernate:59 - org.hibernate.query.internal.QueryImpl@6f815e7f
+2018-02-13 16:30:49 DEBUG logging:109 - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2018-02-13 16:30:49 INFO  Version:45 - HHH000412: Hibernate Core {5.2.12.Final}
+2018-02-13 16:30:49 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2018-02-13 16:30:49 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-02-13 16:30:49 WARN  pooling:70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2018-02-13 16:30:49 INFO  pooling:126 - HHH10001005: using driver [oracle.jdbc.OracleDriver] at URL [jdbc:oracle:thin:@rentalproject.cptyc64r16fz.us-east-2.rds.amazonaws.com:1521:ORCL]
+2018-02-13 16:30:49 INFO  pooling:135 - HHH10001001: Connection properties: {user=admin, password=****}
+2018-02-13 16:30:49 INFO  pooling:140 - HHH10001003: Autocommit mode: false
+2018-02-13 16:30:49 INFO  DriverManagerConnectionProviderImpl:41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2018-02-13 16:32:58 DEBUG logging:109 - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2018-02-13 16:32:58 INFO  Version:45 - HHH000412: Hibernate Core {5.2.12.Final}
+2018-02-13 16:32:58 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2018-02-13 16:32:58 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-02-13 16:32:58 WARN  pooling:70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2018-02-13 16:32:58 INFO  pooling:126 - HHH10001005: using driver [oracle.jdbc.OracleDriver] at URL [jdbc:oracle:thin:@rentalproject.cptyc64r16fz.us-east-2.rds.amazonaws.com:1521:ORCL]
+2018-02-13 16:32:58 INFO  pooling:135 - HHH10001001: Connection properties: {user=admin, password=****}
+2018-02-13 16:32:58 INFO  pooling:140 - HHH10001003: Autocommit mode: false
+2018-02-13 16:32:58 INFO  DriverManagerConnectionProviderImpl:41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2018-02-13 16:32:59 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2018-02-13 16:33:00 WARN  UserHibernate:30 - The user is: User [id=0, role=1, fullName=Bob, email=test4@test.com, password=123]
+2018-02-13 16:33:00 WARN  UserHibernate:32 - Created user will have an id of 1
+2018-02-13 16:33:00 WARN  UserHibernate:33 - The user is: User [id=1, role=1, fullName=Bob, email=test4@test.com, password=123]
+2018-02-13 16:33:00 WARN  PaymentInfoHibernate:24 - The payment info is: PaymentInfo [id=0, cost=10.0, user=User [id=1, role=1, fullName=Bob, email=test4@test.com, password=123], creditCardNumber=1]
+2018-02-13 16:33:00 WARN  PaymentInfoHibernate:26 - Created payment info will have an id of 1
+2018-02-13 16:33:00 WARN  PaymentInfoHibernate:27 - The payment info is: PaymentInfo [id=1, cost=10.0, user=User [id=1, role=1, fullName=Bob, email=test4@test.com, password=123], creditCardNumber=1]
+2018-02-13 16:33:01 ERROR ExceptionMapperStandardImpl:39 - HHH000346: Error during managed flush [Batch update returned unexpected row count from update [0]; actual row count: 0; expected: 1]
+2018-02-13 16:33:01 INFO  AbstractBatchImpl:193 - HHH000010: On release of batch it still contained JDBC statements
+2018-02-13 16:33:01 WARN  UserHibernate:30 - The user is: User [id=0, role=1, fullName=Bob, email=test3@test.com, password=123]
+2018-02-13 16:33:01 WARN  UserHibernate:32 - Created user will have an id of 2
+2018-02-13 16:33:01 WARN  UserHibernate:33 - The user is: User [id=2, role=1, fullName=Bob, email=test3@test.com, password=123]
+2018-02-13 16:33:01 WARN  PaymentInfoHibernate:24 - The payment info is: PaymentInfo [id=0, cost=10.0, user=User [id=2, role=1, fullName=Bob, email=test3@test.com, password=123], creditCardNumber=1]
+2018-02-13 16:33:01 WARN  PaymentInfoHibernate:26 - Created payment info will have an id of 2
+2018-02-13 16:33:01 WARN  PaymentInfoHibernate:27 - The payment info is: PaymentInfo [id=2, cost=10.0, user=User [id=2, role=1, fullName=Bob, email=test3@test.com, password=123], creditCardNumber=1]
+2018-02-13 16:33:01 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2018-02-13 16:33:01 ERROR ExceptionMapperStandardImpl:39 - HHH000346: Error during managed flush [Batch update returned unexpected row count from update [0]; actual row count: 0; expected: 1]
+2018-02-13 16:33:02 INFO  AbstractBatchImpl:193 - HHH000010: On release of batch it still contained JDBC statements
+2018-02-13 16:33:02 WARN  UserHibernate:30 - The user is: User [id=0, role=1, fullName=Bob, email=test5@test.com, password=123]
+2018-02-13 16:33:02 WARN  UserHibernate:32 - Created user will have an id of 3
+2018-02-13 16:33:02 WARN  UserHibernate:33 - The user is: User [id=3, role=1, fullName=Bob, email=test5@test.com, password=123]
+2018-02-13 16:33:02 WARN  PaymentInfoHibernate:24 - The payment info is: PaymentInfo [id=0, cost=10.0, user=User [id=3, role=1, fullName=Bob, email=test5@test.com, password=123], creditCardNumber=1]
+2018-02-13 16:33:02 WARN  PaymentInfoHibernate:26 - Created payment info will have an id of 3
+2018-02-13 16:33:02 WARN  PaymentInfoHibernate:27 - The payment info is: PaymentInfo [id=3, cost=10.0, user=User [id=3, role=1, fullName=Bob, email=test5@test.com, password=123], creditCardNumber=1]
+2018-02-13 16:33:02 ERROR ExceptionMapperStandardImpl:39 - HHH000346: Error during managed flush [Batch update returned unexpected row count from update [0]; actual row count: 0; expected: 1]
+2018-02-13 16:33:02 INFO  AbstractBatchImpl:193 - HHH000010: On release of batch it still contained JDBC statements
+2018-02-13 16:33:02 WARN  UserHibernate:30 - The user is: User [id=0, role=1, fullName=Bob, email=test@test.com, password=123]
+2018-02-13 16:33:02 WARN  UserHibernate:32 - Created user will have an id of 4
+2018-02-13 16:33:02 WARN  UserHibernate:33 - The user is: User [id=4, role=1, fullName=Bob, email=test@test.com, password=123]
+2018-02-13 16:33:02 WARN  PaymentInfoHibernate:24 - The payment info is: PaymentInfo [id=0, cost=10.0, user=User [id=4, role=1, fullName=Bob, email=test@test.com, password=123], creditCardNumber=1]
+2018-02-13 16:33:02 WARN  PaymentInfoHibernate:26 - Created payment info will have an id of 4
+2018-02-13 16:33:02 WARN  PaymentInfoHibernate:27 - The payment info is: PaymentInfo [id=4, cost=10.0, user=User [id=4, role=1, fullName=Bob, email=test@test.com, password=123], creditCardNumber=1]
+2018-02-13 16:33:02 ERROR ExceptionMapperStandardImpl:39 - HHH000346: Error during managed flush [Batch update returned unexpected row count from update [0]; actual row count: 0; expected: 1]
+2018-02-13 16:33:02 INFO  AbstractBatchImpl:193 - HHH000010: On release of batch it still contained JDBC statements
+2018-02-13 16:33:02 WARN  UserHibernate:30 - The user is: User [id=0, role=1, fullName=Bob, email=test2@test.com, password=123]
+2018-02-13 16:33:02 WARN  UserHibernate:32 - Created user will have an id of 5
+2018-02-13 16:33:02 WARN  UserHibernate:33 - The user is: User [id=5, role=1, fullName=Bob, email=test2@test.com, password=123]
+2018-02-13 16:33:02 WARN  PaymentInfoHibernate:24 - The payment info is: PaymentInfo [id=0, cost=10.0, user=User [id=5, role=1, fullName=Bob, email=test2@test.com, password=123], creditCardNumber=1]
+2018-02-13 16:33:02 WARN  PaymentInfoHibernate:26 - Created payment info will have an id of 5
+2018-02-13 16:33:02 WARN  PaymentInfoHibernate:27 - The payment info is: PaymentInfo [id=5, cost=10.0, user=User [id=5, role=1, fullName=Bob, email=test2@test.com, password=123], creditCardNumber=1]
+2018-02-13 16:33:02 ERROR ExceptionMapperStandardImpl:39 - HHH000346: Error during managed flush [Batch update returned unexpected row count from update [0]; actual row count: 0; expected: 1]
+2018-02-13 16:33:02 INFO  AbstractBatchImpl:193 - HHH000010: On release of batch it still contained JDBC statements
+2018-02-13 16:34:15 DEBUG logging:109 - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2018-02-13 16:34:15 INFO  Version:45 - HHH000412: Hibernate Core {5.2.12.Final}
+2018-02-13 16:34:15 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2018-02-13 16:34:15 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-02-13 16:34:15 WARN  pooling:70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2018-02-13 16:34:15 INFO  pooling:126 - HHH10001005: using driver [oracle.jdbc.OracleDriver] at URL [jdbc:oracle:thin:@rentalproject.cptyc64r16fz.us-east-2.rds.amazonaws.com:1521:ORCL]
+2018-02-13 16:34:15 INFO  pooling:135 - HHH10001001: Connection properties: {user=admin, password=****}
+2018-02-13 16:34:15 INFO  pooling:140 - HHH10001003: Autocommit mode: false
+2018-02-13 16:34:16 INFO  DriverManagerConnectionProviderImpl:41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2018-02-13 16:34:16 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2018-02-13 16:34:17 WARN  UserHibernate:30 - The user is: User [id=0, role=1, fullName=Bob, email=test5@test.com, password=123]
+2018-02-13 16:34:17 WARN  UserHibernate:32 - Created user will have an id of 6
+2018-02-13 16:34:17 WARN  UserHibernate:33 - The user is: User [id=6, role=1, fullName=Bob, email=test5@test.com, password=123]
+2018-02-13 16:34:17 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2018-02-13 16:34:17 WARN  UserHibernate:30 - The user is: User [id=0, role=1, fullName=Bob, email=test3@test.com, password=123]
+2018-02-13 16:34:17 WARN  UserHibernate:32 - Created user will have an id of 7
+2018-02-13 16:34:17 WARN  UserHibernate:33 - The user is: User [id=7, role=1, fullName=Bob, email=test3@test.com, password=123]
+2018-02-13 16:34:17 WARN  UserHibernate:30 - The user is: User [id=0, role=1, fullName=Bob, email=test2@test.com, password=123]
+2018-02-13 16:34:17 WARN  UserHibernate:32 - Created user will have an id of 8
+2018-02-13 16:34:17 WARN  UserHibernate:33 - The user is: User [id=8, role=1, fullName=Bob, email=test2@test.com, password=123]
+2018-02-13 16:34:17 WARN  UserHibernate:30 - The user is: User [id=0, role=1, fullName=Bob, email=test@test.com, password=123]
+2018-02-13 16:34:17 WARN  UserHibernate:32 - Created user will have an id of 9
+2018-02-13 16:34:17 WARN  UserHibernate:33 - The user is: User [id=9, role=1, fullName=Bob, email=test@test.com, password=123]
+2018-02-13 16:34:17 WARN  UserHibernate:30 - The user is: User [id=0, role=1, fullName=Bob, email=test4@test.com, password=123]
+2018-02-13 16:34:17 WARN  UserHibernate:32 - Created user will have an id of 10
+2018-02-13 16:34:17 WARN  UserHibernate:33 - The user is: User [id=10, role=1, fullName=Bob, email=test4@test.com, password=123]
+2018-02-13 16:34:17 WARN  UserHibernate:30 - The user is: User [id=0, role=1, fullName=Bob, email=test6@test.com, password=123]
+2018-02-13 16:34:17 WARN  UserHibernate:32 - Created user will have an id of 11
+2018-02-13 16:34:18 WARN  UserHibernate:33 - The user is: User [id=11, role=1, fullName=Bob, email=test6@test.com, password=123]
+2018-02-13 16:34:18 TRACE root:95 - User [id=11, role=1, fullName=Bob, email=test6@test.com, password=123]
+2018-02-13 16:34:18 TRACE UserHibernate:55 - SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])
+2018-02-13 16:34:18 TRACE UserHibernate:59 - org.hibernate.query.internal.QueryImpl@4b61d0c6
+2018-02-13 16:34:22 DEBUG logging:109 - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2018-02-13 16:34:22 INFO  Version:45 - HHH000412: Hibernate Core {5.2.12.Final}
+2018-02-13 16:34:22 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2018-02-13 16:34:23 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-02-13 16:34:23 WARN  pooling:70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2018-02-13 16:34:23 INFO  pooling:126 - HHH10001005: using driver [oracle.jdbc.OracleDriver] at URL [jdbc:oracle:thin:@rentalproject.cptyc64r16fz.us-east-2.rds.amazonaws.com:1521:ORCL]
+2018-02-13 16:34:23 INFO  pooling:135 - HHH10001001: Connection properties: {user=admin, password=****}
+2018-02-13 16:34:23 INFO  pooling:140 - HHH10001003: Autocommit mode: false
+2018-02-13 16:34:23 INFO  DriverManagerConnectionProviderImpl:41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2018-02-13 16:34:23 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2018-02-13 16:34:24 WARN  UserHibernate:30 - The user is: User [id=0, role=1, fullName=Bob, email=test4@test.com, password=123]
+2018-02-13 16:34:24 WARN  UserHibernate:32 - Created user will have an id of 12
+2018-02-13 16:34:24 WARN  UserHibernate:33 - The user is: User [id=12, role=1, fullName=Bob, email=test4@test.com, password=123]
+2018-02-13 16:34:24 WARN  PaymentInfoHibernate:24 - The payment info is: PaymentInfo [id=0, cost=10.0, user=User [id=12, role=1, fullName=Bob, email=test4@test.com, password=123], creditCardNumber=1]
+2018-02-13 16:34:24 WARN  PaymentInfoHibernate:26 - Created payment info will have an id of 6
+2018-02-13 16:34:24 WARN  PaymentInfoHibernate:27 - The payment info is: PaymentInfo [id=6, cost=10.0, user=User [id=12, role=1, fullName=Bob, email=test4@test.com, password=123], creditCardNumber=1]
+2018-02-13 16:34:24 ERROR ExceptionMapperStandardImpl:39 - HHH000346: Error during managed flush [Batch update returned unexpected row count from update [0]; actual row count: 0; expected: 1]
+2018-02-13 16:34:24 INFO  AbstractBatchImpl:193 - HHH000010: On release of batch it still contained JDBC statements
+2018-02-13 16:34:24 WARN  UserHibernate:30 - The user is: User [id=0, role=1, fullName=Bob, email=test3@test.com, password=123]
+2018-02-13 16:34:24 WARN  UserHibernate:32 - Created user will have an id of 13
+2018-02-13 16:34:24 WARN  UserHibernate:33 - The user is: User [id=13, role=1, fullName=Bob, email=test3@test.com, password=123]
+2018-02-13 16:34:24 WARN  PaymentInfoHibernate:24 - The payment info is: PaymentInfo [id=0, cost=10.0, user=User [id=13, role=1, fullName=Bob, email=test3@test.com, password=123], creditCardNumber=1]
+2018-02-13 16:34:24 WARN  PaymentInfoHibernate:26 - Created payment info will have an id of 7
+2018-02-13 16:34:24 WARN  PaymentInfoHibernate:27 - The payment info is: PaymentInfo [id=7, cost=10.0, user=User [id=13, role=1, fullName=Bob, email=test3@test.com, password=123], creditCardNumber=1]
+2018-02-13 16:34:24 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2018-02-13 16:34:25 ERROR ExceptionMapperStandardImpl:39 - HHH000346: Error during managed flush [Batch update returned unexpected row count from update [0]; actual row count: 0; expected: 1]
+2018-02-13 16:34:25 INFO  AbstractBatchImpl:193 - HHH000010: On release of batch it still contained JDBC statements
+2018-02-13 16:34:25 WARN  UserHibernate:30 - The user is: User [id=0, role=1, fullName=Bob, email=test5@test.com, password=123]
+2018-02-13 16:34:25 WARN  UserHibernate:32 - Created user will have an id of 14
+2018-02-13 16:34:25 WARN  UserHibernate:33 - The user is: User [id=14, role=1, fullName=Bob, email=test5@test.com, password=123]
+2018-02-13 16:34:25 WARN  PaymentInfoHibernate:24 - The payment info is: PaymentInfo [id=0, cost=10.0, user=User [id=14, role=1, fullName=Bob, email=test5@test.com, password=123], creditCardNumber=1]
+2018-02-13 16:34:25 WARN  PaymentInfoHibernate:26 - Created payment info will have an id of 8
+2018-02-13 16:34:25 WARN  PaymentInfoHibernate:27 - The payment info is: PaymentInfo [id=8, cost=10.0, user=User [id=14, role=1, fullName=Bob, email=test5@test.com, password=123], creditCardNumber=1]
+2018-02-13 16:34:25 ERROR ExceptionMapperStandardImpl:39 - HHH000346: Error during managed flush [Batch update returned unexpected row count from update [0]; actual row count: 0; expected: 1]
+2018-02-13 16:34:25 INFO  AbstractBatchImpl:193 - HHH000010: On release of batch it still contained JDBC statements
+2018-02-13 16:34:25 WARN  UserHibernate:30 - The user is: User [id=0, role=1, fullName=Bob, email=test@test.com, password=123]
+2018-02-13 16:34:25 WARN  UserHibernate:32 - Created user will have an id of 15
+2018-02-13 16:34:25 WARN  UserHibernate:33 - The user is: User [id=15, role=1, fullName=Bob, email=test@test.com, password=123]
+2018-02-13 16:34:25 WARN  PaymentInfoHibernate:24 - The payment info is: PaymentInfo [id=0, cost=10.0, user=User [id=15, role=1, fullName=Bob, email=test@test.com, password=123], creditCardNumber=1]
+2018-02-13 16:34:25 WARN  PaymentInfoHibernate:26 - Created payment info will have an id of 9
+2018-02-13 16:34:25 WARN  PaymentInfoHibernate:27 - The payment info is: PaymentInfo [id=9, cost=10.0, user=User [id=15, role=1, fullName=Bob, email=test@test.com, password=123], creditCardNumber=1]
+2018-02-13 16:34:25 ERROR ExceptionMapperStandardImpl:39 - HHH000346: Error during managed flush [Batch update returned unexpected row count from update [0]; actual row count: 0; expected: 1]
+2018-02-13 16:34:25 INFO  AbstractBatchImpl:193 - HHH000010: On release of batch it still contained JDBC statements
+2018-02-13 16:34:25 WARN  UserHibernate:30 - The user is: User [id=0, role=1, fullName=Bob, email=test2@test.com, password=123]
+2018-02-13 16:34:25 WARN  UserHibernate:32 - Created user will have an id of 16
+2018-02-13 16:34:25 WARN  UserHibernate:33 - The user is: User [id=16, role=1, fullName=Bob, email=test2@test.com, password=123]
+2018-02-13 16:34:25 WARN  PaymentInfoHibernate:24 - The payment info is: PaymentInfo [id=0, cost=10.0, user=User [id=16, role=1, fullName=Bob, email=test2@test.com, password=123], creditCardNumber=1]
+2018-02-13 16:34:25 WARN  PaymentInfoHibernate:26 - Created payment info will have an id of 10
+2018-02-13 16:34:25 WARN  PaymentInfoHibernate:27 - The payment info is: PaymentInfo [id=10, cost=10.0, user=User [id=16, role=1, fullName=Bob, email=test2@test.com, password=123], creditCardNumber=1]
+2018-02-13 16:34:25 ERROR ExceptionMapperStandardImpl:39 - HHH000346: Error during managed flush [Batch update returned unexpected row count from update [0]; actual row count: 0; expected: 1]
+2018-02-13 16:34:25 INFO  AbstractBatchImpl:193 - HHH000010: On release of batch it still contained JDBC statements
+2018-02-13 16:35:58 DEBUG logging:109 - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2018-02-13 16:35:58 INFO  Version:45 - HHH000412: Hibernate Core {5.2.12.Final}
+2018-02-13 16:35:58 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2018-02-13 16:35:58 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-02-13 16:35:58 WARN  pooling:70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2018-02-13 16:35:58 INFO  pooling:126 - HHH10001005: using driver [oracle.jdbc.OracleDriver] at URL [jdbc:oracle:thin:@rentalproject.cptyc64r16fz.us-east-2.rds.amazonaws.com:1521:ORCL]
+2018-02-13 16:35:58 INFO  pooling:135 - HHH10001001: Connection properties: {user=admin, password=****}
+2018-02-13 16:35:58 INFO  pooling:140 - HHH10001003: Autocommit mode: false
+2018-02-13 16:35:58 INFO  DriverManagerConnectionProviderImpl:41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2018-02-13 16:35:59 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2018-02-13 16:36:00 WARN  UserHibernate:30 - The user is: User [id=0, role=1, fullName=Bob, email=test4@test.com, password=123]
+2018-02-13 16:36:00 WARN  UserHibernate:32 - Created user will have an id of 2
+2018-02-13 16:36:00 WARN  UserHibernate:33 - The user is: User [id=2, role=1, fullName=Bob, email=test4@test.com, password=123]
+2018-02-13 16:36:00 WARN  PaymentInfoHibernate:24 - The payment info is: PaymentInfo [id=0, cost=10.0, user=User [id=2, role=1, fullName=Bob, email=test4@test.com, password=123], creditCardNumber=1]
+2018-02-13 16:36:00 WARN  PaymentInfoHibernate:26 - Created payment info will have an id of 1
+2018-02-13 16:36:00 WARN  PaymentInfoHibernate:27 - The payment info is: PaymentInfo [id=1, cost=10.0, user=User [id=2, role=1, fullName=Bob, email=test4@test.com, password=123], creditCardNumber=1]
+2018-02-13 16:36:00 WARN  UserHibernate:30 - The user is: User [id=0, role=1, fullName=Bob, email=test3@test.com, password=123]
+2018-02-13 16:36:00 WARN  UserHibernate:32 - Created user will have an id of 3
+2018-02-13 16:36:00 WARN  UserHibernate:33 - The user is: User [id=3, role=1, fullName=Bob, email=test3@test.com, password=123]
+2018-02-13 16:36:00 WARN  PaymentInfoHibernate:24 - The payment info is: PaymentInfo [id=0, cost=10.0, user=User [id=3, role=1, fullName=Bob, email=test3@test.com, password=123], creditCardNumber=1]
+2018-02-13 16:36:00 WARN  PaymentInfoHibernate:26 - Created payment info will have an id of 2
+2018-02-13 16:36:00 WARN  PaymentInfoHibernate:27 - The payment info is: PaymentInfo [id=2, cost=10.0, user=User [id=3, role=1, fullName=Bob, email=test3@test.com, password=123], creditCardNumber=1]
+2018-02-13 16:36:00 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2018-02-13 16:36:00 WARN  UserHibernate:30 - The user is: User [id=0, role=1, fullName=Bob, email=test5@test.com, password=123]
+2018-02-13 16:36:00 WARN  UserHibernate:32 - Created user will have an id of 4
+2018-02-13 16:36:00 WARN  UserHibernate:33 - The user is: User [id=4, role=1, fullName=Bob, email=test5@test.com, password=123]
+2018-02-13 16:36:00 WARN  PaymentInfoHibernate:24 - The payment info is: PaymentInfo [id=0, cost=10.0, user=User [id=4, role=1, fullName=Bob, email=test5@test.com, password=123], creditCardNumber=1]
+2018-02-13 16:36:00 WARN  PaymentInfoHibernate:26 - Created payment info will have an id of 3
+2018-02-13 16:36:00 WARN  PaymentInfoHibernate:27 - The payment info is: PaymentInfo [id=3, cost=10.0, user=User [id=4, role=1, fullName=Bob, email=test5@test.com, password=123], creditCardNumber=1]
+2018-02-13 16:36:01 WARN  UserHibernate:30 - The user is: User [id=0, role=1, fullName=Bob, email=test@test.com, password=123]
+2018-02-13 16:36:01 WARN  UserHibernate:32 - Created user will have an id of 5
+2018-02-13 16:36:01 WARN  UserHibernate:33 - The user is: User [id=5, role=1, fullName=Bob, email=test@test.com, password=123]
+2018-02-13 16:36:01 WARN  PaymentInfoHibernate:24 - The payment info is: PaymentInfo [id=0, cost=10.0, user=User [id=5, role=1, fullName=Bob, email=test@test.com, password=123], creditCardNumber=1]
+2018-02-13 16:36:01 WARN  PaymentInfoHibernate:26 - Created payment info will have an id of 4
+2018-02-13 16:36:01 WARN  PaymentInfoHibernate:27 - The payment info is: PaymentInfo [id=4, cost=10.0, user=User [id=5, role=1, fullName=Bob, email=test@test.com, password=123], creditCardNumber=1]
+2018-02-13 16:36:01 WARN  UserHibernate:30 - The user is: User [id=0, role=1, fullName=Bob, email=test2@test.com, password=123]
+2018-02-13 16:36:01 WARN  UserHibernate:32 - Created user will have an id of 6
+2018-02-13 16:36:01 WARN  UserHibernate:33 - The user is: User [id=6, role=1, fullName=Bob, email=test2@test.com, password=123]
+2018-02-13 16:36:01 WARN  PaymentInfoHibernate:24 - The payment info is: PaymentInfo [id=0, cost=10.0, user=User [id=6, role=1, fullName=Bob, email=test2@test.com, password=123], creditCardNumber=1]
+2018-02-13 16:36:01 WARN  PaymentInfoHibernate:26 - Created payment info will have an id of 5
+2018-02-13 16:36:01 WARN  PaymentInfoHibernate:27 - The payment info is: PaymentInfo [id=5, cost=10.0, user=User [id=6, role=1, fullName=Bob, email=test2@test.com, password=123], creditCardNumber=1]
+2018-02-13 16:36:39 DEBUG logging:109 - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2018-02-13 16:36:39 INFO  Version:45 - HHH000412: Hibernate Core {5.2.12.Final}
+2018-02-13 16:36:39 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2018-02-13 16:36:39 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-02-13 16:36:39 WARN  pooling:70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2018-02-13 16:36:39 INFO  pooling:126 - HHH10001005: using driver [oracle.jdbc.OracleDriver] at URL [jdbc:oracle:thin:@rentalproject.cptyc64r16fz.us-east-2.rds.amazonaws.com:1521:ORCL]
+2018-02-13 16:36:39 INFO  pooling:135 - HHH10001001: Connection properties: {user=admin, password=****}
+2018-02-13 16:36:39 INFO  pooling:140 - HHH10001003: Autocommit mode: false
+2018-02-13 16:36:39 INFO  DriverManagerConnectionProviderImpl:41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2018-02-13 16:36:40 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2018-02-13 16:36:41 WARN  UserHibernate:30 - The user is: User [id=0, role=1, fullName=Bob, email=test4@test.com, password=123]
+2018-02-13 16:36:41 WARN  UserHibernate:32 - Created user will have an id of 1
+2018-02-13 16:36:41 WARN  UserHibernate:33 - The user is: User [id=1, role=1, fullName=Bob, email=test4@test.com, password=123]
+2018-02-13 16:36:41 WARN  PaymentInfoHibernate:24 - The payment info is: PaymentInfo [id=0, cost=10.0, user=User [id=1, role=1, fullName=Bob, email=test4@test.com, password=123], creditCardNumber=1]
+2018-02-13 16:36:41 WARN  PaymentInfoHibernate:26 - Created payment info will have an id of 1
+2018-02-13 16:36:41 WARN  PaymentInfoHibernate:27 - The payment info is: PaymentInfo [id=1, cost=10.0, user=User [id=1, role=1, fullName=Bob, email=test4@test.com, password=123], creditCardNumber=1]
+2018-02-13 16:36:41 WARN  UserHibernate:30 - The user is: User [id=0, role=1, fullName=Bob, email=test3@test.com, password=123]
+2018-02-13 16:36:41 WARN  UserHibernate:32 - Created user will have an id of 2
+2018-02-13 16:36:41 WARN  UserHibernate:33 - The user is: User [id=2, role=1, fullName=Bob, email=test3@test.com, password=123]
+2018-02-13 16:36:41 WARN  PaymentInfoHibernate:24 - The payment info is: PaymentInfo [id=0, cost=10.0, user=User [id=2, role=1, fullName=Bob, email=test3@test.com, password=123], creditCardNumber=1]
+2018-02-13 16:36:41 WARN  PaymentInfoHibernate:26 - Created payment info will have an id of 2
+2018-02-13 16:36:41 WARN  PaymentInfoHibernate:27 - The payment info is: PaymentInfo [id=2, cost=10.0, user=User [id=2, role=1, fullName=Bob, email=test3@test.com, password=123], creditCardNumber=1]
+2018-02-13 16:36:41 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2018-02-13 16:36:41 WARN  UserHibernate:30 - The user is: User [id=0, role=1, fullName=Bob, email=test5@test.com, password=123]
+2018-02-13 16:36:41 WARN  UserHibernate:32 - Created user will have an id of 3
+2018-02-13 16:36:41 WARN  UserHibernate:33 - The user is: User [id=3, role=1, fullName=Bob, email=test5@test.com, password=123]
+2018-02-13 16:36:41 WARN  PaymentInfoHibernate:24 - The payment info is: PaymentInfo [id=0, cost=10.0, user=User [id=3, role=1, fullName=Bob, email=test5@test.com, password=123], creditCardNumber=1]
+2018-02-13 16:36:41 WARN  PaymentInfoHibernate:26 - Created payment info will have an id of 3
+2018-02-13 16:36:41 WARN  PaymentInfoHibernate:27 - The payment info is: PaymentInfo [id=3, cost=10.0, user=User [id=3, role=1, fullName=Bob, email=test5@test.com, password=123], creditCardNumber=1]
+2018-02-13 16:36:41 WARN  UserHibernate:30 - The user is: User [id=0, role=1, fullName=Bob, email=test@test.com, password=123]
+2018-02-13 16:36:41 WARN  UserHibernate:32 - Created user will have an id of 4
+2018-02-13 16:36:41 WARN  UserHibernate:33 - The user is: User [id=4, role=1, fullName=Bob, email=test@test.com, password=123]
+2018-02-13 16:36:41 WARN  PaymentInfoHibernate:24 - The payment info is: PaymentInfo [id=0, cost=10.0, user=User [id=4, role=1, fullName=Bob, email=test@test.com, password=123], creditCardNumber=1]
+2018-02-13 16:36:41 WARN  PaymentInfoHibernate:26 - Created payment info will have an id of 4
+2018-02-13 16:36:41 WARN  PaymentInfoHibernate:27 - The payment info is: PaymentInfo [id=4, cost=10.0, user=User [id=4, role=1, fullName=Bob, email=test@test.com, password=123], creditCardNumber=1]
+2018-02-13 16:36:42 ERROR ExceptionMapperStandardImpl:39 - HHH000346: Error during managed flush [Batch update returned unexpected row count from update [0]; actual row count: 0; expected: 1]
+2018-02-13 16:36:42 INFO  AbstractBatchImpl:193 - HHH000010: On release of batch it still contained JDBC statements
+2018-02-13 16:36:42 WARN  UserHibernate:30 - The user is: User [id=0, role=1, fullName=Bob, email=test2@test.com, password=123]
+2018-02-13 16:36:42 WARN  UserHibernate:32 - Created user will have an id of 5
+2018-02-13 16:36:42 WARN  UserHibernate:33 - The user is: User [id=5, role=1, fullName=Bob, email=test2@test.com, password=123]
+2018-02-13 16:36:42 WARN  PaymentInfoHibernate:24 - The payment info is: PaymentInfo [id=0, cost=10.0, user=User [id=5, role=1, fullName=Bob, email=test2@test.com, password=123], creditCardNumber=1]
+2018-02-13 16:36:42 WARN  PaymentInfoHibernate:26 - Created payment info will have an id of 5
+2018-02-13 16:36:42 WARN  PaymentInfoHibernate:27 - The payment info is: PaymentInfo [id=5, cost=10.0, user=User [id=5, role=1, fullName=Bob, email=test2@test.com, password=123], creditCardNumber=1]
+2018-02-13 16:37:43 DEBUG logging:109 - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2018-02-13 16:37:43 INFO  Version:45 - HHH000412: Hibernate Core {5.2.12.Final}
+2018-02-13 16:37:43 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2018-02-13 16:37:43 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-02-13 16:37:43 WARN  pooling:70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2018-02-13 16:37:43 INFO  pooling:126 - HHH10001005: using driver [oracle.jdbc.OracleDriver] at URL [jdbc:oracle:thin:@rentalproject.cptyc64r16fz.us-east-2.rds.amazonaws.com:1521:ORCL]
+2018-02-13 16:37:43 INFO  pooling:135 - HHH10001001: Connection properties: {user=admin, password=****}
+2018-02-13 16:37:43 INFO  pooling:140 - HHH10001003: Autocommit mode: false
+2018-02-13 16:37:43 INFO  DriverManagerConnectionProviderImpl:41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2018-02-13 16:37:43 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2018-02-13 16:37:44 WARN  UserHibernate:30 - The user is: User [id=0, role=1, fullName=Bob, email=test4@test.com, password=123]
+2018-02-13 16:37:44 WARN  UserHibernate:32 - Created user will have an id of 7
+2018-02-13 16:37:44 WARN  UserHibernate:33 - The user is: User [id=7, role=1, fullName=Bob, email=test4@test.com, password=123]
+2018-02-13 16:37:44 WARN  PaymentInfoHibernate:24 - The payment info is: PaymentInfo [id=0, cost=10.0, user=User [id=7, role=1, fullName=Bob, email=test4@test.com, password=123], creditCardNumber=1]
+2018-02-13 16:37:45 WARN  PaymentInfoHibernate:26 - Created payment info will have an id of 6
+2018-02-13 16:37:45 WARN  PaymentInfoHibernate:27 - The payment info is: PaymentInfo [id=6, cost=10.0, user=User [id=7, role=1, fullName=Bob, email=test4@test.com, password=123], creditCardNumber=1]
+2018-02-13 16:37:45 WARN  UserHibernate:30 - The user is: User [id=0, role=1, fullName=Bob, email=test3@test.com, password=123]
+2018-02-13 16:37:45 WARN  UserHibernate:32 - Created user will have an id of 8
+2018-02-13 16:37:45 WARN  UserHibernate:33 - The user is: User [id=8, role=1, fullName=Bob, email=test3@test.com, password=123]
+2018-02-13 16:37:45 WARN  PaymentInfoHibernate:24 - The payment info is: PaymentInfo [id=0, cost=10.0, user=User [id=8, role=1, fullName=Bob, email=test3@test.com, password=123], creditCardNumber=1]
+2018-02-13 16:37:45 WARN  PaymentInfoHibernate:26 - Created payment info will have an id of 7
+2018-02-13 16:37:45 WARN  PaymentInfoHibernate:27 - The payment info is: PaymentInfo [id=7, cost=10.0, user=User [id=8, role=1, fullName=Bob, email=test3@test.com, password=123], creditCardNumber=1]
+2018-02-13 16:37:45 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2018-02-13 16:37:45 WARN  UserHibernate:30 - The user is: User [id=0, role=1, fullName=Bob, email=test5@test.com, password=123]
+2018-02-13 16:37:45 WARN  UserHibernate:32 - Created user will have an id of 9
+2018-02-13 16:37:45 WARN  UserHibernate:33 - The user is: User [id=9, role=1, fullName=Bob, email=test5@test.com, password=123]
+2018-02-13 16:37:45 WARN  PaymentInfoHibernate:24 - The payment info is: PaymentInfo [id=0, cost=10.0, user=User [id=9, role=1, fullName=Bob, email=test5@test.com, password=123], creditCardNumber=1]
+2018-02-13 16:37:45 WARN  PaymentInfoHibernate:26 - Created payment info will have an id of 8
+2018-02-13 16:37:45 WARN  PaymentInfoHibernate:27 - The payment info is: PaymentInfo [id=8, cost=10.0, user=User [id=9, role=1, fullName=Bob, email=test5@test.com, password=123], creditCardNumber=1]
+2018-02-13 16:37:45 WARN  UserHibernate:30 - The user is: User [id=0, role=1, fullName=Bob, email=test@test.com, password=123]
+2018-02-13 16:37:45 WARN  UserHibernate:32 - Created user will have an id of 10
+2018-02-13 16:37:45 WARN  UserHibernate:33 - The user is: User [id=10, role=1, fullName=Bob, email=test@test.com, password=123]
+2018-02-13 16:37:46 WARN  PaymentInfoHibernate:24 - The payment info is: PaymentInfo [id=0, cost=10.0, user=User [id=10, role=1, fullName=Bob, email=test@test.com, password=123], creditCardNumber=1]
+2018-02-13 16:37:46 WARN  PaymentInfoHibernate:26 - Created payment info will have an id of 9
+2018-02-13 16:37:46 WARN  PaymentInfoHibernate:27 - The payment info is: PaymentInfo [id=9, cost=10.0, user=User [id=10, role=1, fullName=Bob, email=test@test.com, password=123], creditCardNumber=1]
+2018-02-13 16:37:46 WARN  UserHibernate:30 - The user is: User [id=0, role=1, fullName=Bob, email=test2@test.com, password=123]
+2018-02-13 16:37:46 WARN  UserHibernate:32 - Created user will have an id of 11
+2018-02-13 16:37:46 WARN  UserHibernate:33 - The user is: User [id=11, role=1, fullName=Bob, email=test2@test.com, password=123]
+2018-02-13 16:37:46 WARN  PaymentInfoHibernate:24 - The payment info is: PaymentInfo [id=0, cost=10.0, user=User [id=11, role=1, fullName=Bob, email=test2@test.com, password=123], creditCardNumber=1]
+2018-02-13 16:37:46 WARN  PaymentInfoHibernate:26 - Created payment info will have an id of 10
+2018-02-13 16:37:46 WARN  PaymentInfoHibernate:27 - The payment info is: PaymentInfo [id=10, cost=10.0, user=User [id=11, role=1, fullName=Bob, email=test2@test.com, password=123], creditCardNumber=1]
