@@ -21,7 +21,7 @@ public interface UserDao
 	 * @param password the password of the user
 	 * @return the user from the database that matches the username and password
 	 */	
-	public User getUser(String username, String password);
+	public User getUser(String email, String password);
 	/**
 	 * returns a login object from the database
 	 * 

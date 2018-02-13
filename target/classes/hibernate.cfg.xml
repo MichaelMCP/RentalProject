@@ -14,9 +14,6 @@
         <property name="hibernate.format_sql">true</property>
         
         <mapping class="com.revature.beans.User"></mapping>
-        <mapping class="com.revature.beans.Employee"></mapping>
-        <mapping class="com.revature.beans.PropertyOwner"></mapping>
-        <mapping class="com.revature.beans.Renter"></mapping>
         <mapping class="com.revature.beans.Receipt"></mapping>
         <mapping class="com.revature.beans.PaymentInfo"></mapping>
         <mapping class="com.revature.beans.Property"></mapping>
