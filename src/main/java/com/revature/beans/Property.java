@@ -23,14 +23,22 @@ public class Property
 	@ManyToOne(fetch=FetchType.EAGER, targetEntity = User.class)
 	@JoinColumn(name="owner_id")
 	private int ownerId;
+	@Column(name="address1")
 	private String address1;
+	@Column(name="address2")
 	private String address2;
+	@Column(name="city")
 	private String city;
+	@Column(name="states")
 	private String state;
+	@Column(name="zipcode")
 	private int zipcode;
 	@Column(name="current_Rent_Price")
 	private double currentRentPrice;
+	@Column(name="rating")
 	private double rating;
+	@Column(name="availabiity")
+	private int availability;
 	
 	public Property() 
 	{

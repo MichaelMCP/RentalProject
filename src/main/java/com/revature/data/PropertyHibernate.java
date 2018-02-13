@@ -5,8 +5,10 @@ import java.util.List;
 import org.apache.log4j.Logger;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
+import org.hibernate.query.Query;
 
 import com.revature.beans.Property;
+import com.revature.beans.User;
 import com.revature.util.HibernateUtil;
 
 public class PropertyHibernate implements PropertyDao {
@@ -55,26 +57,48 @@ public class PropertyHibernate implements PropertyDao {
 
 	@Override
 	public boolean deleteProperty(Property property) {
-		// TODO Auto-generated method stub
-		return false;
+		try {
+		Session s = hu.getSession();
+		Transaction tx = s.beginTransaction();
+		s.delete(property);
+		tx.commit();
+		s.close();
+		}catch(Exception e) {
+			e.printStackTrace();
+			return false;
+		}
+		return true;
+
 	}
 
 	@Override
 	public List<Property> getAllPropertiesByOwnerId(int id) {
-		// TODO Auto-generated method stub
-		return null;
+		Session s = hu.getSession();
+		String hquery = "from com.revature.beans.User where id = " + id;
+		Query<Property> q = s.createQuery(hquery, Property.class);
+		List<Property> propertyList = q.getResultList();
+		s.close();
+		return propertyList;
 	}
 
 	@Override
 	public List<Property> getAllProperties() {
-		// TODO Auto-generated method stub
-		return null;
+		Session s = hu.getSession();
+		String hquery = "from com.revature.beans.User";
+		Query<Property> q = s.createQuery(hquery, Property.class);
+		List<Property> propertyList = q.getResultList();
+		s.close();
+		return propertyList;
 	}
 
 	@Override
 	public Property updateProperty(Property property) {
-		// TODO Auto-generated method stub
-		return null;
+		Session s = hu.getSession();
+		Transaction tx = s.beginTransaction();
+		s.update(property);
+		tx.commit();
+		s.close();
+		return property;
 	}
 
 }
