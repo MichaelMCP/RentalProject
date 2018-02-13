@@ -29,7 +29,7 @@ public class LoginController {
 		return "login";
 	}
 	
-	@RequestMapping(method=RequestMethod.POST)
+	@RequestMapping(value="/login2", method=RequestMethod.POST)
 	public String login(String username, String password, HttpSession session) {
 		System.out.println(username);
 		System.out.println(password);

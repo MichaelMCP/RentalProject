@@ -11,15 +11,16 @@ public class LoginOracle implements LoginService{
 	@Override
 	public User login(String user, String pass) {
 		User u = ud.getUser(user, pass);
-		
-		if(u != null)
-		{
-			return u;
-		}
-		else
-		{
-			return null;
-		}
+		User q = ud.getUserById(1);
+		return q;
+//		if(u != null)
+//		{
+//			return u;
+//		}
+//		else
+//		{
+//			return null;
+//		}
 		
 	}
 
