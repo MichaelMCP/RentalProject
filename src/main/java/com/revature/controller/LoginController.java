@@ -12,7 +12,7 @@ import com.revature.beans.User;
 import com.revature.service.LoginService;
 
 @Controller
-@CrossOrigin(origins="http://localhost:4200")
+@CrossOrigin(origins= {"http://localhost:4200", "http://18.219.120.2:8080/login"})
 @RequestMapping(value="/login")
 public class LoginController {
 	@Autowired
