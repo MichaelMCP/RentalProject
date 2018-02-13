@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
-@CrossOrigin(origins="http://50.207.204.190:4200")
+@CrossOrigin({"http://localhost:4200", "http://18.219.120.2:8080/home"})
 public class HomeController {
 	@RequestMapping(value="/home", method=RequestMethod.GET)
 	public String getHomepage(HttpSession s) {
