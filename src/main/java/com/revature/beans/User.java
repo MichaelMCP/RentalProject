@@ -21,6 +21,7 @@ public class User
 	@Column(name="full_name")
 	private String fullName;
 	private String email;
+	@Column(name="pass")
 	private String password;
 	
 	

@@ -11,7 +11,7 @@ id number(20) primary key,
 role number(1) not null,
 full_name varchar2(100) not null,
 email varchar2(100) not null unique,
-password varchar2(100) not null,
+pass varchar2(100) not null,
 DTYPE varchar2(100)
 );
 
