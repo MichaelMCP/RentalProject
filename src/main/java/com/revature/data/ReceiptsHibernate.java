@@ -17,7 +17,7 @@ public class ReceiptsHibernate implements ReceiptsDao {
 	private static HibernateUtil hu = HibernateUtil.getInstance();
 
 	@Override
-	public int createRecepit(Receipt receipt) {
+	public int createRecepit(Receipt receipt) throws NullPointerException {
 		Session session = hu.getSession();
 		Transaction tx = null;
 		try{

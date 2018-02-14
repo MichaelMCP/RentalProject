@@ -16,7 +16,7 @@ public class UserHibernate implements UserDao
 	private static HibernateUtil hu = HibernateUtil.getInstance();
 
 	@Override
-	public int createUser(User user) 
+	public int createUser(User user) throws NullPointerException
 	{
 		Session session = hu.getSession();
 		Transaction tx = null;

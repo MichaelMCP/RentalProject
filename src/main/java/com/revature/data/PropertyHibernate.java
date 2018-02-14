@@ -15,7 +15,7 @@ public class PropertyHibernate implements PropertyDao {
 	private static HibernateUtil hu = HibernateUtil.getInstance();
 	
 	@Override
-	public int registerProperty(Property property) {
+	public int registerProperty(Property property) throws NullPointerException {
 		Session session = hu.getSession();
 		Transaction tx = null;
 		try{

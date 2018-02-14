@@ -16,7 +16,7 @@ public class PaymentInfoHibernate implements PaymentInfoDao{
 	private static HibernateUtil hu = HibernateUtil.getInstance();
 
 	@Override
-	public int createPaymentInfo(PaymentInfo p) {
+	public int createPaymentInfo(PaymentInfo p) throws NullPointerException {
 		Session session = hu.getSession();
 		Transaction tx = null;
 		try{
