@@ -44,4 +44,8 @@ public class LoginController {
 		}
 			
 	}
+	@RequestMapping(value="/login3", method=RequestMethod.POST)
+	public String test() {
+		return " ";
+	}
 }
