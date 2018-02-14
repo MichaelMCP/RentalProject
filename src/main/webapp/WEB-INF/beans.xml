@@ -13,6 +13,4 @@
 	<!-- Enable annotation-based configuration of Spring MVC -->
 	<mvc:annotation-driven></mvc:annotation-driven>
 	
-	<mvc:resources location="http://18.219.120.2:8080/demo" mapping="/**"></mvc:resources>
-
 </beans>
