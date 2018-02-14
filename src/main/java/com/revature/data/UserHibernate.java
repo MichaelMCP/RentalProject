@@ -16,7 +16,7 @@ public class UserHibernate implements UserDao
 	private static HibernateUtil hu = HibernateUtil.getInstance();
 
 	@Override
-	public int createUser(User user) throws NullPointerException
+	public int createUser(User user)
 	{
 		Session session = hu.getSession();
 		Transaction tx = null;
@@ -33,7 +33,6 @@ public class UserHibernate implements UserDao
 			return user.getId();
 			
 		} catch(Exception e) {
-			tx.rollback();
 			log.error(e);
 			return 0;
 		} finally {

@@ -16,7 +16,7 @@ public class PaymentInfoHibernate implements PaymentInfoDao{
 	private static HibernateUtil hu = HibernateUtil.getInstance();
 
 	@Override
-	public int createPaymentInfo(PaymentInfo p) throws NullPointerException {
+	public int createPaymentInfo(PaymentInfo p){
 		Session session = hu.getSession();
 		Transaction tx = null;
 		try{
@@ -32,7 +32,6 @@ public class PaymentInfoHibernate implements PaymentInfoDao{
 			return p.getId();
 			
 		} catch(Exception e) {
-			tx.rollback();
 			log.error(e);
 			return 0;
 		} finally {

@@ -15,7 +15,7 @@ public class PropertyHibernate implements PropertyDao {
 	private static HibernateUtil hu = HibernateUtil.getInstance();
 	
 	@Override
-	public int registerProperty(Property property) throws NullPointerException {
+	public int registerProperty(Property property){
 		Session session = hu.getSession();
 		Transaction tx = null;
 		try{
@@ -31,7 +31,6 @@ public class PropertyHibernate implements PropertyDao {
 			return property.getPropertyId();
 			
 		} catch(Exception e) {
-			tx.rollback();
 			log.error(e);
 			return 0;
 		} finally {

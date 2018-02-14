@@ -17,7 +17,7 @@ public class ReceiptsHibernate implements ReceiptsDao {
 	private static HibernateUtil hu = HibernateUtil.getInstance();
 
 	@Override
-	public int createRecepit(Receipt receipt) throws NullPointerException {
+	public int createRecepit(Receipt receipt){
 		Session session = hu.getSession();
 		Transaction tx = null;
 		try{
@@ -32,7 +32,6 @@ public class ReceiptsHibernate implements ReceiptsDao {
 			return receipt.getReceiptId();
 			
 		} catch(Exception e) {
-			tx.rollback();
 			log.trace(e);
 			return 0;
 		} finally {
