@@ -33,7 +33,7 @@ public class PaymentInfoHibernate implements PaymentInfoDao{
 			
 		} catch(Exception e) {
 			tx.rollback();
-			e.printStackTrace();
+			log.error(e);
 			return 0;
 		} finally {
 			session.close();

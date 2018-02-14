@@ -8,7 +8,6 @@ import org.hibernate.Transaction;
 import org.hibernate.query.Query;
 
 import com.revature.beans.Property;
-import com.revature.beans.User;
 import com.revature.util.HibernateUtil;
 
 public class PropertyHibernate implements PropertyDao {
@@ -33,7 +32,7 @@ public class PropertyHibernate implements PropertyDao {
 			
 		} catch(Exception e) {
 			tx.rollback();
-			e.printStackTrace();
+			log.error(e);
 			return 0;
 		} finally {
 			session.close();
