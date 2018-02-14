@@ -48,7 +48,7 @@ public class PropertyHibernate implements PropertyDao {
 		tx.commit();
 		s.close();
 		}catch(Exception e) {
-			e.printStackTrace();
+			log.trace(e);
 			return false;
 		}
 		return true;
