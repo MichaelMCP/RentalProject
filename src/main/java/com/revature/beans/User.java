@@ -21,39 +21,23 @@ public class User
 	@Column(name="full_name")
 	private String fullName;
 	private String email;
-	@Column(name="pass")
-	private String password;
-	
-	
-	public int getId() {
-		return id;
+	private String pass;
+	public User() {
+		super();
+		// TODO Auto-generated constructor stub
 	}
-	public void setId(int id) {
+	public User(int id, int role, String fullName, String email, String pass) {
+		super();
 		this.id = id;
-	}
-	public int getRole() {
-		return role;
-	}
-	public void setRole(int role) {
 		this.role = role;
-	}
-	public String getFullName() {
-		return fullName;
-	}
-	public void setFullName(String fullName) {
 		this.fullName = fullName;
-	}
-	public String getEmail() {
-		return email;
-	}
-	public void setEmail(String email) {
 		this.email = email;
+		this.pass = pass;
 	}
-	public String getPassword() {
-		return password;
-	}
-	public void setPassword(String password) {
-		this.password = password;
+	@Override
+	public String toString() {
+		return "User [id=" + id + ", role=" + role + ", fullName=" + fullName + ", email=" + email + ", pass=" + pass
+				+ "]";
 	}
 	@Override
 	public int hashCode() {
@@ -62,7 +46,7 @@ public class User
 		result = prime * result + ((email == null) ? 0 : email.hashCode());
 		result = prime * result + ((fullName == null) ? 0 : fullName.hashCode());
 		result = prime * result + id;
-		result = prime * result + ((password == null) ? 0 : password.hashCode());
+		result = prime * result + ((pass == null) ? 0 : pass.hashCode());
 		result = prime * result + role;
 		return result;
 	}
@@ -87,32 +71,45 @@ public class User
 			return false;
 		if (id != other.id)
 			return false;
-		if (password == null) {
-			if (other.password != null)
+		if (pass == null) {
+			if (other.pass != null)
 				return false;
-		} else if (!password.equals(other.password))
+		} else if (!pass.equals(other.pass))
 			return false;
 		if (role != other.role)
 			return false;
 		return true;
 	}
-	@Override
-	public String toString() {
-		return "User [id=" + id + ", role=" + role + ", fullName=" + fullName + ", email=" + email + ", password="
-				+ password + "]";
+	public int getId() {
+		return id;
 	}
-	public User() 
-	{
-		super();
-		// TODO Auto-generated constructor stub
-	}
-	public User(int id, int role, String fullName, String email, String password) {
-		super();
+	public void setId(int id) {
 		this.id = id;
-		this.role = role;
-		this.fullName = fullName;
-		this.email = email;
-		this.password = password;
 	}
+	public int getRole() {
+		return role;
+	}
+	public void setRole(int role) {
+		this.role = role;
+	}
+	public String getFullName() {
+		return fullName;
+	}
+	public void setFullName(String fullName) {
+		this.fullName = fullName;
+	}
+	public String getEmail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	public String getPass() {
+		return pass;
+	}
+	public void setPass(String pass) {
+		this.pass = pass;
+	}
+
 	
 }

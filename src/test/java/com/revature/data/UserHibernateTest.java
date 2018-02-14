@@ -25,7 +25,7 @@ public class UserHibernateTest {
 		u.setRole(1);
 		u.setEmail("test@test.com");
 		u.setFullName("Bob");
-		u.setPassword("123");
+		u.setPass("123");
 		int test = ud.createUser(u);
 		assertEquals(u.getId(), test);
 		ud.deleteUser(u);
@@ -37,7 +37,7 @@ public class UserHibernateTest {
 		u.setRole(1);
 		u.setEmail("test2@test.com");
 		u.setFullName("Bob");
-		u.setPassword("123");
+		u.setPass("123");
 		ud.createUser(u);
 		User test = ud.getUserById(u.getId());
 		assertEquals(u, test);
@@ -50,7 +50,7 @@ public class UserHibernateTest {
 		u.setRole(1);
 		u.setEmail("test3@test.com");
 		u.setFullName("Bob");
-		u.setPassword("123");
+		u.setPass("123");
 		ud.createUser(u);
 		u.setFullName("Joe");
 		User test = ud.updateUser(u);
@@ -64,7 +64,7 @@ public class UserHibernateTest {
 		u.setRole(1);
 		u.setEmail("test4@test.com");
 		u.setFullName("Bob");
-		u.setPassword("123");
+		u.setPass("123");
 		ud.createUser(u);
 		int test = ud.deleteUser(u);
 		assertEquals(1, test);
@@ -76,7 +76,7 @@ public class UserHibernateTest {
 		u.setRole(1);
 		u.setEmail("test5@test.com");
 		u.setFullName("Bob");
-		u.setPassword("123");
+		u.setPass("123");
 		ud.createUser(u);
 		List<User> test = ud.getAllUsers();
 		assertTrue(test.contains(u));
@@ -89,11 +89,11 @@ public class UserHibernateTest {
 		u.setRole(1);
 		u.setEmail("test6@test.com");
 		u.setFullName("Bob");
-		u.setPassword("123");
+		u.setPass("123");
 		ud.createUser(u);
 
 		log.trace(u);
-		User test = ud.getUser(u.getEmail(), u.getPassword());
+		User test = ud.getUser(u.getEmail(), u.getPass());
 		assertEquals(u, test);
 		ud.deleteUser(u);
 	}

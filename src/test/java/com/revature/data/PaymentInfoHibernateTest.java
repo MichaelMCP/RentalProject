@@ -21,7 +21,7 @@ public class PaymentInfoHibernateTest {
 		u.setRole(1);
 		u.setEmail("test@test.com");
 		u.setFullName("Bob");
-		u.setPassword("123");
+		u.setPass("123");
 		ud.createUser(u);
 		
 		PaymentInfo p = new PaymentInfo();
@@ -40,7 +40,7 @@ public class PaymentInfoHibernateTest {
 		u.setRole(1);
 		u.setEmail("test2@test.com");
 		u.setFullName("Bob");
-		u.setPassword("123");
+		u.setPass("123");
 		ud.createUser(u);
 		
 		PaymentInfo p = new PaymentInfo();
@@ -60,7 +60,7 @@ public class PaymentInfoHibernateTest {
 		u.setRole(1);
 		u.setEmail("test3@test.com");
 		u.setFullName("Bob");
-		u.setPassword("123");
+		u.setPass("123");
 		ud.createUser(u);
 		
 		PaymentInfo p = new PaymentInfo();
@@ -80,7 +80,7 @@ public class PaymentInfoHibernateTest {
 		u.setRole(1);
 		u.setEmail("test4@test.com");
 		u.setFullName("Bob");
-		u.setPassword("123");
+		u.setPass("123");
 		ud.createUser(u);
 		
 		PaymentInfo p = new PaymentInfo();
@@ -101,7 +101,7 @@ public class PaymentInfoHibernateTest {
 		u.setRole(1);
 		u.setEmail("test5@test.com");
 		u.setFullName("Bob");
-		u.setPassword("123");
+		u.setPass("123");
 		ud.createUser(u);
 		
 		PaymentInfo p = new PaymentInfo();
