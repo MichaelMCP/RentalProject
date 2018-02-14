@@ -7,6 +7,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.revature.beans.User;
 import com.revature.service.LoginService;
@@ -30,6 +31,7 @@ public class LoginController {
 	}
 	
 	@RequestMapping(value="/login2", method=RequestMethod.POST)
+	@ResponseBody
 	public String login(String username, String password, HttpSession session) {
 		System.out.println(username);
 		System.out.println(password);
