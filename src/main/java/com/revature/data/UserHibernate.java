@@ -61,7 +61,6 @@ public class UserHibernate implements UserDao
 		
 
 		s.close();
-		System.out.println(userList.get(0).getFullName());
 		return userList.get(0);
 
 	}
