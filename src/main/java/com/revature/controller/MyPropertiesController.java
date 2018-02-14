@@ -15,7 +15,7 @@ import com.revature.beans.User;
 import com.revature.service.MyPropertiesService;
 
 @Controller
-@CrossOrigin(origins= {"http://localhost:4200", "http://18.219.120.2:8080/my-properties"})
+@CrossOrigin(origins= {"http://localhost:4200", "http://18.219.120.2:8080"})
 @RequestMapping(value="/my-properties")
 public class MyPropertiesController {
 	private ObjectMapper om = new ObjectMapper();
