@@ -5,6 +5,7 @@ import javax.servlet.http.HttpSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -32,8 +33,8 @@ public class LoginController {
 	}
 	
 	@RequestMapping(value="/login2", method=RequestMethod.POST)
-	public String login(@RequestBody User user, HttpSession session) {
-		User u = login.login(user.getEmail(), user.getPass());
+	public String login(@ModelAttribute("user") User user, HttpSession session) {
+		User u = login.login(user.getEmail(), user.getPassword());
 		if(u == null) {
 			return "redirect:login";
 		} else {
