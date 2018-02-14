@@ -15,11 +15,6 @@ public class UserHibernate implements UserDao
 	private static Logger log = Logger.getLogger(UserHibernate.class);
 	private static HibernateUtil hu = HibernateUtil.getInstance();
 
-	public UserHibernate() 
-	{
-		// TODO Auto-generated constructor stub
-	}
-
 	@Override
 	public int createUser(User user) 
 	{
@@ -39,7 +34,7 @@ public class UserHibernate implements UserDao
 			
 		} catch(Exception e) {
 			tx.rollback();
-			e.printStackTrace();
+			log.error(e);
 			return 0;
 		} finally {
 			session.close();
@@ -61,7 +56,6 @@ public class UserHibernate implements UserDao
 		
 
 		s.close();
-		System.out.println(userList.get(0).getFullName());
 		return userList.get(0);
 
 	}
