@@ -2,6 +2,7 @@ package com.revature.beans;
 
 import java.sql.Timestamp;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
@@ -24,80 +25,50 @@ public class Receipt
 	private int receiptId;
 	@Column(name="payments_time")
 	private Timestamp paymentsTime;
-	@OneToOne(fetch=FetchType.EAGER, targetEntity = User.class)
+	@OneToOne(fetch=FetchType.EAGER, cascade=CascadeType.ALL)
 	@JoinColumn(name="rent_user_id")
-	private int renterUserId;
-	@OneToOne(fetch=FetchType.EAGER, targetEntity = User.class)
+	private User user;
+	@OneToOne(fetch=FetchType.EAGER, cascade=CascadeType.ALL)
 	@JoinColumn(name="owner_user_id")
-	private int ownerUserId;
+	private User owner;
 	@Column(name="user_rating")
 	private int userRating;
-	private double amount;
-	
-	public Receipt(int receiptId, Timestamp paymentsTime, int renterUserId, int ownerUserId, int userRating,
-			double amount) {
-		super();
-		this.receiptId = receiptId;
-		this.paymentsTime = paymentsTime;
-		this.renterUserId = renterUserId;
-		this.ownerUserId = ownerUserId;
-		this.userRating = userRating;
-		this.amount = amount;
-	}
-
-	public Receipt() 
-	{
-		super();
-	}
-
 	public int getReceiptId() {
 		return receiptId;
 	}
-
 	public void setReceiptId(int receiptId) {
 		this.receiptId = receiptId;
 	}
-
 	public Timestamp getPaymentsTime() {
 		return paymentsTime;
 	}
-
 	public void setPaymentsTime(Timestamp paymentsTime) {
 		this.paymentsTime = paymentsTime;
 	}
-
-	public int getRenterUserId() {
-		return renterUserId;
+	public User getUser() {
+		return user;
 	}
-
-	public void setRenter_user_id(int renterUserId) {
-		this.renterUserId = renterUserId;
+	public void setUser(User user) {
+		this.user = user;
 	}
-
-	public int getOwnerUserId() {
-		return ownerUserId;
+	public User getOwner() {
+		return owner;
 	}
-
-	public void setOwnerUserId(int ownerUserId) {
-		this.ownerUserId = ownerUserId;
+	public void setOwner(User owner) {
+		this.owner = owner;
 	}
-
 	public int getUserRating() {
 		return userRating;
 	}
-
 	public void setUserRating(int userRating) {
 		this.userRating = userRating;
 	}
-
 	public double getAmount() {
 		return amount;
 	}
-
 	public void setAmount(double amount) {
 		this.amount = amount;
 	}
-
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -105,14 +76,13 @@ public class Receipt
 		long temp;
 		temp = Double.doubleToLongBits(amount);
 		result = prime * result + (int) (temp ^ (temp >>> 32));
-		result = prime * result + ownerUserId;
+		result = prime * result + ((owner == null) ? 0 : owner.hashCode());
 		result = prime * result + ((paymentsTime == null) ? 0 : paymentsTime.hashCode());
 		result = prime * result + receiptId;
-		result = prime * result + renterUserId;
+		result = prime * result + ((user == null) ? 0 : user.hashCode());
 		result = prime * result + userRating;
 		return result;
 	}
-
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
@@ -124,7 +94,10 @@ public class Receipt
 		Receipt other = (Receipt) obj;
 		if (Double.doubleToLongBits(amount) != Double.doubleToLongBits(other.amount))
 			return false;
-		if (ownerUserId != other.ownerUserId)
+		if (owner == null) {
+			if (other.owner != null)
+				return false;
+		} else if (!owner.equals(other.owner))
 			return false;
 		if (paymentsTime == null) {
 			if (other.paymentsTime != null)
@@ -133,30 +106,34 @@ public class Receipt
 			return false;
 		if (receiptId != other.receiptId)
 			return false;
-		if (renterUserId != other.renterUserId)
+		if (user == null) {
+			if (other.user != null)
+				return false;
+		} else if (!user.equals(other.user))
 			return false;
 		if (userRating != other.userRating)
 			return false;
 		return true;
 	}
-
 	@Override
 	public String toString() {
-		StringBuilder builder = new StringBuilder();
-		builder.append("Receipt [receiptId=");
-		builder.append(receiptId);
-		builder.append(", paymentsTime=");
-		builder.append(paymentsTime);
-		builder.append(", renterUserId=");
-		builder.append(renterUserId);
-		builder.append(", ownerUserId=");
-		builder.append(ownerUserId);
-		builder.append(", userRating=");
-		builder.append(userRating);
-		builder.append(", amount=");
-		builder.append(amount);
-		builder.append("]");
-		return builder.toString();
+		return "Receipt [receiptId=" + receiptId + ", paymentsTime=" + paymentsTime + ", user=" + user + ", owner="
+				+ owner + ", userRating=" + userRating + ", amount=" + amount + "]";
 	}
+	public Receipt(int receiptId, Timestamp paymentsTime, User user, User owner, int userRating, double amount) {
+		super();
+		this.receiptId = receiptId;
+		this.paymentsTime = paymentsTime;
+		this.user = user;
+		this.owner = owner;
+		this.userRating = userRating;
+		this.amount = amount;
+	}
+	private double amount;
+	public Receipt() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	
  
 }
