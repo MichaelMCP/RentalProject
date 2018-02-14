@@ -48,10 +48,21 @@ public class UserHibernate implements UserDao
 	}
 
 	@Override
-	public User getUser(String username, String password) 
+	public User getUser(String email, String password) 
 	{
-		// TODO Auto-generated method stub
-		return null;
+		Session s = hu.getSession();
+		String query = "from com.revature.beans.User u where u.email=:email and u.password=:password";
+		log.trace(s);
+		Query<User> q = s.createQuery(query, User.class);
+		q.setParameter("email", email);
+		q.setParameter("password", password);
+		log.trace(q);
+		List<User> userList = q.getResultList();
+		
+
+		s.close();
+		return userList.get(0);
+
 	}
 
 	@Override

@@ -1,17 +1,23 @@
 package com.revature.data;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 import java.util.List;
 
+import org.apache.log4j.Logger;
+import org.junit.Before;
 import org.junit.Test;
 
 import com.revature.beans.User;
 
 public class UserHibernateTest {
-	//reset the database when testing
-	UserDao ud = new UserHibernate();
-
+	@Before
+	public void setup() {
+		ud= new UserHibernate();
+	}
+	private static UserDao ud;
+	private static Logger log = Logger.getRootLogger();
 	
 	@Test
 	public void testCreateUser() {
@@ -22,6 +28,7 @@ public class UserHibernateTest {
 		u.setPassword("123");
 		int test = ud.createUser(u);
 		assertEquals(u.getId(), test);
+		ud.deleteUser(u);
 	}
 	
 	@Test
@@ -34,6 +41,7 @@ public class UserHibernateTest {
 		ud.createUser(u);
 		User test = ud.getUserById(u.getId());
 		assertEquals(u, test);
+		ud.deleteUser(u);
 	}
 	
 	@Test
@@ -47,6 +55,7 @@ public class UserHibernateTest {
 		u.setFullName("Joe");
 		User test = ud.updateUser(u);
 		assertEquals(u, test);
+		ud.deleteUser(u);
 	}
 	
 	@Test
@@ -70,7 +79,23 @@ public class UserHibernateTest {
 		u.setPassword("123");
 		ud.createUser(u);
 		List<User> test = ud.getAllUsers();
-		assertEquals(u, test.get(0));
+		assertTrue(test.contains(u));
+		ud.deleteUser(u);
+	}
+	
+	@Test
+	public void testGetUserLogin() {
+		User u = new User();
+		u.setRole(1);
+		u.setEmail("test6@test.com");
+		u.setFullName("Bob");
+		u.setPassword("123");
+		ud.createUser(u);
+
+		log.trace(u);
+		User test = ud.getUser(u.getEmail(), u.getPassword());
+		assertEquals(u, test);
+		ud.deleteUser(u);
 	}
 
 }
