@@ -26,13 +26,17 @@ public class Receipt
 	@Column(name="payments_time")
 	private Timestamp paymentsTime;
 	@OneToOne(fetch=FetchType.EAGER, cascade=CascadeType.ALL)
-	@JoinColumn(name="rent_user_id")
+	@JoinColumn(name="renter_user_id")
 	private User user;
 	@OneToOne(fetch=FetchType.EAGER, cascade=CascadeType.ALL)
 	@JoinColumn(name="owner_user_id")
 	private User owner;
 	@Column(name="user_rating")
 	private int userRating;
+	private double amount;
+	@OneToOne(fetch=FetchType.EAGER, cascade=CascadeType.ALL)
+	@JoinColumn(name="property_id")
+	private Property property;
 	public int getReceiptId() {
 		return receiptId;
 	}
@@ -69,6 +73,12 @@ public class Receipt
 	public void setAmount(double amount) {
 		this.amount = amount;
 	}
+	public Property getProperty() {
+		return property;
+	}
+	public void setProperty(Property property) {
+		this.property = property;
+	}
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -78,6 +88,7 @@ public class Receipt
 		result = prime * result + (int) (temp ^ (temp >>> 32));
 		result = prime * result + ((owner == null) ? 0 : owner.hashCode());
 		result = prime * result + ((paymentsTime == null) ? 0 : paymentsTime.hashCode());
+		result = prime * result + ((property == null) ? 0 : property.hashCode());
 		result = prime * result + receiptId;
 		result = prime * result + ((user == null) ? 0 : user.hashCode());
 		result = prime * result + userRating;
@@ -104,6 +115,11 @@ public class Receipt
 				return false;
 		} else if (!paymentsTime.equals(other.paymentsTime))
 			return false;
+		if (property == null) {
+			if (other.property != null)
+				return false;
+		} else if (!property.equals(other.property))
+			return false;
 		if (receiptId != other.receiptId)
 			return false;
 		if (user == null) {
@@ -118,9 +134,10 @@ public class Receipt
 	@Override
 	public String toString() {
 		return "Receipt [receiptId=" + receiptId + ", paymentsTime=" + paymentsTime + ", user=" + user + ", owner="
-				+ owner + ", userRating=" + userRating + ", amount=" + amount + "]";
+				+ owner + ", userRating=" + userRating + ", amount=" + amount + ", property=" + property + "]";
 	}
-	public Receipt(int receiptId, Timestamp paymentsTime, User user, User owner, int userRating, double amount) {
+	public Receipt(int receiptId, Timestamp paymentsTime, User user, User owner, int userRating, double amount,
+			Property property) {
 		super();
 		this.receiptId = receiptId;
 		this.paymentsTime = paymentsTime;
@@ -128,12 +145,11 @@ public class Receipt
 		this.owner = owner;
 		this.userRating = userRating;
 		this.amount = amount;
+		this.property = property;
 	}
-	private double amount;
 	public Receipt() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	
  
 }
