@@ -42,7 +42,7 @@ public class ReceiptsHibernate implements ReceiptsDao {
 	@Override
 	public List<Receipt> getReceiptByRenterId(int i) {
 		Session s = hu.getSession();
-		String query = "from com.revature.beans.Receipt re where re.renter_user_id=:renterId";
+		String query = "from com.revature.beans.Receipt re where re.user.id=:renterId";
 		log.trace(s);
 		Query<Receipt> q = s.createQuery(query, Receipt.class);
 		q.setParameter("renterId", i);
@@ -55,7 +55,7 @@ public class ReceiptsHibernate implements ReceiptsDao {
 	@Override
 	public List<Receipt> getReceiptByOwnerId(int i) {
 		Session s = hu.getSession();
-		String query = "from com.revature.beans.Receipt re where re.owner_User_id=:ownerId";
+		String query = "from com.revature.beans.Receipt re where re.owner.id=:ownerId";
 		log.trace(s);
 		Query<Receipt> q = s.createQuery(query, Receipt.class);
 		q.setParameter("ownerId", i);

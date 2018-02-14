@@ -3520,3 +3520,945 @@ line 1:47: unexpected token: :
 2018-02-14 11:49:57 WARN  PaymentInfoHibernate:24 - The payment info is: PaymentInfo [id=0, cost=10.0, user=User [id=17, role=1, fullName=Bob, email=test2@test.com, pass=123], creditCardNumber=1]
 2018-02-14 11:49:57 WARN  PaymentInfoHibernate:26 - Created payment info will have an id of 5
 2018-02-14 11:49:57 WARN  PaymentInfoHibernate:27 - The payment info is: PaymentInfo [id=5, cost=10.0, user=User [id=17, role=1, fullName=Bob, email=test2@test.com, pass=123], creditCardNumber=1]
+2018-02-14 14:08:51 DEBUG logging:109 - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2018-02-14 14:08:51 INFO  Version:45 - HHH000412: Hibernate Core {5.2.12.Final}
+2018-02-14 14:08:51 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2018-02-14 14:08:52 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-02-14 14:08:52 WARN  pooling:70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2018-02-14 14:08:52 INFO  pooling:126 - HHH10001005: using driver [oracle.jdbc.OracleDriver] at URL [jdbc:oracle:thin:@rentalproject.cptyc64r16fz.us-east-2.rds.amazonaws.com:1521:ORCL]
+2018-02-14 14:08:52 INFO  pooling:135 - HHH10001001: Connection properties: {user=admin, password=****}
+2018-02-14 14:08:52 INFO  pooling:140 - HHH10001003: Autocommit mode: false
+2018-02-14 14:08:52 INFO  DriverManagerConnectionProviderImpl:41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2018-02-14 14:08:52 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2018-02-14 14:08:53 WARN  PaymentInfoHibernate:25 - The Receipt is: Receipt [receiptId=0, paymentsTime=null, user=null, owner=null, userRating=0, amount=10.0, property=null]
+2018-02-14 14:08:53 WARN  PaymentInfoHibernate:27 - Created Receipt will have an id of 1
+2018-02-14 14:08:53 WARN  PaymentInfoHibernate:28 - The Receipt is: Receipt [receiptId=1, paymentsTime=null, user=null, owner=null, userRating=0, amount=10.0, property=null]
+2018-02-14 14:10:43 DEBUG logging:109 - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2018-02-14 14:10:43 INFO  Version:45 - HHH000412: Hibernate Core {5.2.12.Final}
+2018-02-14 14:10:43 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2018-02-14 14:10:43 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-02-14 14:10:43 WARN  pooling:70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2018-02-14 14:10:43 INFO  pooling:126 - HHH10001005: using driver [oracle.jdbc.OracleDriver] at URL [jdbc:oracle:thin:@rentalproject.cptyc64r16fz.us-east-2.rds.amazonaws.com:1521:ORCL]
+2018-02-14 14:10:43 INFO  pooling:135 - HHH10001001: Connection properties: {user=admin, password=****}
+2018-02-14 14:10:43 INFO  pooling:140 - HHH10001003: Autocommit mode: false
+2018-02-14 14:10:43 INFO  DriverManagerConnectionProviderImpl:41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2018-02-14 14:10:44 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2018-02-14 14:10:45 WARN  PaymentInfoHibernate:25 - The Receipt is: Receipt [receiptId=0, paymentsTime=null, user=null, owner=null, userRating=0, amount=10.0, property=null]
+2018-02-14 14:10:45 WARN  PaymentInfoHibernate:27 - Created Receipt will have an id of 2
+2018-02-14 14:10:45 WARN  PaymentInfoHibernate:28 - The Receipt is: Receipt [receiptId=2, paymentsTime=null, user=null, owner=null, userRating=0, amount=10.0, property=null]
+2018-02-14 14:11:14 DEBUG logging:109 - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2018-02-14 14:11:14 INFO  Version:45 - HHH000412: Hibernate Core {5.2.12.Final}
+2018-02-14 14:11:14 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2018-02-14 14:11:15 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-02-14 14:11:15 WARN  pooling:70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2018-02-14 14:11:15 INFO  pooling:126 - HHH10001005: using driver [oracle.jdbc.OracleDriver] at URL [jdbc:oracle:thin:@rentalproject.cptyc64r16fz.us-east-2.rds.amazonaws.com:1521:ORCL]
+2018-02-14 14:11:15 INFO  pooling:135 - HHH10001001: Connection properties: {user=admin, password=****}
+2018-02-14 14:11:15 INFO  pooling:140 - HHH10001003: Autocommit mode: false
+2018-02-14 14:11:15 INFO  DriverManagerConnectionProviderImpl:41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2018-02-14 14:11:15 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2018-02-14 14:11:16 WARN  PaymentInfoHibernate:25 - The Receipt is: Receipt [receiptId=0, paymentsTime=null, user=null, owner=null, userRating=0, amount=10.0, property=null]
+2018-02-14 14:11:16 WARN  PaymentInfoHibernate:27 - Created Receipt will have an id of 1
+2018-02-14 14:11:16 WARN  PaymentInfoHibernate:28 - The Receipt is: Receipt [receiptId=1, paymentsTime=null, user=null, owner=null, userRating=0, amount=10.0, property=null]
+2018-02-14 14:11:16 WARN  PaymentInfoHibernate:25 - The Receipt is: Receipt [receiptId=0, paymentsTime=null, user=null, owner=null, userRating=0, amount=10.0, property=null]
+2018-02-14 14:11:16 WARN  PaymentInfoHibernate:27 - Created Receipt will have an id of 2
+2018-02-14 14:11:16 WARN  PaymentInfoHibernate:28 - The Receipt is: Receipt [receiptId=2, paymentsTime=null, user=null, owner=null, userRating=0, amount=10.0, property=null]
+2018-02-14 14:13:29 DEBUG logging:109 - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2018-02-14 14:13:29 INFO  Version:45 - HHH000412: Hibernate Core {5.2.12.Final}
+2018-02-14 14:13:29 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2018-02-14 14:13:29 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-02-14 14:13:29 WARN  pooling:70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2018-02-14 14:13:29 INFO  pooling:126 - HHH10001005: using driver [oracle.jdbc.OracleDriver] at URL [jdbc:oracle:thin:@rentalproject.cptyc64r16fz.us-east-2.rds.amazonaws.com:1521:ORCL]
+2018-02-14 14:13:29 INFO  pooling:135 - HHH10001001: Connection properties: {user=admin, password=****}
+2018-02-14 14:13:29 INFO  pooling:140 - HHH10001003: Autocommit mode: false
+2018-02-14 14:13:29 INFO  DriverManagerConnectionProviderImpl:41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2018-02-14 14:13:30 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2018-02-14 14:13:31 WARN  PaymentInfoHibernate:25 - The Receipt is: Receipt [receiptId=0, paymentsTime=null, user=null, owner=null, userRating=0, amount=10.0, property=null]
+2018-02-14 14:13:31 WARN  PaymentInfoHibernate:27 - Created Receipt will have an id of 3
+2018-02-14 14:13:31 WARN  PaymentInfoHibernate:28 - The Receipt is: Receipt [receiptId=3, paymentsTime=null, user=null, owner=null, userRating=0, amount=10.0, property=null]
+2018-02-14 14:13:31 WARN  PaymentInfoHibernate:25 - The Receipt is: Receipt [receiptId=0, paymentsTime=null, user=null, owner=null, userRating=0, amount=10.0, property=null]
+2018-02-14 14:13:31 WARN  PaymentInfoHibernate:27 - Created Receipt will have an id of 4
+2018-02-14 14:13:31 WARN  PaymentInfoHibernate:28 - The Receipt is: Receipt [receiptId=4, paymentsTime=null, user=null, owner=null, userRating=0, amount=10.0, property=null]
+2018-02-14 14:13:31 WARN  UserHibernate:25 - The user is: User [id=0, role=1, fullName=Bob, email=test10@test.com, pass=123]
+2018-02-14 14:13:31 WARN  UserHibernate:27 - Created user will have an id of 1
+2018-02-14 14:13:31 WARN  UserHibernate:28 - The user is: User [id=1, role=1, fullName=Bob, email=test10@test.com, pass=123]
+2018-02-14 14:13:31 WARN  PaymentInfoHibernate:25 - The Receipt is: Receipt [receiptId=0, paymentsTime=null, user=User [id=1, role=1, fullName=Bob, email=test10@test.com, pass=123], owner=null, userRating=0, amount=10.0, property=null]
+2018-02-14 14:13:31 WARN  PaymentInfoHibernate:27 - Created Receipt will have an id of 5
+2018-02-14 14:13:31 WARN  PaymentInfoHibernate:28 - The Receipt is: Receipt [receiptId=5, paymentsTime=null, user=User [id=1, role=1, fullName=Bob, email=test10@test.com, pass=123], owner=null, userRating=0, amount=10.0, property=null]
+2018-02-14 14:15:59 DEBUG logging:109 - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2018-02-14 14:15:59 INFO  Version:45 - HHH000412: Hibernate Core {5.2.12.Final}
+2018-02-14 14:15:59 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2018-02-14 14:15:59 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-02-14 14:15:59 WARN  pooling:70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2018-02-14 14:15:59 INFO  pooling:126 - HHH10001005: using driver [oracle.jdbc.OracleDriver] at URL [jdbc:oracle:thin:@rentalproject.cptyc64r16fz.us-east-2.rds.amazonaws.com:1521:ORCL]
+2018-02-14 14:15:59 INFO  pooling:135 - HHH10001001: Connection properties: {user=admin, password=****}
+2018-02-14 14:15:59 INFO  pooling:140 - HHH10001003: Autocommit mode: false
+2018-02-14 14:15:59 INFO  DriverManagerConnectionProviderImpl:41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2018-02-14 14:15:59 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2018-02-14 14:16:00 WARN  PaymentInfoHibernate:25 - The Receipt is: Receipt [receiptId=0, paymentsTime=null, user=null, owner=null, userRating=0, amount=10.0, property=null]
+2018-02-14 14:16:00 WARN  PaymentInfoHibernate:27 - Created Receipt will have an id of 6
+2018-02-14 14:16:00 WARN  PaymentInfoHibernate:28 - The Receipt is: Receipt [receiptId=6, paymentsTime=null, user=null, owner=null, userRating=0, amount=10.0, property=null]
+2018-02-14 14:16:01 WARN  PaymentInfoHibernate:25 - The Receipt is: Receipt [receiptId=0, paymentsTime=null, user=null, owner=null, userRating=0, amount=10.0, property=null]
+2018-02-14 14:16:01 WARN  PaymentInfoHibernate:27 - Created Receipt will have an id of 7
+2018-02-14 14:16:01 WARN  PaymentInfoHibernate:28 - The Receipt is: Receipt [receiptId=7, paymentsTime=null, user=null, owner=null, userRating=0, amount=10.0, property=null]
+2018-02-14 14:16:01 WARN  UserHibernate:25 - The user is: User [id=0, role=1, fullName=Bob, email=test10@test.com, pass=123]
+2018-02-14 14:16:01 WARN  UserHibernate:27 - Created user will have an id of 2
+2018-02-14 14:16:01 WARN  UserHibernate:28 - The user is: User [id=2, role=1, fullName=Bob, email=test10@test.com, pass=123]
+2018-02-14 14:16:01 WARN  PaymentInfoHibernate:25 - The Receipt is: Receipt [receiptId=0, paymentsTime=null, user=User [id=2, role=1, fullName=Bob, email=test10@test.com, pass=123], owner=null, userRating=0, amount=10.0, property=null]
+2018-02-14 14:16:01 WARN  PaymentInfoHibernate:27 - Created Receipt will have an id of 8
+2018-02-14 14:16:01 WARN  PaymentInfoHibernate:28 - The Receipt is: Receipt [receiptId=8, paymentsTime=null, user=User [id=2, role=1, fullName=Bob, email=test10@test.com, pass=123], owner=null, userRating=0, amount=10.0, property=null]
+2018-02-14 14:16:01 TRACE PaymentInfoHibernate:46 - SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])
+2018-02-14 14:16:01 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2018-02-14 15:50:18 DEBUG logging:109 - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2018-02-14 15:50:18 INFO  Version:45 - HHH000412: Hibernate Core {5.2.12.Final}
+2018-02-14 15:50:18 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2018-02-14 15:50:18 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-02-14 15:50:18 WARN  pooling:70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2018-02-14 15:50:18 INFO  pooling:126 - HHH10001005: using driver [oracle.jdbc.OracleDriver] at URL [jdbc:oracle:thin:@rentalproject.cptyc64r16fz.us-east-2.rds.amazonaws.com:1521:ORCL]
+2018-02-14 15:50:18 INFO  pooling:135 - HHH10001001: Connection properties: {user=admin, password=****}
+2018-02-14 15:50:18 INFO  pooling:140 - HHH10001003: Autocommit mode: false
+2018-02-14 15:50:18 INFO  DriverManagerConnectionProviderImpl:41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2018-02-14 15:50:19 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2018-02-14 15:50:20 WARN  PaymentInfoHibernate:25 - The Receipt is: Receipt [receiptId=0, paymentsTime=null, user=null, owner=null, userRating=0, amount=10.0, property=null]
+2018-02-14 15:50:20 WARN  PaymentInfoHibernate:27 - Created Receipt will have an id of 1
+2018-02-14 15:50:20 WARN  PaymentInfoHibernate:28 - The Receipt is: Receipt [receiptId=1, paymentsTime=null, user=null, owner=null, userRating=0, amount=10.0, property=null]
+2018-02-14 15:50:20 WARN  PaymentInfoHibernate:25 - The Receipt is: Receipt [receiptId=0, paymentsTime=null, user=null, owner=null, userRating=0, amount=10.0, property=null]
+2018-02-14 15:50:20 WARN  PaymentInfoHibernate:27 - Created Receipt will have an id of 2
+2018-02-14 15:50:20 WARN  PaymentInfoHibernate:28 - The Receipt is: Receipt [receiptId=2, paymentsTime=null, user=null, owner=null, userRating=0, amount=10.0, property=null]
+2018-02-14 15:50:20 WARN  UserHibernate:25 - The user is: User [id=0, role=1, fullName=Bob, email=test10@test.com, pass=123]
+2018-02-14 15:50:20 WARN  UserHibernate:27 - Created user will have an id of 1
+2018-02-14 15:50:20 WARN  UserHibernate:28 - The user is: User [id=1, role=1, fullName=Bob, email=test10@test.com, pass=123]
+2018-02-14 15:50:20 WARN  PaymentInfoHibernate:25 - The Receipt is: Receipt [receiptId=0, paymentsTime=null, user=User [id=1, role=1, fullName=Bob, email=test10@test.com, pass=123], owner=null, userRating=0, amount=10.0, property=null]
+2018-02-14 15:50:20 WARN  PaymentInfoHibernate:27 - Created Receipt will have an id of 3
+2018-02-14 15:50:20 WARN  PaymentInfoHibernate:28 - The Receipt is: Receipt [receiptId=3, paymentsTime=null, user=User [id=1, role=1, fullName=Bob, email=test10@test.com, pass=123], owner=null, userRating=0, amount=10.0, property=null]
+2018-02-14 15:50:20 TRACE PaymentInfoHibernate:46 - SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])
+2018-02-14 15:50:20 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2018-02-14 15:54:20 DEBUG logging:109 - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2018-02-14 15:54:20 INFO  Version:45 - HHH000412: Hibernate Core {5.2.12.Final}
+2018-02-14 15:54:20 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2018-02-14 15:54:20 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-02-14 15:54:20 WARN  pooling:70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2018-02-14 15:54:20 INFO  pooling:126 - HHH10001005: using driver [oracle.jdbc.OracleDriver] at URL [jdbc:oracle:thin:@rentalproject.cptyc64r16fz.us-east-2.rds.amazonaws.com:1521:ORCL]
+2018-02-14 15:54:20 INFO  pooling:135 - HHH10001001: Connection properties: {user=admin, password=****}
+2018-02-14 15:54:20 INFO  pooling:140 - HHH10001003: Autocommit mode: false
+2018-02-14 15:54:20 INFO  DriverManagerConnectionProviderImpl:41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2018-02-14 15:54:21 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2018-02-14 15:54:22 WARN  PaymentInfoHibernate:25 - The Receipt is: Receipt [receiptId=0, paymentsTime=null, user=null, owner=null, userRating=0, amount=10.0, property=null]
+2018-02-14 15:54:22 WARN  PaymentInfoHibernate:27 - Created Receipt will have an id of 4
+2018-02-14 15:54:22 WARN  PaymentInfoHibernate:28 - The Receipt is: Receipt [receiptId=4, paymentsTime=null, user=null, owner=null, userRating=0, amount=10.0, property=null]
+2018-02-14 15:54:22 WARN  PaymentInfoHibernate:25 - The Receipt is: Receipt [receiptId=0, paymentsTime=null, user=null, owner=null, userRating=0, amount=10.0, property=null]
+2018-02-14 15:54:22 WARN  PaymentInfoHibernate:27 - Created Receipt will have an id of 5
+2018-02-14 15:54:22 WARN  PaymentInfoHibernate:28 - The Receipt is: Receipt [receiptId=5, paymentsTime=null, user=null, owner=null, userRating=0, amount=10.0, property=null]
+2018-02-14 15:54:22 WARN  UserHibernate:25 - The user is: User [id=0, role=1, fullName=Bob, email=test10@test.com, pass=123]
+2018-02-14 15:54:22 WARN  UserHibernate:27 - Created user will have an id of 2
+2018-02-14 15:54:22 WARN  UserHibernate:28 - The user is: User [id=2, role=1, fullName=Bob, email=test10@test.com, pass=123]
+2018-02-14 15:54:22 WARN  SqlExceptionHelper:129 - SQL Error: 1, SQLState: 23000
+2018-02-14 15:54:22 ERROR SqlExceptionHelper:131 - ORA-00001: unique constraint (ADMIN.SYS_C008457) violated
+
+2018-02-14 15:54:22 INFO  AbstractBatchImpl:193 - HHH000010: On release of batch it still contained JDBC statements
+2018-02-14 15:54:22 ERROR ExceptionMapperStandardImpl:39 - HHH000346: Error during managed flush [org.hibernate.exception.ConstraintViolationException: could not execute statement]
+2018-02-14 15:54:22 ERROR UserHibernate:36 - javax.persistence.PersistenceException: org.hibernate.exception.ConstraintViolationException: could not execute statement
+2018-02-14 15:54:22 WARN  PaymentInfoHibernate:25 - The Receipt is: Receipt [receiptId=0, paymentsTime=null, user=User [id=2, role=1, fullName=Bob, email=test10@test.com, pass=123], owner=null, userRating=0, amount=10.0, property=null]
+2018-02-14 15:54:22 WARN  PaymentInfoHibernate:27 - Created Receipt will have an id of 6
+2018-02-14 15:54:22 WARN  PaymentInfoHibernate:28 - The Receipt is: Receipt [receiptId=6, paymentsTime=null, user=User [id=2, role=1, fullName=Bob, email=test10@test.com, pass=123], owner=null, userRating=0, amount=10.0, property=null]
+2018-02-14 15:54:22 WARN  SqlExceptionHelper:129 - SQL Error: 2291, SQLState: 23000
+2018-02-14 15:54:22 ERROR SqlExceptionHelper:131 - ORA-02291: integrity constraint (ADMIN.FK_RENTER_USER_ID) violated - parent key not found
+
+2018-02-14 15:54:22 INFO  AbstractBatchImpl:193 - HHH000010: On release of batch it still contained JDBC statements
+2018-02-14 15:54:22 ERROR ExceptionMapperStandardImpl:39 - HHH000346: Error during managed flush [org.hibernate.exception.ConstraintViolationException: could not execute statement]
+2018-02-14 15:54:22 TRACE PaymentInfoHibernate:35 - javax.persistence.PersistenceException: org.hibernate.exception.ConstraintViolationException: could not execute statement
+2018-02-14 15:54:22 TRACE PaymentInfoHibernate:47 - SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])
+2018-02-14 15:54:22 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2018-02-14 15:54:22 ERROR ErrorCounter:60 - line 1:75: unexpected token: re
+2018-02-14 15:54:22 ERROR ErrorCounter:55 - line 1:75: unexpected token: re
+line 1:75: unexpected token: re
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.fromJoin(HqlBaseParser.java:1700)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.fromClause(HqlBaseParser.java:1355)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.selectFrom(HqlBaseParser.java:1063)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.queryRule(HqlBaseParser.java:748)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.selectStatement(HqlBaseParser.java:319)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.statement(HqlBaseParser.java:198)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.parse(QueryTranslatorImpl.java:284)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:186)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.compile(QueryTranslatorImpl.java:141)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:115)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:77)
+	at org.hibernate.engine.query.spi.QueryPlanCache.getHQLQueryPlan(QueryPlanCache.java:153)
+	at org.hibernate.internal.AbstractSharedSessionContract.getQueryPlan(AbstractSharedSessionContract.java:553)
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:662)
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:686)
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:103)
+	at com.revature.data.ReceiptsHibernate.getReceiptByRenterId(ReceiptsHibernate.java:48)
+	at com.revature.data.ReceiptsHibernateTest.testGetReceiptByRenterId(ReceiptsHibernateTest.java:54)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:538)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:760)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:460)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:206)
+2018-02-14 15:56:34 DEBUG logging:109 - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2018-02-14 15:56:34 INFO  Version:45 - HHH000412: Hibernate Core {5.2.12.Final}
+2018-02-14 15:56:34 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2018-02-14 15:56:35 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-02-14 15:56:35 WARN  pooling:70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2018-02-14 15:56:35 INFO  pooling:126 - HHH10001005: using driver [oracle.jdbc.OracleDriver] at URL [jdbc:oracle:thin:@rentalproject.cptyc64r16fz.us-east-2.rds.amazonaws.com:1521:ORCL]
+2018-02-14 15:56:35 INFO  pooling:135 - HHH10001001: Connection properties: {user=admin, password=****}
+2018-02-14 15:56:35 INFO  pooling:140 - HHH10001003: Autocommit mode: false
+2018-02-14 15:56:35 INFO  DriverManagerConnectionProviderImpl:41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2018-02-14 15:56:35 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2018-02-14 15:56:36 WARN  PaymentInfoHibernate:25 - The Receipt is: Receipt [receiptId=0, paymentsTime=null, user=null, owner=null, userRating=0, amount=10.0, property=null]
+2018-02-14 15:56:36 WARN  PaymentInfoHibernate:27 - Created Receipt will have an id of 1
+2018-02-14 15:56:36 WARN  PaymentInfoHibernate:28 - The Receipt is: Receipt [receiptId=1, paymentsTime=null, user=null, owner=null, userRating=0, amount=10.0, property=null]
+2018-02-14 15:56:36 WARN  PaymentInfoHibernate:25 - The Receipt is: Receipt [receiptId=0, paymentsTime=null, user=null, owner=null, userRating=0, amount=10.0, property=null]
+2018-02-14 15:56:36 WARN  PaymentInfoHibernate:27 - Created Receipt will have an id of 2
+2018-02-14 15:56:36 WARN  PaymentInfoHibernate:28 - The Receipt is: Receipt [receiptId=2, paymentsTime=null, user=null, owner=null, userRating=0, amount=10.0, property=null]
+2018-02-14 15:56:37 WARN  UserHibernate:25 - The user is: User [id=0, role=1, fullName=Bob, email=test10@test.com, pass=123]
+2018-02-14 15:56:37 WARN  UserHibernate:27 - Created user will have an id of 1
+2018-02-14 15:56:37 WARN  UserHibernate:28 - The user is: User [id=1, role=1, fullName=Bob, email=test10@test.com, pass=123]
+2018-02-14 15:56:37 WARN  PaymentInfoHibernate:25 - The Receipt is: Receipt [receiptId=0, paymentsTime=null, user=User [id=1, role=1, fullName=Bob, email=test10@test.com, pass=123], owner=null, userRating=0, amount=10.0, property=null]
+2018-02-14 15:56:37 WARN  PaymentInfoHibernate:27 - Created Receipt will have an id of 3
+2018-02-14 15:56:37 WARN  PaymentInfoHibernate:28 - The Receipt is: Receipt [receiptId=3, paymentsTime=null, user=User [id=1, role=1, fullName=Bob, email=test10@test.com, pass=123], owner=null, userRating=0, amount=10.0, property=null]
+2018-02-14 15:56:37 TRACE PaymentInfoHibernate:47 - SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])
+2018-02-14 15:56:37 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2018-02-14 15:56:37 ERROR ErrorCounter:60 - line 1:75: unexpected token: re
+2018-02-14 15:56:37 ERROR ErrorCounter:55 - line 1:75: unexpected token: re
+line 1:75: unexpected token: re
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.fromJoin(HqlBaseParser.java:1700)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.fromClause(HqlBaseParser.java:1355)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.selectFrom(HqlBaseParser.java:1063)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.queryRule(HqlBaseParser.java:748)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.selectStatement(HqlBaseParser.java:319)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.statement(HqlBaseParser.java:198)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.parse(QueryTranslatorImpl.java:284)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:186)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.compile(QueryTranslatorImpl.java:141)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:115)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:77)
+	at org.hibernate.engine.query.spi.QueryPlanCache.getHQLQueryPlan(QueryPlanCache.java:153)
+	at org.hibernate.internal.AbstractSharedSessionContract.getQueryPlan(AbstractSharedSessionContract.java:553)
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:662)
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:686)
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:103)
+	at com.revature.data.ReceiptsHibernate.getReceiptByRenterId(ReceiptsHibernate.java:48)
+	at com.revature.data.ReceiptsHibernateTest.testGetReceiptByRenterId(ReceiptsHibernateTest.java:54)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:538)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:760)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:460)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:206)
+2018-02-14 15:57:06 DEBUG logging:109 - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2018-02-14 15:57:07 INFO  Version:45 - HHH000412: Hibernate Core {5.2.12.Final}
+2018-02-14 15:57:07 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2018-02-14 15:57:07 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-02-14 15:57:07 WARN  pooling:70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2018-02-14 15:57:07 INFO  pooling:126 - HHH10001005: using driver [oracle.jdbc.OracleDriver] at URL [jdbc:oracle:thin:@rentalproject.cptyc64r16fz.us-east-2.rds.amazonaws.com:1521:ORCL]
+2018-02-14 15:57:07 INFO  pooling:135 - HHH10001001: Connection properties: {user=admin, password=****}
+2018-02-14 15:57:07 INFO  pooling:140 - HHH10001003: Autocommit mode: false
+2018-02-14 15:57:07 INFO  DriverManagerConnectionProviderImpl:41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2018-02-14 15:57:07 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2018-02-14 15:57:08 WARN  PaymentInfoHibernate:25 - The Receipt is: Receipt [receiptId=0, paymentsTime=null, user=null, owner=null, userRating=0, amount=10.0, property=null]
+2018-02-14 15:57:08 WARN  PaymentInfoHibernate:27 - Created Receipt will have an id of 1
+2018-02-14 15:57:08 WARN  PaymentInfoHibernate:28 - The Receipt is: Receipt [receiptId=1, paymentsTime=null, user=null, owner=null, userRating=0, amount=10.0, property=null]
+2018-02-14 15:57:09 WARN  PaymentInfoHibernate:25 - The Receipt is: Receipt [receiptId=0, paymentsTime=null, user=null, owner=null, userRating=0, amount=10.0, property=null]
+2018-02-14 15:57:09 WARN  PaymentInfoHibernate:27 - Created Receipt will have an id of 2
+2018-02-14 15:57:09 WARN  PaymentInfoHibernate:28 - The Receipt is: Receipt [receiptId=2, paymentsTime=null, user=null, owner=null, userRating=0, amount=10.0, property=null]
+2018-02-14 15:57:09 WARN  UserHibernate:25 - The user is: User [id=0, role=1, fullName=Bob, email=test10@test.com, pass=123]
+2018-02-14 15:57:09 WARN  UserHibernate:27 - Created user will have an id of 1
+2018-02-14 15:57:09 WARN  UserHibernate:28 - The user is: User [id=1, role=1, fullName=Bob, email=test10@test.com, pass=123]
+2018-02-14 15:57:09 WARN  PaymentInfoHibernate:25 - The Receipt is: Receipt [receiptId=0, paymentsTime=null, user=User [id=1, role=1, fullName=Bob, email=test10@test.com, pass=123], owner=null, userRating=0, amount=10.0, property=null]
+2018-02-14 15:57:09 WARN  PaymentInfoHibernate:27 - Created Receipt will have an id of 3
+2018-02-14 15:57:09 WARN  PaymentInfoHibernate:28 - The Receipt is: Receipt [receiptId=3, paymentsTime=null, user=User [id=1, role=1, fullName=Bob, email=test10@test.com, pass=123], owner=null, userRating=0, amount=10.0, property=null]
+2018-02-14 15:57:09 TRACE PaymentInfoHibernate:47 - SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])
+2018-02-14 15:57:09 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2018-02-14 15:57:09 ERROR ErrorCounter:60 -  could not resolve property: renter_user_id of: com.revature.beans.Receipt
+2018-02-14 15:57:09 ERROR ErrorCounter:55 -  could not resolve property: renter_user_id of: com.revature.beans.Receipt
+ could not resolve property: renter_user_id of: com.revature.beans.Receipt
+	at org.hibernate.hql.internal.ast.HqlSqlWalker.handleWithFragment(HqlSqlWalker.java:516)
+	at org.hibernate.hql.internal.ast.HqlSqlWalker.createEntityJoin(HqlSqlWalker.java:482)
+	at org.hibernate.hql.internal.ast.HqlSqlWalker.createFromJoinElement(HqlSqlWalker.java:382)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.joinElement(HqlSqlBaseWalker.java:3921)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.fromElement(HqlSqlBaseWalker.java:3707)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.fromElementList(HqlSqlBaseWalker.java:3585)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.fromClause(HqlSqlBaseWalker.java:720)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.query(HqlSqlBaseWalker.java:576)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.selectStatement(HqlSqlBaseWalker.java:313)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.statement(HqlSqlBaseWalker.java:261)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.analyze(QueryTranslatorImpl.java:266)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:189)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.compile(QueryTranslatorImpl.java:141)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:115)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:77)
+	at org.hibernate.engine.query.spi.QueryPlanCache.getHQLQueryPlan(QueryPlanCache.java:153)
+	at org.hibernate.internal.AbstractSharedSessionContract.getQueryPlan(AbstractSharedSessionContract.java:553)
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:662)
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:686)
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:103)
+	at com.revature.data.ReceiptsHibernate.getReceiptByRenterId(ReceiptsHibernate.java:48)
+	at com.revature.data.ReceiptsHibernateTest.testGetReceiptByRenterId(ReceiptsHibernateTest.java:54)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:538)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:760)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:460)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:206)
+2018-02-14 15:57:45 DEBUG logging:109 - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2018-02-14 15:57:46 INFO  Version:45 - HHH000412: Hibernate Core {5.2.12.Final}
+2018-02-14 15:57:46 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2018-02-14 15:57:46 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-02-14 15:57:46 WARN  pooling:70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2018-02-14 15:57:46 INFO  pooling:126 - HHH10001005: using driver [oracle.jdbc.OracleDriver] at URL [jdbc:oracle:thin:@rentalproject.cptyc64r16fz.us-east-2.rds.amazonaws.com:1521:ORCL]
+2018-02-14 15:57:46 INFO  pooling:135 - HHH10001001: Connection properties: {user=admin, password=****}
+2018-02-14 15:57:46 INFO  pooling:140 - HHH10001003: Autocommit mode: false
+2018-02-14 15:57:46 INFO  DriverManagerConnectionProviderImpl:41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2018-02-14 15:57:46 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2018-02-14 15:57:47 WARN  PaymentInfoHibernate:25 - The Receipt is: Receipt [receiptId=0, paymentsTime=null, user=null, owner=null, userRating=0, amount=10.0, property=null]
+2018-02-14 15:57:47 WARN  PaymentInfoHibernate:27 - Created Receipt will have an id of 1
+2018-02-14 15:57:47 WARN  PaymentInfoHibernate:28 - The Receipt is: Receipt [receiptId=1, paymentsTime=null, user=null, owner=null, userRating=0, amount=10.0, property=null]
+2018-02-14 15:57:47 WARN  PaymentInfoHibernate:25 - The Receipt is: Receipt [receiptId=0, paymentsTime=null, user=null, owner=null, userRating=0, amount=10.0, property=null]
+2018-02-14 15:57:47 WARN  PaymentInfoHibernate:27 - Created Receipt will have an id of 2
+2018-02-14 15:57:47 WARN  PaymentInfoHibernate:28 - The Receipt is: Receipt [receiptId=2, paymentsTime=null, user=null, owner=null, userRating=0, amount=10.0, property=null]
+2018-02-14 15:57:48 WARN  UserHibernate:25 - The user is: User [id=0, role=1, fullName=Bob, email=test10@test.com, pass=123]
+2018-02-14 15:57:48 WARN  UserHibernate:27 - Created user will have an id of 1
+2018-02-14 15:57:48 WARN  UserHibernate:28 - The user is: User [id=1, role=1, fullName=Bob, email=test10@test.com, pass=123]
+2018-02-14 15:57:48 WARN  PaymentInfoHibernate:25 - The Receipt is: Receipt [receiptId=0, paymentsTime=null, user=User [id=1, role=1, fullName=Bob, email=test10@test.com, pass=123], owner=null, userRating=0, amount=10.0, property=null]
+2018-02-14 15:57:48 WARN  PaymentInfoHibernate:27 - Created Receipt will have an id of 3
+2018-02-14 15:57:48 WARN  PaymentInfoHibernate:28 - The Receipt is: Receipt [receiptId=3, paymentsTime=null, user=User [id=1, role=1, fullName=Bob, email=test10@test.com, pass=123], owner=null, userRating=0, amount=10.0, property=null]
+2018-02-14 15:57:48 TRACE PaymentInfoHibernate:47 - SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])
+2018-02-14 15:57:48 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2018-02-14 15:57:48 ERROR ErrorCounter:60 -  Path expected for join!
+2018-02-14 15:57:48 ERROR ErrorCounter:55 -  Path expected for join!
+ Path expected for join!
+	at org.hibernate.hql.internal.ast.HqlSqlWalker.createFromJoinElement(HqlSqlWalker.java:394)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.joinElement(HqlSqlBaseWalker.java:3921)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.fromElement(HqlSqlBaseWalker.java:3707)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.fromElementList(HqlSqlBaseWalker.java:3585)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.fromClause(HqlSqlBaseWalker.java:720)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.query(HqlSqlBaseWalker.java:576)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.selectStatement(HqlSqlBaseWalker.java:313)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.statement(HqlSqlBaseWalker.java:261)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.analyze(QueryTranslatorImpl.java:266)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:189)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.compile(QueryTranslatorImpl.java:141)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:115)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:77)
+	at org.hibernate.engine.query.spi.QueryPlanCache.getHQLQueryPlan(QueryPlanCache.java:153)
+	at org.hibernate.internal.AbstractSharedSessionContract.getQueryPlan(AbstractSharedSessionContract.java:553)
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:662)
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:686)
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:103)
+	at com.revature.data.ReceiptsHibernate.getReceiptByRenterId(ReceiptsHibernate.java:48)
+	at com.revature.data.ReceiptsHibernateTest.testGetReceiptByRenterId(ReceiptsHibernateTest.java:54)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:538)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:760)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:460)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:206)
+2018-02-14 15:57:48 ERROR ErrorCounter:60 -  Invalid path: 'u.id'
+2018-02-14 15:57:48 ERROR ErrorCounter:55 -  Invalid path: 'u.id'
+ Invalid path: 'u.id'
+	at org.hibernate.hql.internal.ast.util.LiteralProcessor.lookupConstant(LiteralProcessor.java:111)
+	at org.hibernate.hql.internal.ast.tree.DotNode.resolve(DotNode.java:214)
+	at org.hibernate.hql.internal.ast.HqlSqlWalker.resolve(HqlSqlWalker.java:1040)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.expr(HqlSqlBaseWalker.java:1290)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.exprOrSubquery(HqlSqlBaseWalker.java:4707)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.comparisonExpr(HqlSqlBaseWalker.java:4175)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.logicalExpr(HqlSqlBaseWalker.java:2138)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.whereClause(HqlSqlBaseWalker.java:815)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.query(HqlSqlBaseWalker.java:609)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.selectStatement(HqlSqlBaseWalker.java:313)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.statement(HqlSqlBaseWalker.java:261)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.analyze(QueryTranslatorImpl.java:266)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:189)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.compile(QueryTranslatorImpl.java:141)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:115)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:77)
+	at org.hibernate.engine.query.spi.QueryPlanCache.getHQLQueryPlan(QueryPlanCache.java:153)
+	at org.hibernate.internal.AbstractSharedSessionContract.getQueryPlan(AbstractSharedSessionContract.java:553)
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:662)
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:686)
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:103)
+	at com.revature.data.ReceiptsHibernate.getReceiptByRenterId(ReceiptsHibernate.java:48)
+	at com.revature.data.ReceiptsHibernateTest.testGetReceiptByRenterId(ReceiptsHibernateTest.java:54)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:538)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:760)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:460)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:206)
+2018-02-14 15:57:48 ERROR ErrorCounter:60 - <AST>:0:0: unexpected end of subtree
+2018-02-14 15:57:48 ERROR ErrorCounter:55 - <AST>:0:0: unexpected end of subtree
+<AST>:0:0: unexpected end of subtree
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.exprOrSubquery(HqlSqlBaseWalker.java:4789)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.comparisonExpr(HqlSqlBaseWalker.java:4178)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.logicalExpr(HqlSqlBaseWalker.java:2138)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.whereClause(HqlSqlBaseWalker.java:815)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.query(HqlSqlBaseWalker.java:609)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.selectStatement(HqlSqlBaseWalker.java:313)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.statement(HqlSqlBaseWalker.java:261)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.analyze(QueryTranslatorImpl.java:266)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:189)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.compile(QueryTranslatorImpl.java:141)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:115)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:77)
+	at org.hibernate.engine.query.spi.QueryPlanCache.getHQLQueryPlan(QueryPlanCache.java:153)
+	at org.hibernate.internal.AbstractSharedSessionContract.getQueryPlan(AbstractSharedSessionContract.java:553)
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:662)
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:686)
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:103)
+	at com.revature.data.ReceiptsHibernate.getReceiptByRenterId(ReceiptsHibernate.java:48)
+	at com.revature.data.ReceiptsHibernateTest.testGetReceiptByRenterId(ReceiptsHibernateTest.java:54)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:538)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:760)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:460)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:206)
+2018-02-14 15:57:48 ERROR ErrorCounter:60 -  left-hand operand of a binary operator was null
+2018-02-14 15:57:48 ERROR ErrorCounter:55 -  left-hand operand of a binary operator was null
+ left-hand operand of a binary operator was null
+	at org.hibernate.hql.internal.ast.tree.BinaryLogicOperatorNode.initialize(BinaryLogicOperatorNode.java:40)
+	at org.hibernate.hql.internal.ast.HqlSqlWalker.prepareLogicOperator(HqlSqlWalker.java:1396)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.comparisonExpr(HqlSqlBaseWalker.java:4649)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.logicalExpr(HqlSqlBaseWalker.java:2138)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.whereClause(HqlSqlBaseWalker.java:815)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.query(HqlSqlBaseWalker.java:609)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.selectStatement(HqlSqlBaseWalker.java:313)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.statement(HqlSqlBaseWalker.java:261)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.analyze(QueryTranslatorImpl.java:266)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:189)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.compile(QueryTranslatorImpl.java:141)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:115)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:77)
+	at org.hibernate.engine.query.spi.QueryPlanCache.getHQLQueryPlan(QueryPlanCache.java:153)
+	at org.hibernate.internal.AbstractSharedSessionContract.getQueryPlan(AbstractSharedSessionContract.java:553)
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:662)
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:686)
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:103)
+	at com.revature.data.ReceiptsHibernate.getReceiptByRenterId(ReceiptsHibernate.java:48)
+	at com.revature.data.ReceiptsHibernateTest.testGetReceiptByRenterId(ReceiptsHibernateTest.java:54)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:538)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:760)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:460)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:206)
+2018-02-14 15:58:57 DEBUG logging:109 - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2018-02-14 15:58:57 INFO  Version:45 - HHH000412: Hibernate Core {5.2.12.Final}
+2018-02-14 15:58:57 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2018-02-14 15:58:57 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-02-14 15:58:57 WARN  pooling:70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2018-02-14 15:58:58 INFO  pooling:126 - HHH10001005: using driver [oracle.jdbc.OracleDriver] at URL [jdbc:oracle:thin:@rentalproject.cptyc64r16fz.us-east-2.rds.amazonaws.com:1521:ORCL]
+2018-02-14 15:58:58 INFO  pooling:135 - HHH10001001: Connection properties: {user=admin, password=****}
+2018-02-14 15:58:58 INFO  pooling:140 - HHH10001003: Autocommit mode: false
+2018-02-14 15:58:58 INFO  DriverManagerConnectionProviderImpl:41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2018-02-14 15:58:58 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2018-02-14 15:58:59 WARN  PaymentInfoHibernate:25 - The Receipt is: Receipt [receiptId=0, paymentsTime=null, user=null, owner=null, userRating=0, amount=10.0, property=null]
+2018-02-14 15:58:59 WARN  PaymentInfoHibernate:27 - Created Receipt will have an id of 1
+2018-02-14 15:58:59 WARN  PaymentInfoHibernate:28 - The Receipt is: Receipt [receiptId=1, paymentsTime=null, user=null, owner=null, userRating=0, amount=10.0, property=null]
+2018-02-14 15:58:59 WARN  PaymentInfoHibernate:25 - The Receipt is: Receipt [receiptId=0, paymentsTime=null, user=null, owner=null, userRating=0, amount=10.0, property=null]
+2018-02-14 15:58:59 WARN  PaymentInfoHibernate:27 - Created Receipt will have an id of 2
+2018-02-14 15:58:59 WARN  PaymentInfoHibernate:28 - The Receipt is: Receipt [receiptId=2, paymentsTime=null, user=null, owner=null, userRating=0, amount=10.0, property=null]
+2018-02-14 15:58:59 WARN  UserHibernate:25 - The user is: User [id=0, role=1, fullName=Bob, email=test10@test.com, pass=123]
+2018-02-14 15:58:59 WARN  UserHibernate:27 - Created user will have an id of 1
+2018-02-14 15:58:59 WARN  UserHibernate:28 - The user is: User [id=1, role=1, fullName=Bob, email=test10@test.com, pass=123]
+2018-02-14 15:58:59 WARN  PaymentInfoHibernate:25 - The Receipt is: Receipt [receiptId=0, paymentsTime=null, user=User [id=1, role=1, fullName=Bob, email=test10@test.com, pass=123], owner=null, userRating=0, amount=10.0, property=null]
+2018-02-14 15:59:00 WARN  PaymentInfoHibernate:27 - Created Receipt will have an id of 3
+2018-02-14 15:59:00 WARN  PaymentInfoHibernate:28 - The Receipt is: Receipt [receiptId=3, paymentsTime=null, user=User [id=1, role=1, fullName=Bob, email=test10@test.com, pass=123], owner=null, userRating=0, amount=10.0, property=null]
+2018-02-14 15:59:00 TRACE PaymentInfoHibernate:47 - SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])
+2018-02-14 15:59:00 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2018-02-14 15:59:00 ERROR ErrorCounter:60 -  could not resolve property: renter_user_id of: com.revature.beans.Receipt
+2018-02-14 15:59:00 ERROR ErrorCounter:55 -  could not resolve property: renter_user_id of: com.revature.beans.Receipt
+ could not resolve property: renter_user_id of: com.revature.beans.Receipt
+	at org.hibernate.hql.internal.ast.HqlSqlWalker.handleWithFragment(HqlSqlWalker.java:516)
+	at org.hibernate.hql.internal.ast.HqlSqlWalker.createEntityJoin(HqlSqlWalker.java:482)
+	at org.hibernate.hql.internal.ast.HqlSqlWalker.createFromJoinElement(HqlSqlWalker.java:382)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.joinElement(HqlSqlBaseWalker.java:3921)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.fromElement(HqlSqlBaseWalker.java:3707)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.fromElementList(HqlSqlBaseWalker.java:3585)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.fromClause(HqlSqlBaseWalker.java:720)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.query(HqlSqlBaseWalker.java:576)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.selectStatement(HqlSqlBaseWalker.java:313)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.statement(HqlSqlBaseWalker.java:261)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.analyze(QueryTranslatorImpl.java:266)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:189)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.compile(QueryTranslatorImpl.java:141)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:115)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:77)
+	at org.hibernate.engine.query.spi.QueryPlanCache.getHQLQueryPlan(QueryPlanCache.java:153)
+	at org.hibernate.internal.AbstractSharedSessionContract.getQueryPlan(AbstractSharedSessionContract.java:553)
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:662)
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:686)
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:103)
+	at com.revature.data.ReceiptsHibernate.getReceiptByRenterId(ReceiptsHibernate.java:48)
+	at com.revature.data.ReceiptsHibernateTest.testGetReceiptByRenterId(ReceiptsHibernateTest.java:54)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:538)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:760)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:460)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:206)
+2018-02-14 16:00:45 DEBUG logging:109 - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2018-02-14 16:00:45 INFO  Version:45 - HHH000412: Hibernate Core {5.2.12.Final}
+2018-02-14 16:00:45 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2018-02-14 16:00:46 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-02-14 16:00:46 WARN  pooling:70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2018-02-14 16:00:46 INFO  pooling:126 - HHH10001005: using driver [oracle.jdbc.OracleDriver] at URL [jdbc:oracle:thin:@rentalproject.cptyc64r16fz.us-east-2.rds.amazonaws.com:1521:ORCL]
+2018-02-14 16:00:46 INFO  pooling:135 - HHH10001001: Connection properties: {user=admin, password=****}
+2018-02-14 16:00:46 INFO  pooling:140 - HHH10001003: Autocommit mode: false
+2018-02-14 16:00:46 INFO  DriverManagerConnectionProviderImpl:41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2018-02-14 16:00:46 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2018-02-14 16:00:47 WARN  PaymentInfoHibernate:25 - The Receipt is: Receipt [receiptId=0, paymentsTime=null, user=null, owner=null, userRating=0, amount=10.0, property=null]
+2018-02-14 16:00:47 WARN  PaymentInfoHibernate:27 - Created Receipt will have an id of 1
+2018-02-14 16:00:47 WARN  PaymentInfoHibernate:28 - The Receipt is: Receipt [receiptId=1, paymentsTime=null, user=null, owner=null, userRating=0, amount=10.0, property=null]
+2018-02-14 16:00:47 WARN  PaymentInfoHibernate:25 - The Receipt is: Receipt [receiptId=0, paymentsTime=null, user=null, owner=null, userRating=0, amount=10.0, property=null]
+2018-02-14 16:00:47 WARN  PaymentInfoHibernate:27 - Created Receipt will have an id of 2
+2018-02-14 16:00:47 WARN  PaymentInfoHibernate:28 - The Receipt is: Receipt [receiptId=2, paymentsTime=null, user=null, owner=null, userRating=0, amount=10.0, property=null]
+2018-02-14 16:00:47 WARN  UserHibernate:25 - The user is: User [id=0, role=1, fullName=Bob, email=test10@test.com, pass=123]
+2018-02-14 16:00:47 WARN  UserHibernate:27 - Created user will have an id of 1
+2018-02-14 16:00:47 WARN  UserHibernate:28 - The user is: User [id=1, role=1, fullName=Bob, email=test10@test.com, pass=123]
+2018-02-14 16:00:47 WARN  PaymentInfoHibernate:25 - The Receipt is: Receipt [receiptId=0, paymentsTime=null, user=User [id=1, role=1, fullName=Bob, email=test10@test.com, pass=123], owner=null, userRating=0, amount=10.0, property=null]
+2018-02-14 16:00:47 WARN  PaymentInfoHibernate:27 - Created Receipt will have an id of 3
+2018-02-14 16:00:47 WARN  PaymentInfoHibernate:28 - The Receipt is: Receipt [receiptId=3, paymentsTime=null, user=User [id=1, role=1, fullName=Bob, email=test10@test.com, pass=123], owner=null, userRating=0, amount=10.0, property=null]
+2018-02-14 16:00:47 TRACE PaymentInfoHibernate:46 - SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])
+2018-02-14 16:00:47 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2018-02-14 16:00:47 TRACE PaymentInfoHibernate:49 - org.hibernate.query.internal.QueryImpl@261d8190
+2018-02-14 16:00:48 WARN  SqlExceptionHelper:129 - SQL Error: 1747, SQLState: 42000
+2018-02-14 16:00:48 ERROR SqlExceptionHelper:131 - ORA-01747: invalid user.table.column, table.column, or column specification
+
+2018-02-14 16:03:58 DEBUG logging:109 - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2018-02-14 16:03:58 INFO  Version:45 - HHH000412: Hibernate Core {5.2.12.Final}
+2018-02-14 16:03:58 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2018-02-14 16:03:58 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-02-14 16:03:58 WARN  pooling:70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2018-02-14 16:03:58 INFO  pooling:126 - HHH10001005: using driver [oracle.jdbc.OracleDriver] at URL [jdbc:oracle:thin:@rentalproject.cptyc64r16fz.us-east-2.rds.amazonaws.com:1521:ORCL]
+2018-02-14 16:03:58 INFO  pooling:135 - HHH10001001: Connection properties: {user=admin, password=****}
+2018-02-14 16:03:58 INFO  pooling:140 - HHH10001003: Autocommit mode: false
+2018-02-14 16:03:58 INFO  DriverManagerConnectionProviderImpl:41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2018-02-14 16:03:59 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2018-02-14 16:04:00 WARN  PaymentInfoHibernate:25 - The Receipt is: Receipt [receiptId=0, paymentsTime=null, user=null, owner=null, userRating=0, amount=10.0, property=null]
+2018-02-14 16:04:00 WARN  PaymentInfoHibernate:27 - Created Receipt will have an id of 1
+2018-02-14 16:04:00 WARN  PaymentInfoHibernate:28 - The Receipt is: Receipt [receiptId=1, paymentsTime=null, user=null, owner=null, userRating=0, amount=10.0, property=null]
+2018-02-14 16:04:00 WARN  PaymentInfoHibernate:25 - The Receipt is: Receipt [receiptId=0, paymentsTime=null, user=null, owner=null, userRating=0, amount=10.0, property=null]
+2018-02-14 16:04:00 WARN  PaymentInfoHibernate:27 - Created Receipt will have an id of 2
+2018-02-14 16:04:00 WARN  PaymentInfoHibernate:28 - The Receipt is: Receipt [receiptId=2, paymentsTime=null, user=null, owner=null, userRating=0, amount=10.0, property=null]
+2018-02-14 16:04:00 WARN  UserHibernate:25 - The user is: User [id=0, role=1, fullName=Bob, email=test10@test.com, pass=123]
+2018-02-14 16:04:00 WARN  UserHibernate:27 - Created user will have an id of 1
+2018-02-14 16:04:00 WARN  UserHibernate:28 - The user is: User [id=1, role=1, fullName=Bob, email=test10@test.com, pass=123]
+2018-02-14 16:04:00 WARN  PaymentInfoHibernate:25 - The Receipt is: Receipt [receiptId=0, paymentsTime=null, user=User [id=1, role=1, fullName=Bob, email=test10@test.com, pass=123], owner=null, userRating=0, amount=10.0, property=null]
+2018-02-14 16:04:00 WARN  PaymentInfoHibernate:27 - Created Receipt will have an id of 3
+2018-02-14 16:04:00 WARN  PaymentInfoHibernate:28 - The Receipt is: Receipt [receiptId=3, paymentsTime=null, user=User [id=1, role=1, fullName=Bob, email=test10@test.com, pass=123], owner=null, userRating=0, amount=10.0, property=null]
+2018-02-14 16:04:00 TRACE PaymentInfoHibernate:46 - SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])
+2018-02-14 16:04:00 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2018-02-14 16:04:00 TRACE PaymentInfoHibernate:49 - org.hibernate.query.internal.QueryImpl@261d8190
+2018-02-14 16:04:37 DEBUG logging:109 - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2018-02-14 16:04:37 INFO  Version:45 - HHH000412: Hibernate Core {5.2.12.Final}
+2018-02-14 16:04:37 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2018-02-14 16:04:38 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-02-14 16:04:38 WARN  pooling:70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2018-02-14 16:04:38 INFO  pooling:126 - HHH10001005: using driver [oracle.jdbc.OracleDriver] at URL [jdbc:oracle:thin:@rentalproject.cptyc64r16fz.us-east-2.rds.amazonaws.com:1521:ORCL]
+2018-02-14 16:04:38 INFO  pooling:135 - HHH10001001: Connection properties: {user=admin, password=****}
+2018-02-14 16:04:38 INFO  pooling:140 - HHH10001003: Autocommit mode: false
+2018-02-14 16:04:38 INFO  DriverManagerConnectionProviderImpl:41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2018-02-14 16:04:38 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2018-02-14 16:04:39 WARN  PaymentInfoHibernate:25 - The Receipt is: Receipt [receiptId=0, paymentsTime=null, user=null, owner=null, userRating=0, amount=10.0, property=null]
+2018-02-14 16:04:39 WARN  PaymentInfoHibernate:27 - Created Receipt will have an id of 1
+2018-02-14 16:04:39 WARN  PaymentInfoHibernate:28 - The Receipt is: Receipt [receiptId=1, paymentsTime=null, user=null, owner=null, userRating=0, amount=10.0, property=null]
+2018-02-14 16:04:39 WARN  PaymentInfoHibernate:25 - The Receipt is: Receipt [receiptId=0, paymentsTime=null, user=null, owner=null, userRating=0, amount=10.0, property=null]
+2018-02-14 16:04:39 WARN  PaymentInfoHibernate:27 - Created Receipt will have an id of 2
+2018-02-14 16:04:39 WARN  PaymentInfoHibernate:28 - The Receipt is: Receipt [receiptId=2, paymentsTime=null, user=null, owner=null, userRating=0, amount=10.0, property=null]
+2018-02-14 16:04:39 WARN  UserHibernate:25 - The user is: User [id=0, role=1, fullName=Bob, email=test10@test.com, pass=123]
+2018-02-14 16:04:39 WARN  UserHibernate:27 - Created user will have an id of 1
+2018-02-14 16:04:39 WARN  UserHibernate:28 - The user is: User [id=1, role=1, fullName=Bob, email=test10@test.com, pass=123]
+2018-02-14 16:04:39 WARN  PaymentInfoHibernate:25 - The Receipt is: Receipt [receiptId=0, paymentsTime=null, user=User [id=1, role=1, fullName=Bob, email=test10@test.com, pass=123], owner=null, userRating=0, amount=10.0, property=null]
+2018-02-14 16:04:39 WARN  PaymentInfoHibernate:27 - Created Receipt will have an id of 3
+2018-02-14 16:04:39 WARN  PaymentInfoHibernate:28 - The Receipt is: Receipt [receiptId=3, paymentsTime=null, user=User [id=1, role=1, fullName=Bob, email=test10@test.com, pass=123], owner=null, userRating=0, amount=10.0, property=null]
+2018-02-14 16:04:40 TRACE PaymentInfoHibernate:46 - SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])
+2018-02-14 16:04:40 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2018-02-14 16:04:40 TRACE PaymentInfoHibernate:49 - org.hibernate.query.internal.QueryImpl@261d8190
+2018-02-14 16:05:41 DEBUG logging:109 - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2018-02-14 16:05:41 INFO  Version:45 - HHH000412: Hibernate Core {5.2.12.Final}
+2018-02-14 16:05:41 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2018-02-14 16:05:42 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-02-14 16:05:42 WARN  pooling:70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2018-02-14 16:05:42 INFO  pooling:126 - HHH10001005: using driver [oracle.jdbc.OracleDriver] at URL [jdbc:oracle:thin:@rentalproject.cptyc64r16fz.us-east-2.rds.amazonaws.com:1521:ORCL]
+2018-02-14 16:05:42 INFO  pooling:135 - HHH10001001: Connection properties: {user=admin, password=****}
+2018-02-14 16:05:42 INFO  pooling:140 - HHH10001003: Autocommit mode: false
+2018-02-14 16:05:42 INFO  DriverManagerConnectionProviderImpl:41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2018-02-14 16:05:42 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2018-02-14 16:05:43 WARN  PaymentInfoHibernate:25 - The Receipt is: Receipt [receiptId=0, paymentsTime=null, user=null, owner=null, userRating=0, amount=10.0, property=null]
+2018-02-14 16:05:43 WARN  PaymentInfoHibernate:27 - Created Receipt will have an id of 1
+2018-02-14 16:05:43 WARN  PaymentInfoHibernate:28 - The Receipt is: Receipt [receiptId=1, paymentsTime=null, user=null, owner=null, userRating=0, amount=10.0, property=null]
+2018-02-14 16:05:43 WARN  PaymentInfoHibernate:25 - The Receipt is: Receipt [receiptId=0, paymentsTime=null, user=null, owner=null, userRating=0, amount=10.0, property=null]
+2018-02-14 16:05:43 WARN  PaymentInfoHibernate:27 - Created Receipt will have an id of 2
+2018-02-14 16:05:43 WARN  PaymentInfoHibernate:28 - The Receipt is: Receipt [receiptId=2, paymentsTime=null, user=null, owner=null, userRating=0, amount=10.0, property=null]
+2018-02-14 16:05:43 WARN  UserHibernate:25 - The user is: User [id=0, role=1, fullName=Bob, email=test10@test.com, pass=123]
+2018-02-14 16:05:43 WARN  UserHibernate:27 - Created user will have an id of 3
+2018-02-14 16:05:43 WARN  UserHibernate:28 - The user is: User [id=3, role=1, fullName=Bob, email=test10@test.com, pass=123]
+2018-02-14 16:05:44 WARN  PaymentInfoHibernate:25 - The Receipt is: Receipt [receiptId=0, paymentsTime=null, user=User [id=3, role=1, fullName=Bob, email=test10@test.com, pass=123], owner=null, userRating=0, amount=10.0, property=null]
+2018-02-14 16:05:44 WARN  PaymentInfoHibernate:27 - Created Receipt will have an id of 3
+2018-02-14 16:05:44 WARN  PaymentInfoHibernate:28 - The Receipt is: Receipt [receiptId=3, paymentsTime=null, user=User [id=3, role=1, fullName=Bob, email=test10@test.com, pass=123], owner=null, userRating=0, amount=10.0, property=null]
+2018-02-14 16:05:44 TRACE PaymentInfoHibernate:46 - SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])
+2018-02-14 16:05:44 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2018-02-14 16:05:44 TRACE PaymentInfoHibernate:49 - org.hibernate.query.internal.QueryImpl@261d8190
+2018-02-14 16:05:44 ERROR ExceptionMapperStandardImpl:39 - HHH000346: Error during managed flush [Batch update returned unexpected row count from update [0]; actual row count: 0; expected: 1]
+2018-02-14 16:05:44 INFO  AbstractBatchImpl:193 - HHH000010: On release of batch it still contained JDBC statements
+2018-02-14 16:06:55 DEBUG logging:109 - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2018-02-14 16:06:55 INFO  Version:45 - HHH000412: Hibernate Core {5.2.12.Final}
+2018-02-14 16:06:55 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2018-02-14 16:06:55 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-02-14 16:06:55 WARN  pooling:70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2018-02-14 16:06:55 INFO  pooling:126 - HHH10001005: using driver [oracle.jdbc.OracleDriver] at URL [jdbc:oracle:thin:@rentalproject.cptyc64r16fz.us-east-2.rds.amazonaws.com:1521:ORCL]
+2018-02-14 16:06:55 INFO  pooling:135 - HHH10001001: Connection properties: {user=admin, password=****}
+2018-02-14 16:06:55 INFO  pooling:140 - HHH10001003: Autocommit mode: false
+2018-02-14 16:06:55 INFO  DriverManagerConnectionProviderImpl:41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2018-02-14 16:06:56 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2018-02-14 16:06:57 WARN  UserHibernate:25 - The user is: User [id=0, role=1, fullName=Bob, email=test10@test.com, pass=123]
+2018-02-14 16:06:57 WARN  UserHibernate:27 - Created user will have an id of 1
+2018-02-14 16:06:57 WARN  UserHibernate:28 - The user is: User [id=1, role=1, fullName=Bob, email=test10@test.com, pass=123]
+2018-02-14 16:06:57 WARN  PaymentInfoHibernate:25 - The Receipt is: Receipt [receiptId=0, paymentsTime=null, user=null, owner=User [id=1, role=1, fullName=Bob, email=test10@test.com, pass=123], userRating=0, amount=10.0, property=null]
+2018-02-14 16:06:57 WARN  PaymentInfoHibernate:27 - Created Receipt will have an id of 1
+2018-02-14 16:06:57 WARN  PaymentInfoHibernate:28 - The Receipt is: Receipt [receiptId=1, paymentsTime=null, user=null, owner=User [id=1, role=1, fullName=Bob, email=test10@test.com, pass=123], userRating=0, amount=10.0, property=null]
+2018-02-14 16:06:57 TRACE PaymentInfoHibernate:59 - SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])
+2018-02-14 16:06:57 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2018-02-14 16:06:57 TRACE PaymentInfoHibernate:62 - org.hibernate.query.internal.QueryImpl@40147317
+2018-02-14 16:06:57 WARN  PaymentInfoHibernate:25 - The Receipt is: Receipt [receiptId=0, paymentsTime=null, user=null, owner=null, userRating=0, amount=10.0, property=null]
+2018-02-14 16:06:57 WARN  PaymentInfoHibernate:27 - Created Receipt will have an id of 2
+2018-02-14 16:06:57 WARN  PaymentInfoHibernate:28 - The Receipt is: Receipt [receiptId=2, paymentsTime=null, user=null, owner=null, userRating=0, amount=10.0, property=null]
+2018-02-14 16:06:57 WARN  PaymentInfoHibernate:25 - The Receipt is: Receipt [receiptId=0, paymentsTime=null, user=null, owner=null, userRating=0, amount=10.0, property=null]
+2018-02-14 16:06:57 WARN  PaymentInfoHibernate:27 - Created Receipt will have an id of 3
+2018-02-14 16:06:57 WARN  PaymentInfoHibernate:28 - The Receipt is: Receipt [receiptId=3, paymentsTime=null, user=null, owner=null, userRating=0, amount=10.0, property=null]
+2018-02-14 16:06:57 WARN  UserHibernate:25 - The user is: User [id=0, role=1, fullName=Bob, email=test10@test.com, pass=123]
+2018-02-14 16:06:57 WARN  UserHibernate:27 - Created user will have an id of 2
+2018-02-14 16:06:57 WARN  UserHibernate:28 - The user is: User [id=2, role=1, fullName=Bob, email=test10@test.com, pass=123]
+2018-02-14 16:06:57 WARN  PaymentInfoHibernate:25 - The Receipt is: Receipt [receiptId=0, paymentsTime=null, user=User [id=2, role=1, fullName=Bob, email=test10@test.com, pass=123], owner=null, userRating=0, amount=10.0, property=null]
+2018-02-14 16:06:57 WARN  PaymentInfoHibernate:27 - Created Receipt will have an id of 4
+2018-02-14 16:06:57 WARN  PaymentInfoHibernate:28 - The Receipt is: Receipt [receiptId=4, paymentsTime=null, user=User [id=2, role=1, fullName=Bob, email=test10@test.com, pass=123], owner=null, userRating=0, amount=10.0, property=null]
+2018-02-14 16:06:57 TRACE PaymentInfoHibernate:46 - SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])
+2018-02-14 16:06:57 TRACE PaymentInfoHibernate:49 - org.hibernate.query.internal.QueryImpl@c96a4ea
+2018-02-14 16:08:35 DEBUG logging:109 - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2018-02-14 16:08:35 INFO  Version:45 - HHH000412: Hibernate Core {5.2.12.Final}
+2018-02-14 16:08:35 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2018-02-14 16:08:35 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-02-14 16:08:35 WARN  pooling:70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2018-02-14 16:08:35 INFO  pooling:126 - HHH10001005: using driver [oracle.jdbc.OracleDriver] at URL [jdbc:oracle:thin:@rentalproject.cptyc64r16fz.us-east-2.rds.amazonaws.com:1521:ORCL]
+2018-02-14 16:08:35 INFO  pooling:135 - HHH10001001: Connection properties: {user=admin, password=****}
+2018-02-14 16:08:35 INFO  pooling:140 - HHH10001003: Autocommit mode: false
+2018-02-14 16:08:35 INFO  DriverManagerConnectionProviderImpl:41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2018-02-14 16:08:36 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2018-02-14 16:08:36 WARN  UserHibernate:25 - The user is: User [id=0, role=1, fullName=Bob, email=test10@test.com, pass=123]
+2018-02-14 16:08:36 WARN  UserHibernate:27 - Created user will have an id of 4
+2018-02-14 16:08:36 WARN  UserHibernate:28 - The user is: User [id=4, role=1, fullName=Bob, email=test10@test.com, pass=123]
+2018-02-14 16:08:36 WARN  PaymentInfoHibernate:25 - The Receipt is: Receipt [receiptId=0, paymentsTime=null, user=null, owner=User [id=4, role=1, fullName=Bob, email=test10@test.com, pass=123], userRating=0, amount=10.0, property=null]
+2018-02-14 16:08:36 WARN  PaymentInfoHibernate:27 - Created Receipt will have an id of 1
+2018-02-14 16:08:36 WARN  PaymentInfoHibernate:28 - The Receipt is: Receipt [receiptId=1, paymentsTime=null, user=null, owner=User [id=4, role=1, fullName=Bob, email=test10@test.com, pass=123], userRating=0, amount=10.0, property=null]
+2018-02-14 16:08:37 TRACE PaymentInfoHibernate:59 - SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])
+2018-02-14 16:08:37 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2018-02-14 16:08:37 TRACE PaymentInfoHibernate:62 - org.hibernate.query.internal.QueryImpl@40147317
+2018-02-14 16:08:37 WARN  PaymentInfoHibernate:25 - The Receipt is: Receipt [receiptId=0, paymentsTime=null, user=null, owner=null, userRating=0, amount=10.0, property=null]
+2018-02-14 16:08:37 WARN  PaymentInfoHibernate:27 - Created Receipt will have an id of 2
+2018-02-14 16:08:37 WARN  PaymentInfoHibernate:28 - The Receipt is: Receipt [receiptId=2, paymentsTime=null, user=null, owner=null, userRating=0, amount=10.0, property=null]
+2018-02-14 16:08:37 WARN  PaymentInfoHibernate:25 - The Receipt is: Receipt [receiptId=0, paymentsTime=null, user=null, owner=null, userRating=0, amount=10.0, property=null]
+2018-02-14 16:08:37 WARN  PaymentInfoHibernate:27 - Created Receipt will have an id of 3
+2018-02-14 16:08:37 WARN  PaymentInfoHibernate:28 - The Receipt is: Receipt [receiptId=3, paymentsTime=null, user=null, owner=null, userRating=0, amount=10.0, property=null]
+2018-02-14 16:08:37 WARN  UserHibernate:25 - The user is: User [id=0, role=1, fullName=Bob, email=test10@test.com, pass=123]
+2018-02-14 16:08:37 WARN  UserHibernate:27 - Created user will have an id of 5
+2018-02-14 16:08:37 WARN  UserHibernate:28 - The user is: User [id=5, role=1, fullName=Bob, email=test10@test.com, pass=123]
+2018-02-14 16:08:37 WARN  PaymentInfoHibernate:25 - The Receipt is: Receipt [receiptId=0, paymentsTime=null, user=User [id=5, role=1, fullName=Bob, email=test10@test.com, pass=123], owner=null, userRating=0, amount=10.0, property=null]
+2018-02-14 16:08:37 WARN  PaymentInfoHibernate:27 - Created Receipt will have an id of 4
+2018-02-14 16:08:37 WARN  PaymentInfoHibernate:28 - The Receipt is: Receipt [receiptId=4, paymentsTime=null, user=User [id=5, role=1, fullName=Bob, email=test10@test.com, pass=123], owner=null, userRating=0, amount=10.0, property=null]
+2018-02-14 16:08:37 TRACE PaymentInfoHibernate:46 - SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])
+2018-02-14 16:08:37 TRACE PaymentInfoHibernate:49 - org.hibernate.query.internal.QueryImpl@c96a4ea
+2018-02-14 16:08:37 WARN  PaymentInfoHibernate:25 - The Receipt is: Receipt [receiptId=0, paymentsTime=null, user=null, owner=null, userRating=0, amount=10.0, property=null]
+2018-02-14 16:08:37 WARN  PaymentInfoHibernate:27 - Created Receipt will have an id of 5
+2018-02-14 16:08:37 WARN  PaymentInfoHibernate:28 - The Receipt is: Receipt [receiptId=5, paymentsTime=null, user=null, owner=null, userRating=0, amount=10.0, property=null]
+2018-02-14 16:09:43 DEBUG logging:109 - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2018-02-14 16:09:44 INFO  Version:45 - HHH000412: Hibernate Core {5.2.12.Final}
+2018-02-14 16:09:44 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2018-02-14 16:09:44 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-02-14 16:09:44 WARN  pooling:70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2018-02-14 16:09:44 INFO  pooling:126 - HHH10001005: using driver [oracle.jdbc.OracleDriver] at URL [jdbc:oracle:thin:@rentalproject.cptyc64r16fz.us-east-2.rds.amazonaws.com:1521:ORCL]
+2018-02-14 16:09:44 INFO  pooling:135 - HHH10001001: Connection properties: {user=admin, password=****}
+2018-02-14 16:09:44 INFO  pooling:140 - HHH10001003: Autocommit mode: false
+2018-02-14 16:09:44 INFO  DriverManagerConnectionProviderImpl:41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2018-02-14 16:09:45 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2018-02-14 16:09:45 WARN  PaymentInfoHibernate:25 - The Receipt is: Receipt [receiptId=0, paymentsTime=null, user=null, owner=null, userRating=0, amount=10.0, property=null]
+2018-02-14 16:09:45 WARN  PaymentInfoHibernate:27 - Created Receipt will have an id of 1
+2018-02-14 16:09:45 WARN  PaymentInfoHibernate:28 - The Receipt is: Receipt [receiptId=1, paymentsTime=null, user=null, owner=null, userRating=0, amount=10.0, property=null]
+2018-02-14 16:09:46 WARN  UserHibernate:25 - The user is: User [id=0, role=1, fullName=Bob, email=test10@test.com, pass=123]
+2018-02-14 16:09:46 WARN  UserHibernate:27 - Created user will have an id of 2
+2018-02-14 16:09:46 WARN  UserHibernate:28 - The user is: User [id=2, role=1, fullName=Bob, email=test10@test.com, pass=123]
+2018-02-14 16:09:46 WARN  PaymentInfoHibernate:25 - The Receipt is: Receipt [receiptId=0, paymentsTime=null, user=null, owner=User [id=2, role=1, fullName=Bob, email=test10@test.com, pass=123], userRating=0, amount=10.0, property=null]
+2018-02-14 16:09:46 WARN  PaymentInfoHibernate:27 - Created Receipt will have an id of 2
+2018-02-14 16:09:46 WARN  PaymentInfoHibernate:28 - The Receipt is: Receipt [receiptId=2, paymentsTime=null, user=null, owner=User [id=2, role=1, fullName=Bob, email=test10@test.com, pass=123], userRating=0, amount=10.0, property=null]
+2018-02-14 16:09:46 TRACE PaymentInfoHibernate:59 - SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])
+2018-02-14 16:09:46 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2018-02-14 16:09:46 TRACE PaymentInfoHibernate:62 - org.hibernate.query.internal.QueryImpl@d4602a
+2018-02-14 16:09:46 WARN  PaymentInfoHibernate:25 - The Receipt is: Receipt [receiptId=0, paymentsTime=null, user=null, owner=null, userRating=0, amount=10.0, property=null]
+2018-02-14 16:09:46 WARN  PaymentInfoHibernate:27 - Created Receipt will have an id of 3
+2018-02-14 16:09:46 WARN  PaymentInfoHibernate:28 - The Receipt is: Receipt [receiptId=3, paymentsTime=null, user=null, owner=null, userRating=0, amount=10.0, property=null]
+2018-02-14 16:09:46 WARN  PaymentInfoHibernate:25 - The Receipt is: Receipt [receiptId=0, paymentsTime=null, user=null, owner=null, userRating=0, amount=10.0, property=null]
+2018-02-14 16:09:46 WARN  PaymentInfoHibernate:27 - Created Receipt will have an id of 4
+2018-02-14 16:09:46 WARN  PaymentInfoHibernate:28 - The Receipt is: Receipt [receiptId=4, paymentsTime=null, user=null, owner=null, userRating=0, amount=10.0, property=null]
+2018-02-14 16:09:46 WARN  UserHibernate:25 - The user is: User [id=0, role=1, fullName=Bob, email=test10@test.com, pass=123]
+2018-02-14 16:09:46 WARN  UserHibernate:27 - Created user will have an id of 3
+2018-02-14 16:09:46 WARN  UserHibernate:28 - The user is: User [id=3, role=1, fullName=Bob, email=test10@test.com, pass=123]
+2018-02-14 16:09:46 WARN  PaymentInfoHibernate:25 - The Receipt is: Receipt [receiptId=0, paymentsTime=null, user=User [id=3, role=1, fullName=Bob, email=test10@test.com, pass=123], owner=null, userRating=0, amount=10.0, property=null]
+2018-02-14 16:09:46 WARN  PaymentInfoHibernate:27 - Created Receipt will have an id of 5
+2018-02-14 16:09:46 WARN  PaymentInfoHibernate:28 - The Receipt is: Receipt [receiptId=5, paymentsTime=null, user=User [id=3, role=1, fullName=Bob, email=test10@test.com, pass=123], owner=null, userRating=0, amount=10.0, property=null]
+2018-02-14 16:09:46 TRACE PaymentInfoHibernate:46 - SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])
+2018-02-14 16:09:46 TRACE PaymentInfoHibernate:49 - org.hibernate.query.internal.QueryImpl@38b972d7
+2018-02-14 16:09:47 WARN  PaymentInfoHibernate:25 - The Receipt is: Receipt [receiptId=0, paymentsTime=null, user=null, owner=null, userRating=0, amount=10.0, property=null]
+2018-02-14 16:09:47 WARN  PaymentInfoHibernate:27 - Created Receipt will have an id of 6
+2018-02-14 16:09:47 WARN  PaymentInfoHibernate:28 - The Receipt is: Receipt [receiptId=6, paymentsTime=null, user=null, owner=null, userRating=0, amount=10.0, property=null]
+2018-02-14 16:11:32 DEBUG logging:109 - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2018-02-14 16:11:32 INFO  Version:45 - HHH000412: Hibernate Core {5.2.12.Final}
+2018-02-14 16:11:32 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2018-02-14 16:11:32 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-02-14 16:11:32 WARN  pooling:70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2018-02-14 16:11:32 INFO  pooling:126 - HHH10001005: using driver [oracle.jdbc.OracleDriver] at URL [jdbc:oracle:thin:@rentalproject.cptyc64r16fz.us-east-2.rds.amazonaws.com:1521:ORCL]
+2018-02-14 16:11:32 INFO  pooling:135 - HHH10001001: Connection properties: {user=admin, password=****}
+2018-02-14 16:11:32 INFO  pooling:140 - HHH10001003: Autocommit mode: false
+2018-02-14 16:11:32 INFO  DriverManagerConnectionProviderImpl:41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2018-02-14 16:11:33 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2018-02-14 16:11:34 WARN  PaymentInfoHibernate:25 - The Receipt is: Receipt [receiptId=0, paymentsTime=null, user=null, owner=null, userRating=0, amount=10.0, property=null]
+2018-02-14 16:11:34 WARN  PaymentInfoHibernate:27 - Created Receipt will have an id of 1
+2018-02-14 16:11:34 WARN  PaymentInfoHibernate:28 - The Receipt is: Receipt [receiptId=1, paymentsTime=null, user=null, owner=null, userRating=0, amount=10.0, property=null]
+2018-02-14 16:11:34 WARN  UserHibernate:25 - The user is: User [id=0, role=1, fullName=Bob, email=test10@test.com, pass=123]
+2018-02-14 16:11:34 WARN  UserHibernate:27 - Created user will have an id of 3
+2018-02-14 16:11:34 WARN  UserHibernate:28 - The user is: User [id=3, role=1, fullName=Bob, email=test10@test.com, pass=123]
+2018-02-14 16:11:34 WARN  PaymentInfoHibernate:25 - The Receipt is: Receipt [receiptId=0, paymentsTime=null, user=null, owner=User [id=3, role=1, fullName=Bob, email=test10@test.com, pass=123], userRating=0, amount=10.0, property=null]
+2018-02-14 16:11:34 WARN  PaymentInfoHibernate:27 - Created Receipt will have an id of 2
+2018-02-14 16:11:34 WARN  PaymentInfoHibernate:28 - The Receipt is: Receipt [receiptId=2, paymentsTime=null, user=null, owner=User [id=3, role=1, fullName=Bob, email=test10@test.com, pass=123], userRating=0, amount=10.0, property=null]
+2018-02-14 16:11:34 TRACE PaymentInfoHibernate:59 - SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])
+2018-02-14 16:11:34 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2018-02-14 16:11:34 TRACE PaymentInfoHibernate:62 - org.hibernate.query.internal.QueryImpl@d4602a
+2018-02-14 16:11:34 WARN  PaymentInfoHibernate:25 - The Receipt is: Receipt [receiptId=0, paymentsTime=null, user=null, owner=null, userRating=0, amount=10.0, property=null]
+2018-02-14 16:11:34 WARN  PaymentInfoHibernate:27 - Created Receipt will have an id of 3
+2018-02-14 16:11:34 WARN  PaymentInfoHibernate:28 - The Receipt is: Receipt [receiptId=3, paymentsTime=null, user=null, owner=null, userRating=0, amount=10.0, property=null]
+2018-02-14 16:11:35 WARN  PaymentInfoHibernate:25 - The Receipt is: Receipt [receiptId=0, paymentsTime=null, user=null, owner=null, userRating=0, amount=10.0, property=null]
+2018-02-14 16:11:35 WARN  PaymentInfoHibernate:27 - Created Receipt will have an id of 4
+2018-02-14 16:11:35 WARN  PaymentInfoHibernate:28 - The Receipt is: Receipt [receiptId=4, paymentsTime=null, user=null, owner=null, userRating=0, amount=10.0, property=null]
+2018-02-14 16:11:35 WARN  PaymentInfoHibernate:25 - The Receipt is: Receipt [receiptId=0, paymentsTime=null, user=null, owner=null, userRating=0, amount=10.0, property=null]
+2018-02-14 16:11:35 WARN  PaymentInfoHibernate:27 - Created Receipt will have an id of 5
+2018-02-14 16:11:35 WARN  PaymentInfoHibernate:28 - The Receipt is: Receipt [receiptId=5, paymentsTime=null, user=null, owner=null, userRating=0, amount=10.0, property=null]
+2018-02-14 16:11:35 WARN  UserHibernate:25 - The user is: User [id=0, role=1, fullName=Bob, email=test10@test.com, pass=123]
+2018-02-14 16:11:35 WARN  UserHibernate:27 - Created user will have an id of 4
+2018-02-14 16:11:35 WARN  UserHibernate:28 - The user is: User [id=4, role=1, fullName=Bob, email=test10@test.com, pass=123]
+2018-02-14 16:11:35 WARN  PaymentInfoHibernate:25 - The Receipt is: Receipt [receiptId=0, paymentsTime=null, user=User [id=4, role=1, fullName=Bob, email=test10@test.com, pass=123], owner=null, userRating=0, amount=10.0, property=null]
+2018-02-14 16:11:35 WARN  PaymentInfoHibernate:27 - Created Receipt will have an id of 6
+2018-02-14 16:11:35 WARN  PaymentInfoHibernate:28 - The Receipt is: Receipt [receiptId=6, paymentsTime=null, user=User [id=4, role=1, fullName=Bob, email=test10@test.com, pass=123], owner=null, userRating=0, amount=10.0, property=null]
+2018-02-14 16:11:35 TRACE PaymentInfoHibernate:46 - SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])
+2018-02-14 16:11:35 TRACE PaymentInfoHibernate:49 - org.hibernate.query.internal.QueryImpl@534243e4
+2018-02-14 16:11:35 WARN  PaymentInfoHibernate:25 - The Receipt is: Receipt [receiptId=0, paymentsTime=null, user=null, owner=null, userRating=0, amount=10.0, property=null]
+2018-02-14 16:11:35 WARN  PaymentInfoHibernate:27 - Created Receipt will have an id of 7
+2018-02-14 16:11:35 WARN  PaymentInfoHibernate:28 - The Receipt is: Receipt [receiptId=7, paymentsTime=null, user=null, owner=null, userRating=0, amount=10.0, property=null]
+2018-02-14 16:11:55 DEBUG logging:109 - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2018-02-14 16:11:55 INFO  Version:45 - HHH000412: Hibernate Core {5.2.12.Final}
+2018-02-14 16:11:55 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2018-02-14 16:11:55 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-02-14 16:11:55 WARN  pooling:70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2018-02-14 16:11:55 INFO  pooling:126 - HHH10001005: using driver [oracle.jdbc.OracleDriver] at URL [jdbc:oracle:thin:@rentalproject.cptyc64r16fz.us-east-2.rds.amazonaws.com:1521:ORCL]
+2018-02-14 16:11:55 INFO  pooling:135 - HHH10001001: Connection properties: {user=admin, password=****}
+2018-02-14 16:11:55 INFO  pooling:140 - HHH10001003: Autocommit mode: false
+2018-02-14 16:11:55 INFO  DriverManagerConnectionProviderImpl:41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2018-02-14 16:11:56 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2018-02-14 16:11:56 WARN  UserHibernate:25 - The user is: User [id=0, role=1, fullName=Bob, email=test5@test.com, pass=123]
+2018-02-14 16:11:56 WARN  UserHibernate:27 - Created user will have an id of 1
+2018-02-14 16:11:56 WARN  UserHibernate:28 - The user is: User [id=1, role=1, fullName=Bob, email=test5@test.com, pass=123]
+2018-02-14 16:11:56 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2018-02-14 16:11:57 WARN  UserHibernate:25 - The user is: User [id=0, role=1, fullName=Bob, email=test3@test.com, pass=123]
+2018-02-14 16:11:57 WARN  UserHibernate:27 - Created user will have an id of 2
+2018-02-14 16:11:57 WARN  UserHibernate:28 - The user is: User [id=2, role=1, fullName=Bob, email=test3@test.com, pass=123]
+2018-02-14 16:11:57 WARN  UserHibernate:25 - The user is: User [id=0, role=1, fullName=Bob, email=test2@test.com, pass=123]
+2018-02-14 16:11:57 WARN  UserHibernate:27 - Created user will have an id of 3
+2018-02-14 16:11:57 WARN  UserHibernate:28 - The user is: User [id=3, role=1, fullName=Bob, email=test2@test.com, pass=123]
+2018-02-14 16:11:57 WARN  UserHibernate:25 - The user is: User [id=0, role=1, fullName=Bob, email=test@test.com, pass=123]
+2018-02-14 16:11:57 WARN  UserHibernate:27 - Created user will have an id of 4
+2018-02-14 16:11:57 WARN  UserHibernate:28 - The user is: User [id=4, role=1, fullName=Bob, email=test@test.com, pass=123]
+2018-02-14 16:11:57 WARN  UserHibernate:25 - The user is: User [id=0, role=1, fullName=Bob, email=test4@test.com, pass=123]
+2018-02-14 16:11:57 WARN  UserHibernate:27 - Created user will have an id of 5
+2018-02-14 16:11:57 WARN  UserHibernate:28 - The user is: User [id=5, role=1, fullName=Bob, email=test4@test.com, pass=123]
+2018-02-14 16:11:57 WARN  UserHibernate:25 - The user is: User [id=0, role=1, fullName=Bob, email=test6@test.com, pass=123]
+2018-02-14 16:11:57 WARN  UserHibernate:27 - Created user will have an id of 6
+2018-02-14 16:11:57 WARN  UserHibernate:28 - The user is: User [id=6, role=1, fullName=Bob, email=test6@test.com, pass=123]
+2018-02-14 16:11:57 TRACE root:91 - User [id=6, role=1, fullName=Bob, email=test6@test.com, pass=123]
+2018-02-14 16:11:57 TRACE UserHibernate:49 - SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])
+2018-02-14 16:11:57 TRACE UserHibernate:53 - org.hibernate.query.internal.QueryImpl@263558c9
+2018-02-14 16:12:05 DEBUG logging:109 - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2018-02-14 16:12:05 INFO  Version:45 - HHH000412: Hibernate Core {5.2.12.Final}
+2018-02-14 16:12:05 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2018-02-14 16:12:05 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-02-14 16:12:05 WARN  pooling:70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2018-02-14 16:12:05 INFO  pooling:126 - HHH10001005: using driver [oracle.jdbc.OracleDriver] at URL [jdbc:oracle:thin:@rentalproject.cptyc64r16fz.us-east-2.rds.amazonaws.com:1521:ORCL]
+2018-02-14 16:12:05 INFO  pooling:135 - HHH10001001: Connection properties: {user=admin, password=****}
+2018-02-14 16:12:05 INFO  pooling:140 - HHH10001003: Autocommit mode: false
+2018-02-14 16:12:05 INFO  DriverManagerConnectionProviderImpl:41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2018-02-14 16:12:06 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2018-02-14 16:12:07 WARN  UserHibernate:25 - The user is: User [id=0, role=1, fullName=Bob, email=test4@test.com, pass=123]
+2018-02-14 16:12:07 WARN  UserHibernate:27 - Created user will have an id of 1
+2018-02-14 16:12:07 WARN  UserHibernate:28 - The user is: User [id=1, role=1, fullName=Bob, email=test4@test.com, pass=123]
+2018-02-14 16:12:07 WARN  PaymentInfoHibernate:24 - The payment info is: PaymentInfo [id=0, cost=10.0, user=User [id=1, role=1, fullName=Bob, email=test4@test.com, pass=123], creditCardNumber=1]
+2018-02-14 16:12:07 WARN  PaymentInfoHibernate:26 - Created payment info will have an id of 1
+2018-02-14 16:12:07 WARN  PaymentInfoHibernate:27 - The payment info is: PaymentInfo [id=1, cost=10.0, user=User [id=1, role=1, fullName=Bob, email=test4@test.com, pass=123], creditCardNumber=1]
+2018-02-14 16:12:07 WARN  UserHibernate:25 - The user is: User [id=0, role=1, fullName=Bob, email=test3@test.com, pass=123]
+2018-02-14 16:12:07 WARN  UserHibernate:27 - Created user will have an id of 2
+2018-02-14 16:12:07 WARN  UserHibernate:28 - The user is: User [id=2, role=1, fullName=Bob, email=test3@test.com, pass=123]
+2018-02-14 16:12:07 WARN  PaymentInfoHibernate:24 - The payment info is: PaymentInfo [id=0, cost=10.0, user=User [id=2, role=1, fullName=Bob, email=test3@test.com, pass=123], creditCardNumber=1]
+2018-02-14 16:12:07 WARN  PaymentInfoHibernate:26 - Created payment info will have an id of 2
+2018-02-14 16:12:07 WARN  PaymentInfoHibernate:27 - The payment info is: PaymentInfo [id=2, cost=10.0, user=User [id=2, role=1, fullName=Bob, email=test3@test.com, pass=123], creditCardNumber=1]
+2018-02-14 16:12:07 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2018-02-14 16:12:07 WARN  UserHibernate:25 - The user is: User [id=0, role=1, fullName=Bob, email=test5@test.com, pass=123]
+2018-02-14 16:12:07 WARN  UserHibernate:27 - Created user will have an id of 3
+2018-02-14 16:12:07 WARN  UserHibernate:28 - The user is: User [id=3, role=1, fullName=Bob, email=test5@test.com, pass=123]
+2018-02-14 16:12:07 WARN  PaymentInfoHibernate:24 - The payment info is: PaymentInfo [id=0, cost=10.0, user=User [id=3, role=1, fullName=Bob, email=test5@test.com, pass=123], creditCardNumber=1]
+2018-02-14 16:12:07 WARN  PaymentInfoHibernate:26 - Created payment info will have an id of 3
+2018-02-14 16:12:07 WARN  PaymentInfoHibernate:27 - The payment info is: PaymentInfo [id=3, cost=10.0, user=User [id=3, role=1, fullName=Bob, email=test5@test.com, pass=123], creditCardNumber=1]
+2018-02-14 16:12:07 WARN  UserHibernate:25 - The user is: User [id=0, role=1, fullName=Bob, email=test@test.com, pass=123]
+2018-02-14 16:12:07 WARN  UserHibernate:27 - Created user will have an id of 4
+2018-02-14 16:12:07 WARN  UserHibernate:28 - The user is: User [id=4, role=1, fullName=Bob, email=test@test.com, pass=123]
+2018-02-14 16:12:08 WARN  PaymentInfoHibernate:24 - The payment info is: PaymentInfo [id=0, cost=10.0, user=User [id=4, role=1, fullName=Bob, email=test@test.com, pass=123], creditCardNumber=1]
+2018-02-14 16:12:08 WARN  PaymentInfoHibernate:26 - Created payment info will have an id of 4
+2018-02-14 16:12:08 WARN  PaymentInfoHibernate:27 - The payment info is: PaymentInfo [id=4, cost=10.0, user=User [id=4, role=1, fullName=Bob, email=test@test.com, pass=123], creditCardNumber=1]
+2018-02-14 16:12:08 WARN  UserHibernate:25 - The user is: User [id=0, role=1, fullName=Bob, email=test2@test.com, pass=123]
+2018-02-14 16:12:08 WARN  UserHibernate:27 - Created user will have an id of 5
+2018-02-14 16:12:08 WARN  UserHibernate:28 - The user is: User [id=5, role=1, fullName=Bob, email=test2@test.com, pass=123]
+2018-02-14 16:12:08 WARN  PaymentInfoHibernate:24 - The payment info is: PaymentInfo [id=0, cost=10.0, user=User [id=5, role=1, fullName=Bob, email=test2@test.com, pass=123], creditCardNumber=1]
+2018-02-14 16:12:08 WARN  PaymentInfoHibernate:26 - Created payment info will have an id of 5
+2018-02-14 16:12:08 WARN  PaymentInfoHibernate:27 - The payment info is: PaymentInfo [id=5, cost=10.0, user=User [id=5, role=1, fullName=Bob, email=test2@test.com, pass=123], creditCardNumber=1]
