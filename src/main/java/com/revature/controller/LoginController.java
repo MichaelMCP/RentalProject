@@ -5,6 +5,7 @@ import javax.servlet.http.HttpSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -31,11 +32,8 @@ public class LoginController {
 	}
 	
 	@RequestMapping(value="/login2", method=RequestMethod.POST)
-	@ResponseBody
-	public String login(String username, String password, HttpSession session) {
-		System.out.println(username);
-		System.out.println(password);
-		User u = login.login(username, password);
+	public String login(@RequestBody User user, HttpSession session) {
+		User u = login.login(user.getEmail(), user.getPassword());
 		if(u == null) {
 			return "redirect:login";
 		} else {
@@ -43,9 +41,5 @@ public class LoginController {
 			return "redirect:home";
 		}
 			
-	}
-	@RequestMapping(value="/login3", method=RequestMethod.POST)
-	public String test() {
-		return " ";
 	}
 }
