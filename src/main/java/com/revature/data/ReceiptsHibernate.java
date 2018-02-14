@@ -33,7 +33,7 @@ public class ReceiptsHibernate implements ReceiptsDao {
 			
 		} catch(Exception e) {
 			tx.rollback();
-			e.printStackTrace();
+			log.trace(e);
 			return 0;
 		} finally {
 			session.close();
