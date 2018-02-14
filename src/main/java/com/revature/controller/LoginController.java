@@ -34,7 +34,7 @@ public class LoginController {
 	
 	@RequestMapping(value="/login2", method=RequestMethod.POST)
 	public String login(@ModelAttribute("user") User user, HttpSession session) {
-		User u = login.login(user.getEmail(), user.getPassword());
+		User u = login.login(user.getEmail(), user.getPass());
 		if(u == null) {
 			return "redirect:login";
 		} else {
