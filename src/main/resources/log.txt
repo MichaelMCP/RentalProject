@@ -3520,3 +3520,458 @@ line 1:47: unexpected token: :
 2018-02-14 11:49:57 WARN  PaymentInfoHibernate:24 - The payment info is: PaymentInfo [id=0, cost=10.0, user=User [id=17, role=1, fullName=Bob, email=test2@test.com, pass=123], creditCardNumber=1]
 2018-02-14 11:49:57 WARN  PaymentInfoHibernate:26 - Created payment info will have an id of 5
 2018-02-14 11:49:57 WARN  PaymentInfoHibernate:27 - The payment info is: PaymentInfo [id=5, cost=10.0, user=User [id=17, role=1, fullName=Bob, email=test2@test.com, pass=123], creditCardNumber=1]
+2018-02-14 14:00:35 DEBUG logging:109 - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2018-02-14 14:00:37 INFO  Version:45 - HHH000412: Hibernate Core {5.2.12.Final}
+2018-02-14 14:00:37 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2018-02-14 14:00:38 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-02-14 14:00:38 WARN  pooling:70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2018-02-14 14:00:38 INFO  pooling:126 - HHH10001005: using driver [oracle.jdbc.OracleDriver] at URL [jdbc:oracle:thin:@rentalproject.cptyc64r16fz.us-east-2.rds.amazonaws.com:1521:ORCL]
+2018-02-14 14:00:38 INFO  pooling:135 - HHH10001001: Connection properties: {user=admin, password=****}
+2018-02-14 14:00:38 INFO  pooling:140 - HHH10001003: Autocommit mode: false
+2018-02-14 14:00:38 INFO  DriverManagerConnectionProviderImpl:41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2018-02-14 14:00:40 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2018-02-14 14:00:43 WARN  UserHibernate:25 - The user is: User [id=0, role=1, fullName=Bob, email=test5@test.com, pass=123]
+2018-02-14 14:00:43 WARN  UserHibernate:27 - Created user will have an id of 1
+2018-02-14 14:00:43 WARN  UserHibernate:28 - The user is: User [id=1, role=1, fullName=Bob, email=test5@test.com, pass=123]
+2018-02-14 14:00:43 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2018-02-14 14:00:44 WARN  UserHibernate:25 - The user is: User [id=0, role=1, fullName=Bob, email=test3@test.com, pass=123]
+2018-02-14 14:00:44 WARN  UserHibernate:27 - Created user will have an id of 2
+2018-02-14 14:00:44 WARN  UserHibernate:28 - The user is: User [id=2, role=1, fullName=Bob, email=test3@test.com, pass=123]
+2018-02-14 14:00:44 WARN  UserHibernate:25 - The user is: User [id=0, role=1, fullName=Bob, email=test2@test.com, pass=123]
+2018-02-14 14:00:44 WARN  UserHibernate:27 - Created user will have an id of 3
+2018-02-14 14:00:44 WARN  UserHibernate:28 - The user is: User [id=3, role=1, fullName=Bob, email=test2@test.com, pass=123]
+2018-02-14 14:00:44 WARN  UserHibernate:25 - The user is: User [id=0, role=1, fullName=Bob, email=test@test.com, pass=123]
+2018-02-14 14:00:44 WARN  UserHibernate:27 - Created user will have an id of 4
+2018-02-14 14:00:44 WARN  UserHibernate:28 - The user is: User [id=4, role=1, fullName=Bob, email=test@test.com, pass=123]
+2018-02-14 14:00:44 WARN  UserHibernate:25 - The user is: User [id=0, role=1, fullName=Bob, email=test4@test.com, pass=123]
+2018-02-14 14:00:45 WARN  UserHibernate:27 - Created user will have an id of 5
+2018-02-14 14:00:45 WARN  UserHibernate:28 - The user is: User [id=5, role=1, fullName=Bob, email=test4@test.com, pass=123]
+2018-02-14 14:00:45 WARN  UserHibernate:25 - The user is: User [id=0, role=1, fullName=Bob, email=test6@test.com, pass=123]
+2018-02-14 14:00:45 WARN  UserHibernate:27 - Created user will have an id of 6
+2018-02-14 14:00:45 WARN  UserHibernate:28 - The user is: User [id=6, role=1, fullName=Bob, email=test6@test.com, pass=123]
+2018-02-14 14:00:45 TRACE root:95 - User [id=6, role=1, fullName=Bob, email=test6@test.com, pass=123]
+2018-02-14 14:00:45 TRACE UserHibernate:49 - SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])
+2018-02-14 14:00:45 TRACE UserHibernate:53 - org.hibernate.query.internal.QueryImpl@ed6bc2e
+2018-02-14 15:48:54 DEBUG logging:109 - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2018-02-14 15:48:55 INFO  Version:45 - HHH000412: Hibernate Core {5.2.12.Final}
+2018-02-14 15:48:55 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2018-02-14 15:48:55 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-02-14 15:48:56 WARN  pooling:70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2018-02-14 15:48:56 INFO  pooling:126 - HHH10001005: using driver [oracle.jdbc.OracleDriver] at URL [jdbc:oracle:thin:@rentalproject.cptyc64r16fz.us-east-2.rds.amazonaws.com:1521:ORCL]
+2018-02-14 15:48:56 INFO  pooling:135 - HHH10001001: Connection properties: {user=admin, password=****}
+2018-02-14 15:48:56 INFO  pooling:140 - HHH10001003: Autocommit mode: false
+2018-02-14 15:48:56 INFO  DriverManagerConnectionProviderImpl:41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2018-02-14 15:48:57 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2018-02-14 15:49:00 WARN  UserHibernate:25 - The user is: User [id=0, role=1, fullName=Bob, email=test5@test.com, pass=123]
+2018-02-14 15:49:00 WARN  UserHibernate:27 - Created user will have an id of 1
+2018-02-14 15:49:00 WARN  UserHibernate:28 - The user is: User [id=1, role=1, fullName=Bob, email=test5@test.com, pass=123]
+2018-02-14 15:49:00 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2018-02-14 15:49:01 WARN  UserHibernate:25 - The user is: User [id=0, role=1, fullName=Bob, email=test3@test.com, pass=123]
+2018-02-14 15:49:01 WARN  UserHibernate:27 - Created user will have an id of 2
+2018-02-14 15:49:01 WARN  UserHibernate:28 - The user is: User [id=2, role=1, fullName=Bob, email=test3@test.com, pass=123]
+2018-02-14 15:49:01 WARN  UserHibernate:25 - The user is: User [id=0, role=1, fullName=Bob, email=test2@test.com, pass=123]
+2018-02-14 15:49:01 WARN  UserHibernate:27 - Created user will have an id of 3
+2018-02-14 15:49:01 WARN  UserHibernate:28 - The user is: User [id=3, role=1, fullName=Bob, email=test2@test.com, pass=123]
+2018-02-14 15:49:01 WARN  UserHibernate:25 - The user is: User [id=0, role=1, fullName=Bob, email=test@test.com, pass=123]
+2018-02-14 15:49:01 WARN  UserHibernate:27 - Created user will have an id of 4
+2018-02-14 15:49:01 WARN  UserHibernate:28 - The user is: User [id=4, role=1, fullName=Bob, email=test@test.com, pass=123]
+2018-02-14 15:49:01 WARN  UserHibernate:25 - The user is: User [id=0, role=1, fullName=Bob, email=test4@test.com, pass=123]
+2018-02-14 15:49:01 WARN  UserHibernate:27 - Created user will have an id of 5
+2018-02-14 15:49:01 WARN  UserHibernate:28 - The user is: User [id=5, role=1, fullName=Bob, email=test4@test.com, pass=123]
+2018-02-14 15:49:01 WARN  UserHibernate:25 - The user is: User [id=0, role=1, fullName=Bob, email=test6@test.com, pass=123]
+2018-02-14 15:49:01 WARN  UserHibernate:27 - Created user will have an id of 6
+2018-02-14 15:49:01 WARN  UserHibernate:28 - The user is: User [id=6, role=1, fullName=Bob, email=test6@test.com, pass=123]
+2018-02-14 15:49:01 TRACE root:95 - User [id=6, role=1, fullName=Bob, email=test6@test.com, pass=123]
+2018-02-14 15:49:01 TRACE UserHibernate:49 - SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])
+2018-02-14 15:49:01 TRACE UserHibernate:53 - org.hibernate.query.internal.QueryImpl@ed6bc2e
+2018-02-14 16:01:58 DEBUG logging:109 - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2018-02-14 16:01:58 INFO  Version:45 - HHH000412: Hibernate Core {5.2.12.Final}
+2018-02-14 16:01:58 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2018-02-14 16:01:59 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-02-14 16:01:59 WARN  pooling:70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2018-02-14 16:02:00 INFO  pooling:126 - HHH10001005: using driver [oracle.jdbc.OracleDriver] at URL [jdbc:oracle:thin:@rentalproject.cptyc64r16fz.us-east-2.rds.amazonaws.com:1521:ORCL]
+2018-02-14 16:02:00 INFO  pooling:135 - HHH10001001: Connection properties: {user=admin, password=****}
+2018-02-14 16:02:00 INFO  pooling:140 - HHH10001003: Autocommit mode: false
+2018-02-14 16:02:00 INFO  DriverManagerConnectionProviderImpl:41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2018-02-14 16:02:01 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2018-02-14 16:02:03 WARN  UserHibernate:25 - The user is: User [id=0, role=1, fullName=Bob, email=test@test.com, pass=123]
+2018-02-14 16:02:03 WARN  UserHibernate:27 - Created user will have an id of 2
+2018-02-14 16:02:03 WARN  UserHibernate:28 - The user is: User [id=2, role=1, fullName=Bob, email=test@test.com, pass=123]
+2018-02-14 16:02:03 WARN  UserHibernate:23 - The property is: Property [propertyId=0, owner=User [id=2, role=1, fullName=Bob, email=test@test.com, pass=123], address1=9384 Rocky Road., address2= , city=Glendale, state=California, zipcode=83302, currentRentPrice=132.0, rating=4.5, availability=1]
+2018-02-14 16:02:03 WARN  UserHibernate:25 - Created property will have an id of 1
+2018-02-14 16:02:03 WARN  UserHibernate:26 - The property is: Property [propertyId=1, owner=User [id=2, role=1, fullName=Bob, email=test@test.com, pass=123], address1=9384 Rocky Road., address2= , city=Glendale, state=California, zipcode=83302, currentRentPrice=132.0, rating=4.5, availability=1]
+2018-02-14 16:02:03 WARN  UserHibernate:23 - The property is: Property [propertyId=0, owner=User [id=2, role=1, fullName=Bob, email=test@test.com, pass=123], address1=Chereoke, address2=Testing second addressline, city=Burbank, state=California, zipcode=30493, currentRentPrice=290.0, rating=3.5, availability=1]
+2018-02-14 16:02:03 WARN  UserHibernate:25 - Created property will have an id of 2
+2018-02-14 16:02:03 WARN  UserHibernate:26 - The property is: Property [propertyId=2, owner=User [id=2, role=1, fullName=Bob, email=test@test.com, pass=123], address1=Chereoke, address2=Testing second addressline, city=Burbank, state=California, zipcode=30493, currentRentPrice=290.0, rating=3.5, availability=1]
+2018-02-14 16:02:04 WARN  UserHibernate:23 - The property is: Property [propertyId=0, owner=User [id=2, role=1, fullName=Bob, email=test@test.com, pass=123], address1=Dawson's Creek Blvd., address2= , city=Burbank, state=California, zipcode=49284, currentRentPrice=395.0, rating=5.0, availability=0]
+2018-02-14 16:02:04 WARN  UserHibernate:25 - Created property will have an id of 3
+2018-02-14 16:02:04 WARN  UserHibernate:26 - The property is: Property [propertyId=3, owner=User [id=2, role=1, fullName=Bob, email=test@test.com, pass=123], address1=Dawson's Creek Blvd., address2= , city=Burbank, state=California, zipcode=49284, currentRentPrice=395.0, rating=5.0, availability=0]
+2018-02-14 16:02:04 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2018-02-14 16:02:04 WARN  UserHibernate:25 - The user is: User [id=0, role=1, fullName=Bob, email=test@test.com, pass=123]
+2018-02-14 16:02:04 WARN  UserHibernate:27 - Created user will have an id of 3
+2018-02-14 16:02:04 WARN  UserHibernate:28 - The user is: User [id=3, role=1, fullName=Bob, email=test@test.com, pass=123]
+2018-02-14 16:02:04 WARN  SqlExceptionHelper:129 - SQL Error: 1, SQLState: 23000
+2018-02-14 16:02:04 ERROR SqlExceptionHelper:131 - ORA-00001: unique constraint (ADMIN.SYS_C008607) violated
+
+2018-02-14 16:02:04 INFO  AbstractBatchImpl:193 - HHH000010: On release of batch it still contained JDBC statements
+2018-02-14 16:02:04 ERROR ExceptionMapperStandardImpl:39 - HHH000346: Error during managed flush [org.hibernate.exception.ConstraintViolationException: could not execute statement]
+2018-02-14 16:02:04 ERROR UserHibernate:36 - javax.persistence.PersistenceException: org.hibernate.exception.ConstraintViolationException: could not execute statement
+2018-02-14 16:02:04 WARN  UserHibernate:23 - The property is: Property [propertyId=0, owner=User [id=3, role=1, fullName=Bob, email=test@test.com, pass=123], address1=9384 Rocky Road., address2= , city=Glendale, state=California, zipcode=83302, currentRentPrice=132.0, rating=4.5, availability=1]
+2018-02-14 16:02:04 WARN  UserHibernate:25 - Created property will have an id of 4
+2018-02-14 16:02:04 WARN  UserHibernate:26 - The property is: Property [propertyId=4, owner=User [id=3, role=1, fullName=Bob, email=test@test.com, pass=123], address1=9384 Rocky Road., address2= , city=Glendale, state=California, zipcode=83302, currentRentPrice=132.0, rating=4.5, availability=1]
+2018-02-14 16:02:04 WARN  SqlExceptionHelper:129 - SQL Error: 2291, SQLState: 23000
+2018-02-14 16:02:04 ERROR SqlExceptionHelper:131 - ORA-02291: integrity constraint (ADMIN.FK_PROPERTIES_OWNER) violated - parent key not found
+
+2018-02-14 16:02:04 INFO  AbstractBatchImpl:193 - HHH000010: On release of batch it still contained JDBC statements
+2018-02-14 16:02:04 ERROR ExceptionMapperStandardImpl:39 - HHH000346: Error during managed flush [org.hibernate.exception.ConstraintViolationException: could not execute statement]
+2018-02-14 16:02:04 ERROR UserHibernate:34 - javax.persistence.PersistenceException: org.hibernate.exception.ConstraintViolationException: could not execute statement
+2018-02-14 16:05:23 DEBUG logging:109 - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2018-02-14 16:05:23 INFO  Version:45 - HHH000412: Hibernate Core {5.2.12.Final}
+2018-02-14 16:05:23 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2018-02-14 16:05:24 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-02-14 16:05:24 WARN  pooling:70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2018-02-14 16:05:24 INFO  pooling:126 - HHH10001005: using driver [oracle.jdbc.OracleDriver] at URL [jdbc:oracle:thin:@rentalproject.cptyc64r16fz.us-east-2.rds.amazonaws.com:1521:ORCL]
+2018-02-14 16:05:24 INFO  pooling:135 - HHH10001001: Connection properties: {user=admin, password=****}
+2018-02-14 16:05:24 INFO  pooling:140 - HHH10001003: Autocommit mode: false
+2018-02-14 16:05:24 INFO  DriverManagerConnectionProviderImpl:41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2018-02-14 16:05:25 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2018-02-14 16:05:27 WARN  UserHibernate:25 - The user is: User [id=0, role=1, fullName=Bob, email=test@test.com, pass=123]
+2018-02-14 16:05:27 WARN  UserHibernate:27 - Created user will have an id of 1
+2018-02-14 16:05:27 WARN  UserHibernate:28 - The user is: User [id=1, role=1, fullName=Bob, email=test@test.com, pass=123]
+2018-02-14 16:05:27 WARN  UserHibernate:23 - The property is: Property [propertyId=0, owner=User [id=1, role=1, fullName=Bob, email=test@test.com, pass=123], address1=9384 Rocky Road., address2= , city=Glendale, state=California, zipcode=83302, currentRentPrice=132.0, rating=4.5, availability=1]
+2018-02-14 16:05:27 WARN  UserHibernate:25 - Created property will have an id of 1
+2018-02-14 16:05:27 WARN  UserHibernate:26 - The property is: Property [propertyId=1, owner=User [id=1, role=1, fullName=Bob, email=test@test.com, pass=123], address1=9384 Rocky Road., address2= , city=Glendale, state=California, zipcode=83302, currentRentPrice=132.0, rating=4.5, availability=1]
+2018-02-14 16:05:27 WARN  UserHibernate:23 - The property is: Property [propertyId=0, owner=User [id=1, role=1, fullName=Bob, email=test@test.com, pass=123], address1=Dawson's Creek Blvd., address2= , city=Burbank, state=California, zipcode=49284, currentRentPrice=395.0, rating=5.0, availability=0]
+2018-02-14 16:05:27 WARN  UserHibernate:25 - Created property will have an id of 2
+2018-02-14 16:05:27 WARN  UserHibernate:26 - The property is: Property [propertyId=2, owner=User [id=1, role=1, fullName=Bob, email=test@test.com, pass=123], address1=Dawson's Creek Blvd., address2= , city=Burbank, state=California, zipcode=49284, currentRentPrice=395.0, rating=5.0, availability=0]
+2018-02-14 16:05:27 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2018-02-14 16:05:28 WARN  UserHibernate:25 - The user is: User [id=0, role=1, fullName=Bob, email=test@test.com, pass=123]
+2018-02-14 16:05:28 WARN  UserHibernate:27 - Created user will have an id of 2
+2018-02-14 16:05:28 WARN  UserHibernate:28 - The user is: User [id=2, role=1, fullName=Bob, email=test@test.com, pass=123]
+2018-02-14 16:05:28 WARN  SqlExceptionHelper:129 - SQL Error: 1, SQLState: 23000
+2018-02-14 16:05:28 ERROR SqlExceptionHelper:131 - ORA-00001: unique constraint (ADMIN.SYS_C008697) violated
+
+2018-02-14 16:05:28 INFO  AbstractBatchImpl:193 - HHH000010: On release of batch it still contained JDBC statements
+2018-02-14 16:05:28 ERROR ExceptionMapperStandardImpl:39 - HHH000346: Error during managed flush [org.hibernate.exception.ConstraintViolationException: could not execute statement]
+2018-02-14 16:05:28 ERROR UserHibernate:36 - javax.persistence.PersistenceException: org.hibernate.exception.ConstraintViolationException: could not execute statement
+2018-02-14 16:05:28 WARN  UserHibernate:23 - The property is: Property [propertyId=0, owner=User [id=2, role=1, fullName=Bob, email=test@test.com, pass=123], address1=9384 Rocky Road., address2= , city=Glendale, state=California, zipcode=83302, currentRentPrice=132.0, rating=4.5, availability=1]
+2018-02-14 16:05:28 WARN  UserHibernate:25 - Created property will have an id of 3
+2018-02-14 16:05:28 WARN  UserHibernate:26 - The property is: Property [propertyId=3, owner=User [id=2, role=1, fullName=Bob, email=test@test.com, pass=123], address1=9384 Rocky Road., address2= , city=Glendale, state=California, zipcode=83302, currentRentPrice=132.0, rating=4.5, availability=1]
+2018-02-14 16:05:28 WARN  SqlExceptionHelper:129 - SQL Error: 2291, SQLState: 23000
+2018-02-14 16:05:28 ERROR SqlExceptionHelper:131 - ORA-02291: integrity constraint (ADMIN.FK_PROPERTIES_OWNER) violated - parent key not found
+
+2018-02-14 16:05:28 INFO  AbstractBatchImpl:193 - HHH000010: On release of batch it still contained JDBC statements
+2018-02-14 16:05:28 ERROR ExceptionMapperStandardImpl:39 - HHH000346: Error during managed flush [org.hibernate.exception.ConstraintViolationException: could not execute statement]
+2018-02-14 16:05:28 ERROR UserHibernate:34 - javax.persistence.PersistenceException: org.hibernate.exception.ConstraintViolationException: could not execute statement
+2018-02-14 16:07:42 DEBUG logging:109 - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2018-02-14 16:07:43 INFO  Version:45 - HHH000412: Hibernate Core {5.2.12.Final}
+2018-02-14 16:07:43 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2018-02-14 16:07:43 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-02-14 16:07:44 WARN  pooling:70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2018-02-14 16:07:44 INFO  pooling:126 - HHH10001005: using driver [oracle.jdbc.OracleDriver] at URL [jdbc:oracle:thin:@rentalproject.cptyc64r16fz.us-east-2.rds.amazonaws.com:1521:ORCL]
+2018-02-14 16:07:44 INFO  pooling:135 - HHH10001001: Connection properties: {user=admin, password=****}
+2018-02-14 16:07:44 INFO  pooling:140 - HHH10001003: Autocommit mode: false
+2018-02-14 16:07:44 INFO  DriverManagerConnectionProviderImpl:41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2018-02-14 16:07:45 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2018-02-14 16:07:48 WARN  UserHibernate:25 - The user is: User [id=0, role=1, fullName=Bob, email=test@test.com, pass=123]
+2018-02-14 16:07:48 WARN  UserHibernate:27 - Created user will have an id of 1
+2018-02-14 16:07:48 WARN  UserHibernate:28 - The user is: User [id=1, role=1, fullName=Bob, email=test@test.com, pass=123]
+2018-02-14 16:07:48 WARN  UserHibernate:23 - The property is: Property [propertyId=0, owner=User [id=1, role=1, fullName=Bob, email=test@test.com, pass=123], address1=9384 Rocky Road., address2= , city=Glendale, state=California, zipcode=83302, currentRentPrice=132.0, rating=4.5, availability=1]
+2018-02-14 16:07:48 WARN  UserHibernate:25 - Created property will have an id of 1
+2018-02-14 16:07:48 WARN  UserHibernate:26 - The property is: Property [propertyId=1, owner=User [id=1, role=1, fullName=Bob, email=test@test.com, pass=123], address1=9384 Rocky Road., address2= , city=Glendale, state=California, zipcode=83302, currentRentPrice=132.0, rating=4.5, availability=1]
+2018-02-14 16:07:48 WARN  UserHibernate:23 - The property is: Property [propertyId=0, owner=User [id=1, role=1, fullName=Bob, email=test@test.com, pass=123], address1=Dawson's Creek Blvd., address2= , city=Burbank, state=California, zipcode=49284, currentRentPrice=395.0, rating=5.0, availability=0]
+2018-02-14 16:07:48 WARN  UserHibernate:25 - Created property will have an id of 2
+2018-02-14 16:07:48 WARN  UserHibernate:26 - The property is: Property [propertyId=2, owner=User [id=1, role=1, fullName=Bob, email=test@test.com, pass=123], address1=Dawson's Creek Blvd., address2= , city=Burbank, state=California, zipcode=49284, currentRentPrice=395.0, rating=5.0, availability=0]
+2018-02-14 16:07:49 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2018-02-14 16:07:49 WARN  UserHibernate:25 - The user is: User [id=0, role=1, fullName=Bob, email=test@test.com, pass=123]
+2018-02-14 16:07:49 WARN  UserHibernate:27 - Created user will have an id of 2
+2018-02-14 16:07:49 WARN  UserHibernate:28 - The user is: User [id=2, role=1, fullName=Bob, email=test@test.com, pass=123]
+2018-02-14 16:07:49 WARN  SqlExceptionHelper:129 - SQL Error: 1, SQLState: 23000
+2018-02-14 16:07:49 ERROR SqlExceptionHelper:131 - ORA-00001: unique constraint (ADMIN.SYS_C008757) violated
+
+2018-02-14 16:07:49 INFO  AbstractBatchImpl:193 - HHH000010: On release of batch it still contained JDBC statements
+2018-02-14 16:07:49 ERROR ExceptionMapperStandardImpl:39 - HHH000346: Error during managed flush [org.hibernate.exception.ConstraintViolationException: could not execute statement]
+2018-02-14 16:07:49 ERROR UserHibernate:36 - javax.persistence.PersistenceException: org.hibernate.exception.ConstraintViolationException: could not execute statement
+2018-02-14 16:07:49 WARN  UserHibernate:23 - The property is: Property [propertyId=0, owner=User [id=2, role=1, fullName=Bob, email=test@test.com, pass=123], address1=9384 Rocky Road., address2= , city=Glendale, state=California, zipcode=83302, currentRentPrice=132.0, rating=4.5, availability=1]
+2018-02-14 16:07:49 WARN  UserHibernate:25 - Created property will have an id of 3
+2018-02-14 16:07:49 WARN  UserHibernate:26 - The property is: Property [propertyId=3, owner=User [id=2, role=1, fullName=Bob, email=test@test.com, pass=123], address1=9384 Rocky Road., address2= , city=Glendale, state=California, zipcode=83302, currentRentPrice=132.0, rating=4.5, availability=1]
+2018-02-14 16:07:49 WARN  SqlExceptionHelper:129 - SQL Error: 2291, SQLState: 23000
+2018-02-14 16:07:49 ERROR SqlExceptionHelper:131 - ORA-02291: integrity constraint (ADMIN.FK_PROPERTIES_OWNER) violated - parent key not found
+
+2018-02-14 16:07:49 INFO  AbstractBatchImpl:193 - HHH000010: On release of batch it still contained JDBC statements
+2018-02-14 16:07:49 ERROR ExceptionMapperStandardImpl:39 - HHH000346: Error during managed flush [org.hibernate.exception.ConstraintViolationException: could not execute statement]
+2018-02-14 16:07:49 ERROR UserHibernate:34 - javax.persistence.PersistenceException: org.hibernate.exception.ConstraintViolationException: could not execute statement
+2018-02-14 16:08:13 DEBUG logging:109 - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2018-02-14 16:08:14 INFO  Version:45 - HHH000412: Hibernate Core {5.2.12.Final}
+2018-02-14 16:08:14 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2018-02-14 16:08:14 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-02-14 16:08:14 WARN  pooling:70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2018-02-14 16:08:14 INFO  pooling:126 - HHH10001005: using driver [oracle.jdbc.OracleDriver] at URL [jdbc:oracle:thin:@rentalproject.cptyc64r16fz.us-east-2.rds.amazonaws.com:1521:ORCL]
+2018-02-14 16:08:14 INFO  pooling:135 - HHH10001001: Connection properties: {user=admin, password=****}
+2018-02-14 16:08:14 INFO  pooling:140 - HHH10001003: Autocommit mode: false
+2018-02-14 16:08:14 INFO  DriverManagerConnectionProviderImpl:41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2018-02-14 16:08:15 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2018-02-14 16:08:17 WARN  UserHibernate:25 - The user is: User [id=0, role=1, fullName=Bob, email=test@test.com, pass=123]
+2018-02-14 16:08:17 WARN  UserHibernate:27 - Created user will have an id of 3
+2018-02-14 16:08:17 WARN  UserHibernate:28 - The user is: User [id=3, role=1, fullName=Bob, email=test@test.com, pass=123]
+2018-02-14 16:08:17 WARN  SqlExceptionHelper:129 - SQL Error: 1, SQLState: 23000
+2018-02-14 16:08:17 ERROR SqlExceptionHelper:131 - ORA-00001: unique constraint (ADMIN.SYS_C008757) violated
+
+2018-02-14 16:08:17 INFO  AbstractBatchImpl:193 - HHH000010: On release of batch it still contained JDBC statements
+2018-02-14 16:08:17 ERROR ExceptionMapperStandardImpl:39 - HHH000346: Error during managed flush [org.hibernate.exception.ConstraintViolationException: could not execute statement]
+2018-02-14 16:08:17 ERROR UserHibernate:36 - javax.persistence.PersistenceException: org.hibernate.exception.ConstraintViolationException: could not execute statement
+2018-02-14 16:08:17 WARN  UserHibernate:23 - The property is: Property [propertyId=0, owner=User [id=3, role=1, fullName=Bob, email=test@test.com, pass=123], address1=9384 Rocky Road., address2= , city=Glendale, state=California, zipcode=83302, currentRentPrice=132.0, rating=4.5, availability=1]
+2018-02-14 16:08:17 WARN  UserHibernate:25 - Created property will have an id of 4
+2018-02-14 16:08:17 WARN  UserHibernate:26 - The property is: Property [propertyId=4, owner=User [id=3, role=1, fullName=Bob, email=test@test.com, pass=123], address1=9384 Rocky Road., address2= , city=Glendale, state=California, zipcode=83302, currentRentPrice=132.0, rating=4.5, availability=1]
+2018-02-14 16:08:17 WARN  SqlExceptionHelper:129 - SQL Error: 2291, SQLState: 23000
+2018-02-14 16:08:17 ERROR SqlExceptionHelper:131 - ORA-02291: integrity constraint (ADMIN.FK_PROPERTIES_OWNER) violated - parent key not found
+
+2018-02-14 16:08:17 INFO  AbstractBatchImpl:193 - HHH000010: On release of batch it still contained JDBC statements
+2018-02-14 16:08:17 ERROR ExceptionMapperStandardImpl:39 - HHH000346: Error during managed flush [org.hibernate.exception.ConstraintViolationException: could not execute statement]
+2018-02-14 16:08:17 ERROR UserHibernate:34 - javax.persistence.PersistenceException: org.hibernate.exception.ConstraintViolationException: could not execute statement
+2018-02-14 16:09:34 DEBUG logging:109 - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2018-02-14 16:09:35 INFO  Version:45 - HHH000412: Hibernate Core {5.2.12.Final}
+2018-02-14 16:09:35 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2018-02-14 16:09:35 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-02-14 16:09:35 WARN  pooling:70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2018-02-14 16:09:36 INFO  pooling:126 - HHH10001005: using driver [oracle.jdbc.OracleDriver] at URL [jdbc:oracle:thin:@rentalproject.cptyc64r16fz.us-east-2.rds.amazonaws.com:1521:ORCL]
+2018-02-14 16:09:36 INFO  pooling:135 - HHH10001001: Connection properties: {user=admin, password=****}
+2018-02-14 16:09:36 INFO  pooling:140 - HHH10001003: Autocommit mode: false
+2018-02-14 16:09:36 INFO  DriverManagerConnectionProviderImpl:41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2018-02-14 16:09:36 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2018-02-14 16:09:38 WARN  UserHibernate:25 - The user is: User [id=0, role=1, fullName=Bob, email=test@test.com, pass=123]
+2018-02-14 16:09:38 WARN  UserHibernate:27 - Created user will have an id of 1
+2018-02-14 16:09:38 WARN  UserHibernate:28 - The user is: User [id=1, role=1, fullName=Bob, email=test@test.com, pass=123]
+2018-02-14 16:09:38 WARN  UserHibernate:23 - The property is: Property [propertyId=0, owner=User [id=1, role=1, fullName=Bob, email=test@test.com, pass=123], address1=9384 Rocky Road., address2= , city=Glendale, state=California, zipcode=83302, currentRentPrice=132.0, rating=4.5, availability=1]
+2018-02-14 16:09:38 WARN  UserHibernate:25 - Created property will have an id of 1
+2018-02-14 16:09:38 WARN  UserHibernate:26 - The property is: Property [propertyId=1, owner=User [id=1, role=1, fullName=Bob, email=test@test.com, pass=123], address1=9384 Rocky Road., address2= , city=Glendale, state=California, zipcode=83302, currentRentPrice=132.0, rating=4.5, availability=1]
+2018-02-14 16:10:50 DEBUG logging:109 - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2018-02-14 16:10:51 INFO  Version:45 - HHH000412: Hibernate Core {5.2.12.Final}
+2018-02-14 16:10:51 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2018-02-14 16:10:51 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-02-14 16:10:51 WARN  pooling:70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2018-02-14 16:10:51 INFO  pooling:126 - HHH10001005: using driver [oracle.jdbc.OracleDriver] at URL [jdbc:oracle:thin:@rentalproject.cptyc64r16fz.us-east-2.rds.amazonaws.com:1521:ORCL]
+2018-02-14 16:10:51 INFO  pooling:135 - HHH10001001: Connection properties: {user=admin, password=****}
+2018-02-14 16:10:51 INFO  pooling:140 - HHH10001003: Autocommit mode: false
+2018-02-14 16:10:51 INFO  DriverManagerConnectionProviderImpl:41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2018-02-14 16:10:52 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2018-02-14 16:10:53 WARN  UserHibernate:25 - The user is: User [id=0, role=1, fullName=Bob, email=test@test.com, pass=123]
+2018-02-14 16:10:53 WARN  UserHibernate:27 - Created user will have an id of 1
+2018-02-14 16:10:53 WARN  UserHibernate:28 - The user is: User [id=1, role=1, fullName=Bob, email=test@test.com, pass=123]
+2018-02-14 16:10:53 WARN  UserHibernate:23 - The property is: Property [propertyId=0, owner=User [id=1, role=1, fullName=Bob, email=test@test.com, pass=123], address1=9384 Rocky Road., address2= , city=Glendale, state=California, zipcode=83302, currentRentPrice=132.0, rating=4.5, availability=1]
+2018-02-14 16:10:54 WARN  UserHibernate:25 - Created property will have an id of 1
+2018-02-14 16:10:54 WARN  UserHibernate:26 - The property is: Property [propertyId=1, owner=User [id=1, role=1, fullName=Bob, email=test@test.com, pass=123], address1=9384 Rocky Road., address2= , city=Glendale, state=California, zipcode=83302, currentRentPrice=132.0, rating=4.5, availability=1]
+2018-02-14 16:10:54 WARN  UserHibernate:23 - The property is: Property [propertyId=0, owner=User [id=1, role=1, fullName=Bob, email=test@test.com, pass=123], address1=Dawson's Creek Blvd., address2= , city=Burbank, state=California, zipcode=49284, currentRentPrice=395.0, rating=5.0, availability=0]
+2018-02-14 16:10:54 WARN  UserHibernate:25 - Created property will have an id of 2
+2018-02-14 16:10:54 WARN  UserHibernate:26 - The property is: Property [propertyId=2, owner=User [id=1, role=1, fullName=Bob, email=test@test.com, pass=123], address1=Dawson's Creek Blvd., address2= , city=Burbank, state=California, zipcode=49284, currentRentPrice=395.0, rating=5.0, availability=0]
+2018-02-14 16:10:54 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2018-02-14 16:10:54 WARN  UserHibernate:25 - The user is: User [id=0, role=1, fullName=Bob, email=test@test.com, pass=123]
+2018-02-14 16:10:54 WARN  UserHibernate:27 - Created user will have an id of 2
+2018-02-14 16:10:54 WARN  UserHibernate:28 - The user is: User [id=2, role=1, fullName=Bob, email=test@test.com, pass=123]
+2018-02-14 16:10:54 WARN  SqlExceptionHelper:129 - SQL Error: 1, SQLState: 23000
+2018-02-14 16:10:54 ERROR SqlExceptionHelper:131 - ORA-00001: unique constraint (ADMIN.SYS_C008817) violated
+
+2018-02-14 16:10:54 INFO  AbstractBatchImpl:193 - HHH000010: On release of batch it still contained JDBC statements
+2018-02-14 16:10:54 ERROR ExceptionMapperStandardImpl:39 - HHH000346: Error during managed flush [org.hibernate.exception.ConstraintViolationException: could not execute statement]
+2018-02-14 16:10:54 ERROR UserHibernate:36 - javax.persistence.PersistenceException: org.hibernate.exception.ConstraintViolationException: could not execute statement
+2018-02-14 16:10:54 WARN  UserHibernate:23 - The property is: Property [propertyId=0, owner=User [id=2, role=1, fullName=Bob, email=test@test.com, pass=123], address1=9384 Rocky Road., address2= , city=Glendale, state=California, zipcode=83302, currentRentPrice=132.0, rating=4.5, availability=1]
+2018-02-14 16:10:54 WARN  UserHibernate:25 - Created property will have an id of 3
+2018-02-14 16:10:54 WARN  UserHibernate:26 - The property is: Property [propertyId=3, owner=User [id=2, role=1, fullName=Bob, email=test@test.com, pass=123], address1=9384 Rocky Road., address2= , city=Glendale, state=California, zipcode=83302, currentRentPrice=132.0, rating=4.5, availability=1]
+2018-02-14 16:10:55 WARN  SqlExceptionHelper:129 - SQL Error: 2291, SQLState: 23000
+2018-02-14 16:10:55 ERROR SqlExceptionHelper:131 - ORA-02291: integrity constraint (ADMIN.FK_PROPERTIES_OWNER) violated - parent key not found
+
+2018-02-14 16:10:55 INFO  AbstractBatchImpl:193 - HHH000010: On release of batch it still contained JDBC statements
+2018-02-14 16:10:55 ERROR ExceptionMapperStandardImpl:39 - HHH000346: Error during managed flush [org.hibernate.exception.ConstraintViolationException: could not execute statement]
+2018-02-14 16:10:55 ERROR UserHibernate:34 - javax.persistence.PersistenceException: org.hibernate.exception.ConstraintViolationException: could not execute statement
+2018-02-14 16:13:49 DEBUG logging:109 - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2018-02-14 16:13:49 INFO  Version:45 - HHH000412: Hibernate Core {5.2.12.Final}
+2018-02-14 16:13:49 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2018-02-14 16:13:50 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-02-14 16:13:50 WARN  pooling:70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2018-02-14 16:13:50 INFO  pooling:126 - HHH10001005: using driver [oracle.jdbc.OracleDriver] at URL [jdbc:oracle:thin:@rentalproject.cptyc64r16fz.us-east-2.rds.amazonaws.com:1521:ORCL]
+2018-02-14 16:13:50 INFO  pooling:135 - HHH10001001: Connection properties: {user=admin, password=****}
+2018-02-14 16:13:50 INFO  pooling:140 - HHH10001003: Autocommit mode: false
+2018-02-14 16:13:50 INFO  DriverManagerConnectionProviderImpl:41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2018-02-14 16:13:51 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2018-02-14 16:13:52 WARN  UserHibernate:25 - The user is: User [id=0, role=1, fullName=Bob, email=test@test.com, pass=123]
+2018-02-14 16:13:52 WARN  UserHibernate:27 - Created user will have an id of 1
+2018-02-14 16:13:52 WARN  UserHibernate:28 - The user is: User [id=1, role=1, fullName=Bob, email=test@test.com, pass=123]
+2018-02-14 16:13:52 WARN  UserHibernate:23 - The property is: Property [propertyId=0, owner=User [id=1, role=1, fullName=Bob, email=test@test.com, pass=123], address1=9384 Rocky Road., address2= , city=Glendale, state=California, zipcode=83302, currentRentPrice=132.0, rating=4.5, availability=1]
+2018-02-14 16:13:52 WARN  UserHibernate:25 - Created property will have an id of 1
+2018-02-14 16:13:52 WARN  UserHibernate:26 - The property is: Property [propertyId=1, owner=User [id=1, role=1, fullName=Bob, email=test@test.com, pass=123], address1=9384 Rocky Road., address2= , city=Glendale, state=California, zipcode=83302, currentRentPrice=132.0, rating=4.5, availability=1]
+2018-02-14 16:13:53 WARN  UserHibernate:23 - The property is: Property [propertyId=0, owner=User [id=1, role=1, fullName=Bob, email=test@test.com, pass=123], address1=Chereoke, address2=Testing second addressline, city=Burbank, state=California, zipcode=30493, currentRentPrice=290.0, rating=3.5, availability=1]
+2018-02-14 16:13:53 WARN  UserHibernate:25 - Created property will have an id of 2
+2018-02-14 16:13:53 WARN  UserHibernate:26 - The property is: Property [propertyId=2, owner=User [id=1, role=1, fullName=Bob, email=test@test.com, pass=123], address1=Chereoke, address2=Testing second addressline, city=Burbank, state=California, zipcode=30493, currentRentPrice=290.0, rating=3.5, availability=1]
+2018-02-14 16:13:53 WARN  UserHibernate:23 - The property is: Property [propertyId=0, owner=User [id=1, role=1, fullName=Bob, email=test@test.com, pass=123], address1=Dawson's Creek Blvd., address2= , city=Burbank, state=California, zipcode=49284, currentRentPrice=395.0, rating=5.0, availability=0]
+2018-02-14 16:13:53 WARN  UserHibernate:25 - Created property will have an id of 3
+2018-02-14 16:13:53 WARN  UserHibernate:26 - The property is: Property [propertyId=3, owner=User [id=1, role=1, fullName=Bob, email=test@test.com, pass=123], address1=Dawson's Creek Blvd., address2= , city=Burbank, state=California, zipcode=49284, currentRentPrice=395.0, rating=5.0, availability=0]
+2018-02-14 16:13:53 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2018-02-14 16:13:53 WARN  UserHibernate:25 - The user is: User [id=0, role=1, fullName=Bob, email=test@test.com, pass=123]
+2018-02-14 16:13:53 WARN  UserHibernate:27 - Created user will have an id of 2
+2018-02-14 16:13:53 WARN  UserHibernate:28 - The user is: User [id=2, role=1, fullName=Bob, email=test@test.com, pass=123]
+2018-02-14 16:13:53 WARN  SqlExceptionHelper:129 - SQL Error: 1, SQLState: 23000
+2018-02-14 16:13:53 ERROR SqlExceptionHelper:131 - ORA-00001: unique constraint (ADMIN.SYS_C008907) violated
+
+2018-02-14 16:13:53 INFO  AbstractBatchImpl:193 - HHH000010: On release of batch it still contained JDBC statements
+2018-02-14 16:13:53 ERROR ExceptionMapperStandardImpl:39 - HHH000346: Error during managed flush [org.hibernate.exception.ConstraintViolationException: could not execute statement]
+2018-02-14 16:13:53 ERROR UserHibernate:36 - javax.persistence.PersistenceException: org.hibernate.exception.ConstraintViolationException: could not execute statement
+2018-02-14 16:13:53 WARN  UserHibernate:23 - The property is: Property [propertyId=0, owner=User [id=2, role=1, fullName=Bob, email=test@test.com, pass=123], address1=9384 Rocky Road., address2= , city=Glendale, state=California, zipcode=83302, currentRentPrice=132.0, rating=4.5, availability=1]
+2018-02-14 16:13:53 WARN  UserHibernate:25 - Created property will have an id of 4
+2018-02-14 16:13:53 WARN  UserHibernate:26 - The property is: Property [propertyId=4, owner=User [id=2, role=1, fullName=Bob, email=test@test.com, pass=123], address1=9384 Rocky Road., address2= , city=Glendale, state=California, zipcode=83302, currentRentPrice=132.0, rating=4.5, availability=1]
+2018-02-14 16:13:53 WARN  SqlExceptionHelper:129 - SQL Error: 2291, SQLState: 23000
+2018-02-14 16:13:53 ERROR SqlExceptionHelper:131 - ORA-02291: integrity constraint (ADMIN.FK_PROPERTIES_OWNER) violated - parent key not found
+
+2018-02-14 16:13:53 INFO  AbstractBatchImpl:193 - HHH000010: On release of batch it still contained JDBC statements
+2018-02-14 16:13:53 ERROR ExceptionMapperStandardImpl:39 - HHH000346: Error during managed flush [org.hibernate.exception.ConstraintViolationException: could not execute statement]
+2018-02-14 16:13:53 ERROR UserHibernate:34 - javax.persistence.PersistenceException: org.hibernate.exception.ConstraintViolationException: could not execute statement
+2018-02-14 16:16:40 DEBUG logging:109 - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2018-02-14 16:16:40 INFO  Version:45 - HHH000412: Hibernate Core {5.2.12.Final}
+2018-02-14 16:16:40 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2018-02-14 16:16:41 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-02-14 16:16:41 WARN  pooling:70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2018-02-14 16:16:41 INFO  pooling:126 - HHH10001005: using driver [oracle.jdbc.OracleDriver] at URL [jdbc:oracle:thin:@rentalproject.cptyc64r16fz.us-east-2.rds.amazonaws.com:1521:ORCL]
+2018-02-14 16:16:41 INFO  pooling:135 - HHH10001001: Connection properties: {user=admin, password=****}
+2018-02-14 16:16:41 INFO  pooling:140 - HHH10001003: Autocommit mode: false
+2018-02-14 16:16:41 INFO  DriverManagerConnectionProviderImpl:41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2018-02-14 16:16:43 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2018-02-14 16:16:44 WARN  UserHibernate:25 - The user is: User [id=0, role=1, fullName=Bob, email=test@test.com, pass=123]
+2018-02-14 16:16:45 WARN  UserHibernate:27 - Created user will have an id of 3
+2018-02-14 16:16:45 WARN  UserHibernate:28 - The user is: User [id=3, role=1, fullName=Bob, email=test@test.com, pass=123]
+2018-02-14 16:16:45 WARN  SqlExceptionHelper:129 - SQL Error: 1, SQLState: 23000
+2018-02-14 16:16:45 ERROR SqlExceptionHelper:131 - ORA-00001: unique constraint (ADMIN.SYS_C008907) violated
+
+2018-02-14 16:16:45 INFO  AbstractBatchImpl:193 - HHH000010: On release of batch it still contained JDBC statements
+2018-02-14 16:16:45 ERROR ExceptionMapperStandardImpl:39 - HHH000346: Error during managed flush [org.hibernate.exception.ConstraintViolationException: could not execute statement]
+2018-02-14 16:16:45 ERROR UserHibernate:36 - javax.persistence.PersistenceException: org.hibernate.exception.ConstraintViolationException: could not execute statement
+2018-02-14 16:16:45 ERROR ExceptionMapperStandardImpl:39 - HHH000346: Error during managed flush [Batch update returned unexpected row count from update [0]; actual row count: 0; expected: 1]
+2018-02-14 16:16:45 INFO  AbstractBatchImpl:193 - HHH000010: On release of batch it still contained JDBC statements
+2018-02-14 16:16:45 WARN  UserHibernate:25 - The user is: User [id=0, role=1, fullName=Bob, email=test@test.com, pass=123]
+2018-02-14 16:16:45 WARN  UserHibernate:27 - Created user will have an id of 4
+2018-02-14 16:16:45 WARN  UserHibernate:28 - The user is: User [id=4, role=1, fullName=Bob, email=test@test.com, pass=123]
+2018-02-14 16:16:45 WARN  SqlExceptionHelper:129 - SQL Error: 1, SQLState: 23000
+2018-02-14 16:16:45 ERROR SqlExceptionHelper:131 - ORA-00001: unique constraint (ADMIN.SYS_C008907) violated
+
+2018-02-14 16:16:45 INFO  AbstractBatchImpl:193 - HHH000010: On release of batch it still contained JDBC statements
+2018-02-14 16:16:45 ERROR ExceptionMapperStandardImpl:39 - HHH000346: Error during managed flush [org.hibernate.exception.ConstraintViolationException: could not execute statement]
+2018-02-14 16:16:45 ERROR UserHibernate:36 - javax.persistence.PersistenceException: org.hibernate.exception.ConstraintViolationException: could not execute statement
+2018-02-14 16:16:45 ERROR ExceptionMapperStandardImpl:39 - HHH000346: Error during managed flush [Batch update returned unexpected row count from update [0]; actual row count: 0; expected: 1]
+2018-02-14 16:16:45 INFO  AbstractBatchImpl:193 - HHH000010: On release of batch it still contained JDBC statements
+2018-02-14 16:20:05 DEBUG logging:109 - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2018-02-14 16:20:05 INFO  Version:45 - HHH000412: Hibernate Core {5.2.12.Final}
+2018-02-14 16:20:05 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2018-02-14 16:20:05 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-02-14 16:20:05 WARN  pooling:70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2018-02-14 16:20:06 INFO  pooling:126 - HHH10001005: using driver [oracle.jdbc.OracleDriver] at URL [jdbc:oracle:thin:@rentalproject.cptyc64r16fz.us-east-2.rds.amazonaws.com:1521:ORCL]
+2018-02-14 16:20:06 INFO  pooling:135 - HHH10001001: Connection properties: {user=admin, password=****}
+2018-02-14 16:20:06 INFO  pooling:140 - HHH10001003: Autocommit mode: false
+2018-02-14 16:20:06 INFO  DriverManagerConnectionProviderImpl:41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2018-02-14 16:20:06 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2018-02-14 16:20:08 WARN  UserHibernate:25 - The user is: User [id=0, role=1, fullName=Bob, email=test@test.com, pass=123]
+2018-02-14 16:20:08 WARN  UserHibernate:27 - Created user will have an id of 5
+2018-02-14 16:20:08 WARN  UserHibernate:28 - The user is: User [id=5, role=1, fullName=Bob, email=test@test.com, pass=123]
+2018-02-14 16:20:08 WARN  SqlExceptionHelper:129 - SQL Error: 1, SQLState: 23000
+2018-02-14 16:20:08 ERROR SqlExceptionHelper:131 - ORA-00001: unique constraint (ADMIN.SYS_C008907) violated
+
+2018-02-14 16:20:08 INFO  AbstractBatchImpl:193 - HHH000010: On release of batch it still contained JDBC statements
+2018-02-14 16:20:08 ERROR ExceptionMapperStandardImpl:39 - HHH000346: Error during managed flush [org.hibernate.exception.ConstraintViolationException: could not execute statement]
+2018-02-14 16:20:08 ERROR UserHibernate:36 - javax.persistence.PersistenceException: org.hibernate.exception.ConstraintViolationException: could not execute statement
+2018-02-14 16:20:08 WARN  UserHibernate:23 - The property is: Property [propertyId=0, owner=User [id=0, role=1, fullName=Bob, email=test@test.com, pass=123], address1=9384 Rocky Road., address2= , city=Glendale, state=California, zipcode=83302, currentRentPrice=132.0, rating=4.5, availability=1]
+2018-02-14 16:20:08 WARN  UserHibernate:25 - Created property will have an id of 5
+2018-02-14 16:20:08 WARN  UserHibernate:26 - The property is: Property [propertyId=5, owner=User [id=0, role=1, fullName=Bob, email=test@test.com, pass=123], address1=9384 Rocky Road., address2= , city=Glendale, state=California, zipcode=83302, currentRentPrice=132.0, rating=4.5, availability=1]
+2018-02-14 16:20:08 ERROR ExceptionMapperStandardImpl:39 - HHH000346: Error during managed flush [org.hibernate.TransientObjectException: object references an unsaved transient instance - save the transient instance before flushing: com.revature.beans.User]
+2018-02-14 16:20:08 ERROR UserHibernate:34 - java.lang.IllegalStateException: org.hibernate.TransientObjectException: object references an unsaved transient instance - save the transient instance before flushing: com.revature.beans.User
+2018-02-14 16:20:08 WARN  UserHibernate:23 - The property is: Property [propertyId=0, owner=User [id=0, role=1, fullName=Bob, email=test@test.com, pass=123], address1=Chereoke, address2=Testing second addressline, city=Burbank, state=California, zipcode=30493, currentRentPrice=290.0, rating=3.5, availability=1]
+2018-02-14 16:20:08 WARN  UserHibernate:25 - Created property will have an id of 6
+2018-02-14 16:20:08 WARN  UserHibernate:26 - The property is: Property [propertyId=6, owner=User [id=0, role=1, fullName=Bob, email=test@test.com, pass=123], address1=Chereoke, address2=Testing second addressline, city=Burbank, state=California, zipcode=30493, currentRentPrice=290.0, rating=3.5, availability=1]
+2018-02-14 16:20:08 ERROR ExceptionMapperStandardImpl:39 - HHH000346: Error during managed flush [org.hibernate.TransientObjectException: object references an unsaved transient instance - save the transient instance before flushing: com.revature.beans.User]
+2018-02-14 16:20:08 ERROR UserHibernate:34 - java.lang.IllegalStateException: org.hibernate.TransientObjectException: object references an unsaved transient instance - save the transient instance before flushing: com.revature.beans.User
+2018-02-14 16:20:08 WARN  UserHibernate:23 - The property is: Property [propertyId=0, owner=User [id=0, role=1, fullName=Bob, email=test@test.com, pass=123], address1=Dawson's Creek Blvd., address2= , city=Burbank, state=California, zipcode=49284, currentRentPrice=395.0, rating=5.0, availability=0]
+2018-02-14 16:20:08 WARN  UserHibernate:25 - Created property will have an id of 7
+2018-02-14 16:20:08 WARN  UserHibernate:26 - The property is: Property [propertyId=7, owner=User [id=0, role=1, fullName=Bob, email=test@test.com, pass=123], address1=Dawson's Creek Blvd., address2= , city=Burbank, state=California, zipcode=49284, currentRentPrice=395.0, rating=5.0, availability=0]
+2018-02-14 16:20:08 ERROR ExceptionMapperStandardImpl:39 - HHH000346: Error during managed flush [org.hibernate.TransientObjectException: object references an unsaved transient instance - save the transient instance before flushing: com.revature.beans.User]
+2018-02-14 16:20:08 ERROR UserHibernate:34 - java.lang.IllegalStateException: org.hibernate.TransientObjectException: object references an unsaved transient instance - save the transient instance before flushing: com.revature.beans.User
+2018-02-14 16:20:09 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2018-02-14 16:20:09 WARN  UserHibernate:25 - The user is: User [id=0, role=1, fullName=Bob, email=test@test.com, pass=123]
+2018-02-14 16:20:09 WARN  UserHibernate:27 - Created user will have an id of 6
+2018-02-14 16:20:09 WARN  UserHibernate:28 - The user is: User [id=6, role=1, fullName=Bob, email=test@test.com, pass=123]
+2018-02-14 16:20:09 WARN  SqlExceptionHelper:129 - SQL Error: 1, SQLState: 23000
+2018-02-14 16:20:09 ERROR SqlExceptionHelper:131 - ORA-00001: unique constraint (ADMIN.SYS_C008907) violated
+
+2018-02-14 16:20:09 INFO  AbstractBatchImpl:193 - HHH000010: On release of batch it still contained JDBC statements
+2018-02-14 16:20:09 ERROR ExceptionMapperStandardImpl:39 - HHH000346: Error during managed flush [org.hibernate.exception.ConstraintViolationException: could not execute statement]
+2018-02-14 16:20:09 ERROR UserHibernate:36 - javax.persistence.PersistenceException: org.hibernate.exception.ConstraintViolationException: could not execute statement
+2018-02-14 16:20:09 WARN  UserHibernate:23 - The property is: Property [propertyId=0, owner=User [id=0, role=1, fullName=Bob, email=test@test.com, pass=123], address1=9384 Rocky Road., address2= , city=Glendale, state=California, zipcode=83302, currentRentPrice=132.0, rating=4.5, availability=1]
+2018-02-14 16:20:09 WARN  UserHibernate:25 - Created property will have an id of 8
+2018-02-14 16:20:09 WARN  UserHibernate:26 - The property is: Property [propertyId=8, owner=User [id=0, role=1, fullName=Bob, email=test@test.com, pass=123], address1=9384 Rocky Road., address2= , city=Glendale, state=California, zipcode=83302, currentRentPrice=132.0, rating=4.5, availability=1]
+2018-02-14 16:20:09 ERROR ExceptionMapperStandardImpl:39 - HHH000346: Error during managed flush [org.hibernate.TransientObjectException: object references an unsaved transient instance - save the transient instance before flushing: com.revature.beans.User]
+2018-02-14 16:20:09 ERROR UserHibernate:34 - java.lang.IllegalStateException: org.hibernate.TransientObjectException: object references an unsaved transient instance - save the transient instance before flushing: com.revature.beans.User
+2018-02-14 16:40:21 DEBUG logging:109 - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2018-02-14 16:40:22 INFO  Version:45 - HHH000412: Hibernate Core {5.2.12.Final}
+2018-02-14 16:40:22 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2018-02-14 16:40:22 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-02-14 16:40:22 WARN  pooling:70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2018-02-14 16:40:22 INFO  pooling:126 - HHH10001005: using driver [oracle.jdbc.OracleDriver] at URL [jdbc:oracle:thin:@rentalproject.cptyc64r16fz.us-east-2.rds.amazonaws.com:1521:ORCL]
+2018-02-14 16:40:22 INFO  pooling:135 - HHH10001001: Connection properties: {user=admin, password=****}
+2018-02-14 16:40:22 INFO  pooling:140 - HHH10001003: Autocommit mode: false
+2018-02-14 16:40:22 INFO  DriverManagerConnectionProviderImpl:41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2018-02-14 16:40:23 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2018-02-14 16:40:25 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2018-02-14 16:41:03 DEBUG logging:109 - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2018-02-14 16:41:03 INFO  Version:45 - HHH000412: Hibernate Core {5.2.12.Final}
+2018-02-14 16:41:03 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2018-02-14 16:41:04 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-02-14 16:41:04 WARN  pooling:70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2018-02-14 16:41:04 INFO  pooling:126 - HHH10001005: using driver [oracle.jdbc.OracleDriver] at URL [jdbc:oracle:thin:@rentalproject.cptyc64r16fz.us-east-2.rds.amazonaws.com:1521:ORCL]
+2018-02-14 16:41:04 INFO  pooling:135 - HHH10001001: Connection properties: {user=admin, password=****}
+2018-02-14 16:41:04 INFO  pooling:140 - HHH10001003: Autocommit mode: false
+2018-02-14 16:41:04 INFO  DriverManagerConnectionProviderImpl:41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2018-02-14 16:41:05 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2018-02-14 16:41:07 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2018-02-14 16:43:08 DEBUG logging:109 - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2018-02-14 16:43:09 INFO  Version:45 - HHH000412: Hibernate Core {5.2.12.Final}
+2018-02-14 16:43:09 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2018-02-14 16:43:09 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-02-14 16:43:09 WARN  pooling:70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2018-02-14 16:43:09 INFO  pooling:126 - HHH10001005: using driver [oracle.jdbc.OracleDriver] at URL [jdbc:oracle:thin:@rentalproject.cptyc64r16fz.us-east-2.rds.amazonaws.com:1521:ORCL]
+2018-02-14 16:43:09 INFO  pooling:135 - HHH10001001: Connection properties: {user=admin, password=****}
+2018-02-14 16:43:09 INFO  pooling:140 - HHH10001003: Autocommit mode: false
+2018-02-14 16:43:09 INFO  DriverManagerConnectionProviderImpl:41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2018-02-14 16:43:10 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2018-02-14 16:43:12 WARN  UserHibernate:25 - The user is: User [id=0, role=1, fullName=Bob, email=test@test.com, pass=123]
+2018-02-14 16:43:12 WARN  UserHibernate:27 - Created user will have an id of 7
+2018-02-14 16:43:12 WARN  UserHibernate:28 - The user is: User [id=7, role=1, fullName=Bob, email=test@test.com, pass=123]
+2018-02-14 16:43:12 WARN  SqlExceptionHelper:129 - SQL Error: 1, SQLState: 23000
+2018-02-14 16:43:12 ERROR SqlExceptionHelper:131 - ORA-00001: unique constraint (ADMIN.SYS_C008907) violated
+
+2018-02-14 16:43:12 INFO  AbstractBatchImpl:193 - HHH000010: On release of batch it still contained JDBC statements
+2018-02-14 16:43:12 ERROR ExceptionMapperStandardImpl:39 - HHH000346: Error during managed flush [org.hibernate.exception.ConstraintViolationException: could not execute statement]
+2018-02-14 16:43:12 ERROR UserHibernate:36 - javax.persistence.PersistenceException: org.hibernate.exception.ConstraintViolationException: could not execute statement
+2018-02-14 16:43:12 WARN  UserHibernate:23 - The property is: Property [propertyId=0, owner=User [id=0, role=1, fullName=Bob, email=test@test.com, pass=123], address1=9384 Rocky Road., address2= , city=Glendale, state=California, zipcode=83302, currentRentPrice=132.0, rating=4.5, availability=1]
+2018-02-14 16:43:12 WARN  UserHibernate:25 - Created property will have an id of 9
+2018-02-14 16:43:12 WARN  UserHibernate:26 - The property is: Property [propertyId=9, owner=User [id=0, role=1, fullName=Bob, email=test@test.com, pass=123], address1=9384 Rocky Road., address2= , city=Glendale, state=California, zipcode=83302, currentRentPrice=132.0, rating=4.5, availability=1]
+2018-02-14 16:43:12 ERROR ExceptionMapperStandardImpl:39 - HHH000346: Error during managed flush [org.hibernate.TransientObjectException: object references an unsaved transient instance - save the transient instance before flushing: com.revature.beans.User]
+2018-02-14 16:43:12 ERROR UserHibernate:34 - java.lang.IllegalStateException: org.hibernate.TransientObjectException: object references an unsaved transient instance - save the transient instance before flushing: com.revature.beans.User
+2018-02-14 16:43:12 WARN  UserHibernate:23 - The property is: Property [propertyId=0, owner=User [id=0, role=1, fullName=Bob, email=test@test.com, pass=123], address1=Chereoke, address2=Testing second addressline, city=Burbank, state=California, zipcode=30493, currentRentPrice=290.0, rating=3.5, availability=1]
+2018-02-14 16:43:12 WARN  UserHibernate:25 - Created property will have an id of 10
+2018-02-14 16:43:12 WARN  UserHibernate:26 - The property is: Property [propertyId=10, owner=User [id=0, role=1, fullName=Bob, email=test@test.com, pass=123], address1=Chereoke, address2=Testing second addressline, city=Burbank, state=California, zipcode=30493, currentRentPrice=290.0, rating=3.5, availability=1]
+2018-02-14 16:43:12 ERROR ExceptionMapperStandardImpl:39 - HHH000346: Error during managed flush [org.hibernate.TransientObjectException: object references an unsaved transient instance - save the transient instance before flushing: com.revature.beans.User]
+2018-02-14 16:43:12 ERROR UserHibernate:34 - java.lang.IllegalStateException: org.hibernate.TransientObjectException: object references an unsaved transient instance - save the transient instance before flushing: com.revature.beans.User
+2018-02-14 16:43:12 WARN  UserHibernate:23 - The property is: Property [propertyId=0, owner=User [id=0, role=1, fullName=Bob, email=test@test.com, pass=123], address1=Dawson's Creek Blvd., address2= , city=Burbank, state=California, zipcode=49284, currentRentPrice=395.0, rating=5.0, availability=0]
+2018-02-14 16:43:12 WARN  UserHibernate:25 - Created property will have an id of 11
+2018-02-14 16:43:12 WARN  UserHibernate:26 - The property is: Property [propertyId=11, owner=User [id=0, role=1, fullName=Bob, email=test@test.com, pass=123], address1=Dawson's Creek Blvd., address2= , city=Burbank, state=California, zipcode=49284, currentRentPrice=395.0, rating=5.0, availability=0]
+2018-02-14 16:43:12 ERROR ExceptionMapperStandardImpl:39 - HHH000346: Error during managed flush [org.hibernate.TransientObjectException: object references an unsaved transient instance - save the transient instance before flushing: com.revature.beans.User]
+2018-02-14 16:43:12 ERROR UserHibernate:34 - java.lang.IllegalStateException: org.hibernate.TransientObjectException: object references an unsaved transient instance - save the transient instance before flushing: com.revature.beans.User
+2018-02-14 16:43:12 WARN  UserHibernate:25 - The user is: User [id=0, role=1, fullName=Bob, email=test@test.com, pass=123]
+2018-02-14 16:43:12 WARN  UserHibernate:27 - Created user will have an id of 8
+2018-02-14 16:43:12 WARN  UserHibernate:28 - The user is: User [id=8, role=1, fullName=Bob, email=test@test.com, pass=123]
+2018-02-14 16:43:12 WARN  SqlExceptionHelper:129 - SQL Error: 1, SQLState: 23000
+2018-02-14 16:43:12 ERROR SqlExceptionHelper:131 - ORA-00001: unique constraint (ADMIN.SYS_C008907) violated
+
+2018-02-14 16:43:12 INFO  AbstractBatchImpl:193 - HHH000010: On release of batch it still contained JDBC statements
+2018-02-14 16:43:12 ERROR ExceptionMapperStandardImpl:39 - HHH000346: Error during managed flush [org.hibernate.exception.ConstraintViolationException: could not execute statement]
+2018-02-14 16:43:12 ERROR UserHibernate:36 - javax.persistence.PersistenceException: org.hibernate.exception.ConstraintViolationException: could not execute statement
+2018-02-14 16:43:12 WARN  UserHibernate:23 - The property is: Property [propertyId=0, owner=User [id=0, role=1, fullName=Bob, email=test@test.com, pass=123], address1=9384 Rocky Road., address2= , city=Glendale, state=California, zipcode=83302, currentRentPrice=132.0, rating=4.5, availability=1]
+2018-02-14 16:43:12 WARN  UserHibernate:25 - Created property will have an id of 12
+2018-02-14 16:43:12 WARN  UserHibernate:26 - The property is: Property [propertyId=12, owner=User [id=0, role=1, fullName=Bob, email=test@test.com, pass=123], address1=9384 Rocky Road., address2= , city=Glendale, state=California, zipcode=83302, currentRentPrice=132.0, rating=4.5, availability=1]
+2018-02-14 16:43:12 ERROR ExceptionMapperStandardImpl:39 - HHH000346: Error during managed flush [org.hibernate.TransientObjectException: object references an unsaved transient instance - save the transient instance before flushing: com.revature.beans.User]
+2018-02-14 16:43:12 ERROR UserHibernate:34 - java.lang.IllegalStateException: org.hibernate.TransientObjectException: object references an unsaved transient instance - save the transient instance before flushing: com.revature.beans.User
