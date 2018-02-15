@@ -12,8 +12,11 @@ import javax.persistence.OneToOne;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
+import org.springframework.stereotype.Component;
+
 @Entity
 @Table(name="payment_info")
+@Component
 public class PaymentInfo 
 {
 

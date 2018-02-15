@@ -2,10 +2,13 @@ package com.revature.service;
 
 import java.util.List;
 
+import org.springframework.stereotype.Component;
+
 import com.revature.beans.Property;
 import com.revature.data.PropertyDao;
 import com.revature.data.PropertyHibernate;
 
+@Component
 public class MyPropertiesOracle implements MyPropertiesService {
 
 	PropertyDao pd = new PropertyHibernate();

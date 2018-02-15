@@ -47,6 +47,8 @@ public class UserHibernate implements UserDao
 		Session s = hu.getSession();
 		String query = "from com.revature.beans.User u where u.email=:email and u.pass=:pass";
 		log.trace(s);
+		log.trace(email);
+		log.trace(pass);
 		Query<User> q = s.createQuery(query, User.class);
 		q.setParameter("email", email);
 		q.setParameter("pass", pass);
