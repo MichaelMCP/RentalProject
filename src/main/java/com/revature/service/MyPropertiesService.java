@@ -8,4 +8,6 @@ import com.revature.beans.Property;
 public interface MyPropertiesService {
 
 	public List<Property> getMyProperties(int id);
+
+	public void deleteMyProperty(Property property);
 }

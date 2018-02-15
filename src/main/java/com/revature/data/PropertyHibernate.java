@@ -57,7 +57,7 @@ public class PropertyHibernate implements PropertyDao {
 	@Override
 	public List<Property> getAllPropertiesByOwnerId(int id) {
 		Session s = hu.getSession();
-		String hquery = "from com.revature.beans.Property where id = " + id;
+		String hquery = "from com.revature.beans.Property where owner_id = " + id;
 		Query<Property> q = s.createQuery(hquery, Property.class);
 		List<Property> propertyList = q.getResultList();
 		s.close();

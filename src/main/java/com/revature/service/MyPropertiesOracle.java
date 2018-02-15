@@ -18,8 +18,10 @@ public class MyPropertiesOracle implements MyPropertiesService {
 		
 		return propertiesList;
 	}
-	public void deleteMyProperties(Property property) {
+	@Override
+	public void deleteMyProperty(Property property) {
 		pd.deleteProperty(property);
 	}
+	
 
 }
