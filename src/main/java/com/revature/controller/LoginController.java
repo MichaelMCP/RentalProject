@@ -39,14 +39,9 @@ public class LoginController {
 		return "login";
 	}
 	
-<<<<<<< HEAD
 	@RequestMapping(method=RequestMethod.POST)
 	@ResponseBody
 	public String login(@RequestBody User user, HttpSession session) throws JsonProcessingException {
-=======
-	@RequestMapping(value="/login2", method=RequestMethod.POST)
-	public String login(@ModelAttribute("user") User user, HttpSession session) {
->>>>>>> 8203a7bad469807dcb8843f68d3433c4e97ca690
 		User u = login.login(user.getEmail(), user.getPass());
 		log.error(session);
 		log.error(u);
