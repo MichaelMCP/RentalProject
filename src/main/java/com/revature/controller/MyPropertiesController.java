@@ -14,6 +14,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.revature.beans.User;
 import com.revature.service.MyPropertiesService;
 
+
 @Controller
 @CrossOrigin(origins= {"*"})
 @RequestMapping(value="/my-properties")

@@ -3,6 +3,7 @@ package com.revature.data;
 import java.util.List;
 
 import org.hibernate.query.Query;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.hibernate.Session;
 
 import com.revature.beans.Service;
@@ -10,7 +11,8 @@ import com.revature.util.HibernateUtil;
 
 public class ServiceHibernate implements ServiceDao{
 	
-	private static HibernateUtil hu = HibernateUtil.getInstance();
+	@Autowired
+	private static HibernateUtil hu;
 
 	
 	public Service getService(Service serv) {

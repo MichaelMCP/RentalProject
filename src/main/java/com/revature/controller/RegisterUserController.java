@@ -16,6 +16,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.revature.beans.User;
 import com.revature.service.RegisterUserService;
 
+
 @Controller
 @CrossOrigin(origins= {"*"})
 @RequestMapping(value="/register")
