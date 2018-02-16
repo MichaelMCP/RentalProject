@@ -68,7 +68,8 @@ create table receipts
   owner_user_id number(20), --fk
   user_rating number(10),
   amount number(10),
-  property_id number(10) --fk
+  property_id number(10), --fk
+  payment_info_id number(10) --fk
   
 );
 
@@ -77,6 +78,7 @@ alter table
 add constraint
    fk_payment_info_user_id FOREIGN KEY (user_id)
 references users (id);
+
 
 alter table
    receipts
@@ -89,6 +91,12 @@ alter table
 add constraint
    fk_owner_user_id FOREIGN KEY (owner_user_id)
 references users (id);
+
+alter table
+   payment_info
+add constraint
+   fk_payment_info_id FOREIGN KEY (payment_info_id)
+references payment_info (payment_id);
 
 drop sequence users_key;
 create sequence users_key;
