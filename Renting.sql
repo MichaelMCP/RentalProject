@@ -115,5 +115,7 @@ drop sequence services_key;
 create sequence services_key;
 drop sequence receipts_key;
 create sequence receipts_key;
+drop sequence rent_transaction_key;
+create sequence rent_transaction_key;
 
 commit;
