@@ -1,8 +1,9 @@
-drop table properties;
+drop table rent_transaction;
 drop table payment_info;
 drop table services;
 drop table roles_table;
 drop table receipts;
+drop table properties;
 drop table users;
 
 create table users
@@ -70,6 +71,20 @@ create table receipts
   amount number(10),
   property_id number(10) --fk
   
+);
+
+create table rent_transaction
+(
+  rent_id number (20) primary key,
+  start_date varchar2(50),
+  end_date varchar2(50),
+  renter_id number(20), --fk
+  property_id number(20), --fk
+  approval number(1),
+  payment_info_id number(20), --fk
+  constraint fk_renter_id foreign key (renter_id) references users(id),
+  constraint fk_property_id foreign key (property_id) references properties(property_id),
+  constraint fk_payment_info_id foreign key (payment_info_id) references payment_info(payment_id)
 );
 
 alter table
