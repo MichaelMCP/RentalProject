@@ -55,6 +55,17 @@ public class UserHibernateTest {
 	}
 	
 	@Test
+	public void testDeleteUser() {
+		User u = new User();
+		u.setRole(1);
+		u.setEmail("test4@test.com");
+		u.setFullName("Bob");
+		u.setPass("123");
+		ud.createUser(u);
+		assertEquals(1, 1);
+	}
+	
+	@Test
 	public void testGetAllUsers() {
 		User u = new User();
 		u.setRole(1);

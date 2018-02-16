@@ -35,15 +35,10 @@ public class MyPropertiesController {
 	@ResponseBody
 	public String showProperties(HttpSession session) throws JsonProcessingException {
 		User user = (User) session.getAttribute("user");
-		if(user == null) {
-			return "redirect: login";
-		}
-		else
-			return om.writeValueAsString(mypro.getMyProperties(user.getId()));
+		return om.writeValueAsString(mypro.getMyProperties(user.getId()));
 	}
 	@RequestMapping(method=RequestMethod.POST)
 	public String deleteProperties(@RequestBody Property property, HttpSession session){
-		log.warn(property);
 		mypro.deleteMyProperty(property);
 		return "redirect: my-properties";
 	}

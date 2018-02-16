@@ -11,14 +11,14 @@ public interface PropertyDao {
 	 * @param property the Property object to be inserted
 	 * @return the id of the inserted Property object
 	 */
-	public int registerProperty(Property property);
+	public Property registerProperty(Property property);
 	
 	/**
 	 * deletes a Property from the database
 	 * 
 	 * @param property the Property object to be deleted
 	 */
-	public boolean deleteProperty(Property property);
+	public void deleteProperty(Property property);
 	/**
 	 * gets all Property Objects that has the id of a specific owner
 	 * 
