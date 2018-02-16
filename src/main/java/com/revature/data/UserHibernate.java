@@ -12,7 +12,6 @@ import com.revature.beans.User;
 @Component
 public class UserHibernate implements UserDao, HibernateSession
 {
-	private static Logger log = Logger.getLogger(UserHibernate.class);
 	
 	private Session session;
 
