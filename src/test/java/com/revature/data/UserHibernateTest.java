@@ -22,8 +22,8 @@ public class UserHibernateTest {
 		u.setEmail("test@test.com");
 		u.setFullName("Bob");
 		u.setPass("123");
-		int test = ud.createUser(u);
-		assertEquals(u.getId(), test);
+		User user = ud.createUser(u);
+		assertEquals(u.getId(), user.getId());
 		ud.deleteUser(u);
 	}
 	
