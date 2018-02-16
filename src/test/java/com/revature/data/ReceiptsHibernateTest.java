@@ -21,8 +21,8 @@ public class ReceiptsHibernateTest {
 		Receipt r = new Receipt();
 		r.setAmount(10);
 		
-		int test = rd.createRecepit(r);
-		assertEquals(r.getReceiptId(), test);
+		Receipt test = rd.createReceipt(r);
+		assertEquals(r, test);
 		rd.deleteReceipt(r);
 	}
 	
@@ -30,7 +30,7 @@ public class ReceiptsHibernateTest {
 	public void testGetReceiptByReceiptId() {
 		Receipt r = new Receipt();
 		r.setAmount(10);
-		rd.createRecepit(r);
+		rd.createReceipt(r);
 		
 		Receipt test = rd.getReceiptByReceiptId(r.getReceiptId());
 		assertEquals(r, test);
@@ -49,7 +49,7 @@ public class ReceiptsHibernateTest {
 		Receipt r = new Receipt();
 		r.setAmount(10);
 		r.setUser(u);
-		rd.createRecepit(r);
+		rd.createReceipt(r);
 		
 		List<Receipt> test = rd.getReceiptByRenterId(r.getUser().getId());
 		assertTrue(test.contains(r));
@@ -68,7 +68,7 @@ public class ReceiptsHibernateTest {
 		Receipt r = new Receipt();
 		r.setAmount(10);
 		r.setOwner(u);
-		rd.createRecepit(r);
+		rd.createReceipt(r);
 		
 		List<Receipt> test = rd.getReceiptByOwnerId(r.getOwner().getId());
 		assertTrue(test.contains(r));
@@ -79,7 +79,7 @@ public class ReceiptsHibernateTest {
 	public void testGetAllReceipts() {
 		Receipt r = new Receipt();
 		r.setAmount(10);
-		rd.createRecepit(r);
+		rd.createReceipt(r);
 		
 		List<Receipt> test = rd.getAllReceipts();
 		assertTrue(test.contains(r));
@@ -87,20 +87,10 @@ public class ReceiptsHibernateTest {
 	}
 	
 	@Test
-	public void testDeleteReceipt() {
-		Receipt r = new Receipt();
-		r.setAmount(10);
-		rd.createRecepit(r);
-		
-		int test = rd.deleteReceipt(r);
-		assertEquals(1, test);
-	}
-	
-	@Test
 	public void testUpdateReceipt() {
 		Receipt r = new Receipt();
 		r.setAmount(10);
-		rd.createRecepit(r);
+		rd.createReceipt(r);
 		
 		r.setAmount(20);
 		Receipt test = rd.updateReceipt(r);
