@@ -5,7 +5,6 @@ import java.util.List;
 import org.hibernate.Session;
 
 import com.revature.beans.RentTransaction;
-import com.revature.beans.User;
 
 public class RentTransactionHibernate implements RentTransactionDao, HibernateSession {
 
