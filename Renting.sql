@@ -1,9 +1,5 @@
 drop table rent_transaction;
-<<<<<<< HEAD
-drop table properties;
-=======
 drop table payment_info;
->>>>>>> 79e497a27ca19f77adf665c8ca804fbd5050d6ac
 drop table services;
 drop table roles_table;
 drop table payment_info;
@@ -81,13 +77,8 @@ create table receipts
 create table rent_transaction
 (
   rent_id number (20) primary key,
-<<<<<<< HEAD
-  start_date timestamp,
-  end_date timestamp,
-=======
   start_date varchar2(50),
   end_date varchar2(50),
->>>>>>> 79e497a27ca19f77adf665c8ca804fbd5050d6ac
   renter_id number(20), --fk
   property_id number(20), --fk
   approval number(1),
