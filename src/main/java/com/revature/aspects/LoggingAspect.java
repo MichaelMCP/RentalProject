@@ -15,7 +15,7 @@ public class LoggingAspect {
 	private Logger log = Logger.getRootLogger();
 	
 	@Around("everything()")
-	public Object log(ProceedingJoinPoint pjp) {
+	public Object log(ProceedingJoinPoint pjp) throws Throwable {
 		Object obj = null;
 		log.trace("Method with signature "+pjp.getSignature()+" called.");
 		log.trace("With arguments: "+Arrays.toString(pjp.getArgs()));
@@ -27,7 +27,9 @@ public class LoggingAspect {
 			for(StackTraceElement s : e.getStackTrace()) {
 				log.warn(s);
 			}
+		
 		}
+		
 		log.info(pjp.getSignature()+" returned: "+obj);
 		return obj;
 	}

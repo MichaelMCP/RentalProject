@@ -27,12 +27,13 @@ public class HibernateAspect
 		Transaction tx = session.beginTransaction();
 		HibernateSession hs = (HibernateSession) pjp.getThis();
 		hs.setSession(session);
+		
 		try {
 			obj = pjp.proceed();
 		} catch(Throwable e) {
 			tx.rollback();
 			throw e;
-		}
+		}		
 		
 		tx.commit();
 		session.close();

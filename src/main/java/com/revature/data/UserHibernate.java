@@ -4,115 +4,69 @@ import java.util.List;
 
 import org.apache.log4j.Logger;
 import org.hibernate.Session;
-import org.hibernate.Transaction;
 import org.hibernate.query.Query;
-import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import com.revature.beans.User;
-import com.revature.util.HibernateUtil;
 
-public class UserHibernate implements UserDao 
+@Component
+public class UserHibernate implements UserDao, HibernateSession
 {
 	private static Logger log = Logger.getLogger(UserHibernate.class);
-	@Autowired
-	private static HibernateUtil hu;
+	
+	private Session session;
 
 	@Override
-	public int createUser(User user)
+	public User createUser(User user)
 	{
-		Session session = hu.getSession();
-		Transaction tx = null;
-		try{
-			tx = session.beginTransaction();
-			log.warn("The user is: "+user);
-			int i = (Integer) session.save(user);
-			log.warn("Created user will have an id of "+i);
-			log.warn("The user is: "+user);
-			
-			
-			tx.commit();
-			
-			return user.getId();
-			
-		} catch(Exception e) {
-			log.error(e);
-			return 0;
-		} finally {
-			session.close();
-		}
+		int i = (Integer) session.save(user);
+		return user;
 
 	}
 
 	@Override
 	public User getUser(String email, String pass) 
 	{
-		Session s = hu.getSession();
 		String query = "from com.revature.beans.User u where u.email=:email and u.pass=:pass";
-		log.trace(s);
-		log.trace(email);
-		log.trace(pass);
-		Query<User> q = s.createQuery(query, User.class);
+		Query q = session.createQuery(query);
 		q.setParameter("email", email);
 		q.setParameter("pass", pass);
-		log.trace(q);
-		List<User> userList = q.getResultList();
-		
-
-		s.close();
-		return userList.get(0);
+		return (User) q.uniqueResult();
 
 	}
-
-	@Override
-	public User getUser(User u) 
-	{
-		Session su = hu.getSession();
-		User user = su.get(User.class, u.getId());
-		su.close();
-		return user;
-	}
-
+	
 	@Override
 	public User getUserById(int i) 
 	{
-		Session su = hu.getSession();
-		User user = su.get(User.class, i);
-		su.close();
-		return user;
+		User u = (User) session.get(User.class, i);
+		return u;
 	}
 
 	@Override
-	public int deleteUser(User user) 
+	public void deleteUser(User user) 
 	{
-		Session s = hu.getSession();
-		Transaction tx = s.beginTransaction();
-		s.delete(user);
-		tx.commit();
-		s.close();
-		return 1;
-
-
+		session.delete(user);
 	}
 
 	@Override
 	public User updateUser(User user) 
 	{
-		Session s = hu.getSession();
-		Transaction tx = s.beginTransaction();
-		s.update(user);
-		tx.commit();
-		s.close();
+		session.update(user);
 		return user;
 	}
 
 	@Override
 	public List<User> getAllUsers() {
-		Session s = hu.getSession();
+		
 		String query = "from com.revature.beans.User";
-		Query<User> q = s.createQuery(query, User.class);
-		List<User> userList = q.getResultList();
-		s.close();
+		List<User> userList = (List<User>) session.createQuery(query).list();
 		return userList;
 
+	}
+
+	@Override
+	public void setSession(Session session) {
+		
+		this.session = session;
 	}
 }
