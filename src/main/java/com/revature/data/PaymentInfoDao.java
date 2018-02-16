@@ -6,7 +6,7 @@ import com.revature.beans.PaymentInfo;
 
 public interface PaymentInfoDao {
 	
-	public int createPaymentInfo(PaymentInfo p);
+	public PaymentInfo createPaymentInfo(PaymentInfo p);
 	
 	public PaymentInfo getPaymentInfoById(int i);
 	
@@ -14,6 +14,6 @@ public interface PaymentInfoDao {
 	
 	public PaymentInfo updatePaymentInfo(PaymentInfo p);
 	
-	public int deletePaymentInfo(PaymentInfo p);
+	public void deletePaymentInfo(PaymentInfo p);
 
 }

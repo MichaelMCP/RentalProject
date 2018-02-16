@@ -6,7 +6,7 @@ import com.revature.beans.Receipt;
 
 public interface ReceiptsDao {
 	
-	public int createRecepit(Receipt receipt);
+	public Receipt createReceipt(Receipt receipt);
 	
 	public List<Receipt> getReceiptByRenterId(int i);
 	
@@ -16,7 +16,7 @@ public interface ReceiptsDao {
 
 	public List<Receipt>getAllReceipts();
 
-	public int deleteReceipt(Receipt receipt);
+	public void deleteReceipt(Receipt receipt);
 	
 	public Receipt updateReceipt(Receipt receipt);
 
