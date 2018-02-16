@@ -2,7 +2,6 @@ drop table rent_transaction;
 drop table payment_info;
 drop table services;
 drop table roles_table;
-drop table payment_info;
 drop table receipts;
 drop table properties;
 drop table users;
