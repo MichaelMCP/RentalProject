@@ -11,72 +11,43 @@ import org.springframework.beans.factory.annotation.Autowired;
 import com.revature.beans.PaymentInfo;
 import com.revature.util.HibernateUtil;
 
-public class PaymentInfoHibernate implements PaymentInfoDao{
+public class PaymentInfoHibernate implements PaymentInfoDao, HibernateSession{
 	
-	private static Logger log = Logger.getLogger(PaymentInfoHibernate.class);
-	@Autowired
-	private static HibernateUtil hu;
+	private Session session;
 
 	@Override
-	public int createPaymentInfo(PaymentInfo p){
-		Session session = hu.getSession();
-		Transaction tx = null;
-		try{
-			tx = session.beginTransaction();
-			log.warn("The payment info is: "+p);
-			int i = (Integer) session.save(p);
-			log.warn("Created payment info will have an id of "+i);
-			log.warn("The payment info is: "+p);
-			
-			
-			tx.commit();
-			
-			return p.getId();
-			
-		} catch(Exception e) {
-			log.error(e);
-			return 0;
-		} finally {
-			session.close();
-		}
+	public PaymentInfo createPaymentInfo(PaymentInfo p){
+		int i = (Integer) session.save(p);
+		return p;
 	}
 
 	@Override
 	public PaymentInfo getPaymentInfoById(int i) {
-		Session su = hu.getSession();
-		PaymentInfo p = su.get(PaymentInfo.class, i);
-		su.close();
+		PaymentInfo p = (PaymentInfo) session.get(PaymentInfo.class, i);
 		return p;
 	}
 
 	@Override
 	public List<PaymentInfo> getAllPaymentInfo() {
-		Session s = hu.getSession();
 		String query = "from com.revature.beans.PaymentInfo";
-		Query<PaymentInfo> q = s.createQuery(query, PaymentInfo.class);
-		List<PaymentInfo> paymentInfoList = q.getResultList();
-		s.close();
-		return paymentInfoList;
+		List<PaymentInfo> q = (List<PaymentInfo>) session.createQuery(query, PaymentInfo.class);
+		return q;
 	}
 
 	@Override
 	public PaymentInfo updatePaymentInfo(PaymentInfo p) {
-		Session s = hu.getSession();
-		Transaction tx = s.beginTransaction();
-		s.update(p);
-		tx.commit();
-		s.close();
+		session.update(p);
 		return p;
 	}
 
 	@Override
-	public int deletePaymentInfo(PaymentInfo p) {
-		Session s = hu.getSession();
-		Transaction tx = s.beginTransaction();
-		s.delete(p);
-		tx.commit();
-		s.close();
-		return 1;
+	public void deletePaymentInfo(PaymentInfo p) {
+		session.delete(p);
+	}
+
+	@Override
+	public void setSession(Session session) {
+		this.session = session;
 	}
 
 }

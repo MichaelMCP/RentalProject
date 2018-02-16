@@ -29,8 +29,8 @@ public class PaymentInfoHibernateTest {
 		p.setCreditCardNumber(1);
 		p.setUser(u);
 		
-		int test = pd.createPaymentInfo(p);
-		assertEquals(p.getId(), test);
+		PaymentInfo test = pd.createPaymentInfo(p);
+		assertEquals(p, test);
 		pd.deletePaymentInfo(p);
 	}
 
@@ -93,24 +93,6 @@ public class PaymentInfoHibernateTest {
 		PaymentInfo test = pd.updatePaymentInfo(p);
 		assertEquals(p, test);
 		pd.deletePaymentInfo(p);
-	}
-
-	@Test
-	public void testDeletePaymentInfo() {
-		User u = new User();
-		u.setRole(1);
-		u.setEmail("test5@test.com");
-		u.setFullName("Bob");
-		u.setPass("123");
-		ud.createUser(u);
-		
-		PaymentInfo p = new PaymentInfo();
-		p.setCost(10);
-		p.setCreditCardNumber(1);
-		p.setUser(u);
-		pd.createPaymentInfo(p);
-		int test = pd.deletePaymentInfo(p);
-		assertEquals(1, test);
 	}
 
 }

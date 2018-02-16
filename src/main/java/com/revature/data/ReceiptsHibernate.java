@@ -10,99 +10,63 @@ import org.hibernate.query.Query;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import com.revature.beans.Receipt;
+import com.revature.beans.User;
 import com.revature.util.HibernateUtil;
 
-public class ReceiptsHibernate implements ReceiptsDao {
+public class ReceiptsHibernate implements ReceiptsDao, HibernateSession {
 	
-	private static Logger log = Logger.getLogger(PaymentInfoHibernate.class);
-	@Autowired
-	private static HibernateUtil hu;
+	private Session session;
 
 	@Override
-	public int createRecepit(Receipt receipt){
-		Session session = hu.getSession();
-		Transaction tx = null;
-		try{
-			tx = session.beginTransaction();
-			log.warn("The Receipt is: "+receipt);
-			int i = (Integer) session.save(receipt);
-			log.warn("Created Receipt will have an id of "+i);
-			log.warn("The Receipt is: "+receipt);
-			
-			tx.commit();
-			
-			return receipt.getReceiptId();
-			
-		} catch(Exception e) {
-			log.trace(e);
-			return 0;
-		} finally {
-			session.close();
-		}
+	public Receipt createReceipt(Receipt receipt){
+		int i = (Integer) session.save(receipt);
+		return receipt;
 	}
 
 	@Override
 	public List<Receipt> getReceiptByRenterId(int i) {
-		Session s = hu.getSession();
+		
 		String query = "from com.revature.beans.Receipt re where re.user.id=:renterId";
-		log.trace(s);
-		Query<Receipt> q = s.createQuery(query, Receipt.class);
+		Query<Receipt> q = session.createQuery(query);
 		q.setParameter("renterId", i);
-		log.trace(q);
-		List<Receipt> receiptList = q.getResultList();
-		s.close();
-		return receiptList;
+		return (List<Receipt>) q.uniqueResult();
 	}
 
 	@Override
 	public List<Receipt> getReceiptByOwnerId(int i) {
-		Session s = hu.getSession();
 		String query = "from com.revature.beans.Receipt re where re.owner.id=:ownerId";
-		log.trace(s);
-		Query<Receipt> q = s.createQuery(query, Receipt.class);
+		Query<Receipt> q = session.createQuery(query);
 		q.setParameter("ownerId", i);
-		log.trace(q);
-		List<Receipt> receiptList = q.getResultList();
-		s.close();
-		return receiptList;
+		return (List<Receipt>) q.uniqueResult();
 	}
 
 	@Override
 	public Receipt getReceiptByReceiptId(int i) {
-		Session su = hu.getSession();
-		Receipt receipt = su.get(Receipt.class, i);
-		su.close();
+		Receipt receipt = (Receipt) session.get(Receipt.class, i);
 		return receipt;
 	}
 
 	@Override
 	public List<Receipt> getAllReceipts() {
-		Session s = hu.getSession();
 		String query = "from com.revature.beans.Receipt";
-		Query<Receipt> q = s.createQuery(query, Receipt.class);
-		List<Receipt> receiptList = q.getResultList();
-		s.close();
+		List<Receipt> receiptList = (List<Receipt>) session.createQuery(query).list();
 		return receiptList;
 	}
 
 	@Override
-	public int deleteReceipt(Receipt receipt) {
-		Session s = hu.getSession();
-		Transaction tx = s.beginTransaction();
-		s.delete(receipt);
-		tx.commit();
-		s.close();
-		return 1;
+	public void deleteReceipt(Receipt receipt) {
+		session.delete(receipt);
 	}
 
 	@Override
 	public Receipt updateReceipt(Receipt receipt) {
-		Session s = hu.getSession();
-		Transaction tx = s.beginTransaction();
-		s.update(receipt);
-		tx.commit();
-		s.close();
+		session.update(receipt);
 		return receipt;
 	}
 
+	@Override
+	public void setSession(Session session) {
+		this.session = session;
+		
+	}
 }
