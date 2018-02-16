@@ -1,28 +1,21 @@
 package com.revature.service;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import com.revature.beans.User;
 import com.revature.data.UserDao;
-import com.revature.data.UserHibernate;
 
 @Component
 public class LoginOracle implements LoginService{
-
-	UserDao ud = new UserHibernate();
+	
+	@Autowired
+	UserDao ud;
 	
 	@Override
 	public User login(String user, String pass) {
-		User u = ud.getUser(user, pass);
-		if(u != null)
-		{
-			return u;
-		}
-		else
-		{
-			return null;
-		}
-		
+		User u = ud.getUser(user, pass);		
+		return u;
 	}
 
 }

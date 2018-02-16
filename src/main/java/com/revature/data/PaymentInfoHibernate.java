@@ -6,6 +6,7 @@ import org.apache.log4j.Logger;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 import org.hibernate.query.Query;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import com.revature.beans.PaymentInfo;
 import com.revature.util.HibernateUtil;
@@ -13,7 +14,8 @@ import com.revature.util.HibernateUtil;
 public class PaymentInfoHibernate implements PaymentInfoDao{
 	
 	private static Logger log = Logger.getLogger(PaymentInfoHibernate.class);
-	private static HibernateUtil hu = HibernateUtil.getInstance();
+	@Autowired
+	private static HibernateUtil hu;
 
 	@Override
 	public int createPaymentInfo(PaymentInfo p){

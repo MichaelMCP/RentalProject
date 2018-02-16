@@ -6,13 +6,15 @@ import org.apache.log4j.Logger;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 import org.hibernate.query.Query;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import com.revature.beans.Property;
 import com.revature.util.HibernateUtil;
 
 public class PropertyHibernate implements PropertyDao {
 	private static Logger log = Logger.getLogger(UserHibernate.class);
-	private static HibernateUtil hu = HibernateUtil.getInstance();
+	@Autowired
+	private static HibernateUtil hu;
 	
 	@Override
 	public int registerProperty(Property property){

@@ -6,46 +6,33 @@ import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.revature.beans.Property;
 import com.revature.beans.User;
-import com.revature.service.MyPropertiesService;
-
+import com.revature.service.AllPropertiesService;
 
 @Controller
 @CrossOrigin(origins= {"*"})
-@RequestMapping(value="/my-properties")
-public class MyPropertiesController {
-	private Logger log = Logger.getLogger(MyPropertiesController.class);
+@RequestMapping(value="/Properties")
+public class AllPropertiesController {
 	private ObjectMapper om = new ObjectMapper();
+	private Logger log = Logger.getLogger(AllPropertiesController.class);
 	@Autowired
-	private MyPropertiesService mypro;
+	private AllPropertiesService allpro;
 	
-	public void setProperties(MyPropertiesService mypro) {
-		this.mypro = mypro;
+	public void setProperties(AllPropertiesService allpro) {
+		this.allpro = allpro;
 	}
 	
 	@RequestMapping(method=RequestMethod.GET)
 	@ResponseBody
 	public String showProperties(HttpSession session) throws JsonProcessingException {
+		log.error(session);
 		User user = (User) session.getAttribute("user");
-		if(user == null) {
-			return "redirect: login";
-		}
-		else
-			return om.writeValueAsString(mypro.getMyProperties(user.getId()));
+		return om.writeValueAsString(allpro.getAllProperties());
 	}
-	@RequestMapping(method=RequestMethod.POST)
-	public String deleteProperties(@RequestBody Property property, HttpSession session){
-		log.warn(property);
-		mypro.deleteMyProperty(property);
-		return "redirect: my-properties";
-	}
-	
 }
