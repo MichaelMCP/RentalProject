@@ -1,15 +1,16 @@
 package com.revature.service;
 
-import org.springframework.stereotype.Component;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.revature.beans.User;
 import com.revature.data.UserDao;
-import com.revature.data.UserHibernate;
 
-@Component
+@Service
 public class RegisterUserOracle implements RegisterUserService {
 
-	UserDao ud = new UserHibernate();
+	@Autowired
+	UserDao ud;
 	
 	@Override
 	public User registerUser(String email, String pass, String fullName, int role) {

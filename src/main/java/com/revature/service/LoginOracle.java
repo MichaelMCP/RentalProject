@@ -1,12 +1,12 @@
 package com.revature.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 import com.revature.beans.User;
 import com.revature.data.UserDao;
 
-@Component
+@Service
 public class LoginOracle implements LoginService{
 	
 	@Autowired

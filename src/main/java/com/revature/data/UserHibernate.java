@@ -2,14 +2,13 @@ package com.revature.data;
 
 import java.util.List;
 
-import org.apache.log4j.Logger;
 import org.hibernate.Session;
 import org.hibernate.query.Query;
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 
 import com.revature.beans.User;
 
-@Component
+@Repository
 public class UserHibernate implements UserDao, HibernateSession
 {
 	

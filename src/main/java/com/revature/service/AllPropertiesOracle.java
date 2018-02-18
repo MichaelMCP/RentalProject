@@ -2,20 +2,21 @@ package com.revature.service;
 
 import java.util.List;
 
-import org.springframework.stereotype.Component;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.revature.beans.Property;
 import com.revature.data.PropertyDao;
-import com.revature.data.PropertyHibernate;
 
-@Component
+@Service
 public class AllPropertiesOracle implements AllPropertiesService{
 	
-	PropertyDao pd = new PropertyHibernate();
+	@Autowired
+	PropertyDao pd;
 	
 	@Override
-	public List<Property> getAllProperties() {
-		List<Property> pList = pd.getAllProperties();
+	public List<Property> getAllPropertiesAvailable() {
+		List<Property> pList = pd.getAllPropertiesAvailable();
 		return pList;
 	}
 
