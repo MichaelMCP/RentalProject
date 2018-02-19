@@ -36,7 +36,7 @@ public class EditUserController {
 	@RequestMapping(method=RequestMethod.POST)
 	public String deleteProperties(@RequestBody User user, HttpSession session){
 		editUser.deleteUser(user);
-		return "redirect: editUser";
+		return "redirect: editUsers";
 	}
 	
 }
