@@ -31,6 +31,7 @@ public interface PropertyDao {
 	 * @param id the id of an owner object
 	 */
 	public List<Property> getAllProperties();
+	public List<Property> getAllPropertiesAvailable();
 	/**
 	 * updates the property object to the database
 	 * 

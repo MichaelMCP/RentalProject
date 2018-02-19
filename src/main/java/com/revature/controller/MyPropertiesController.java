@@ -22,7 +22,6 @@ import com.revature.service.MyPropertiesService;
 @CrossOrigin(origins= {"*"})
 @RequestMapping(value="/my-properties")
 public class MyPropertiesController {
-	private Logger log = Logger.getLogger(MyPropertiesController.class);
 	private ObjectMapper om = new ObjectMapper();
 	@Autowired
 	private MyPropertiesService mypro;

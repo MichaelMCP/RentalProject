@@ -3,9 +3,11 @@ package com.revature.data;
 import java.util.List;
 
 import org.hibernate.Session;
+import org.springframework.stereotype.Repository;
 
 import com.revature.beans.RentTransaction;
 
+@Repository
 public class RentTransactionHibernate implements RentTransactionDao, HibernateSession {
 
 	private Session session;

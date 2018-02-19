@@ -20,7 +20,6 @@ import com.revature.service.AllPropertiesService;
 @RequestMapping(value="/Properties")
 public class AllPropertiesController {
 	private ObjectMapper om = new ObjectMapper();
-	private Logger log = Logger.getLogger(AllPropertiesController.class);
 	@Autowired
 	private AllPropertiesService allpro;
 	
@@ -31,8 +30,7 @@ public class AllPropertiesController {
 	@RequestMapping(method=RequestMethod.GET)
 	@ResponseBody
 	public String showProperties(HttpSession session) throws JsonProcessingException {
-		log.error(session);
 		User user = (User) session.getAttribute("user");
-		return om.writeValueAsString(allpro.getAllProperties());
+		return om.writeValueAsString(allpro.getAllPropertiesAvailable());
 	}
 }

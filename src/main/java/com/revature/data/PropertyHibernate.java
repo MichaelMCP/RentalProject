@@ -4,10 +4,11 @@ import java.util.List;
 import org.hibernate.Session;
 import org.hibernate.query.Query;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 
 import com.revature.beans.Property;
 
-@Component
+@Repository
 public class PropertyHibernate implements PropertyDao, HibernateSession {
 	private Session session;
 	
@@ -28,6 +29,15 @@ public class PropertyHibernate implements PropertyDao, HibernateSession {
 		String hquery = "from com.revature.beans.Property where owner_id = :owner_id";
 		Query q = session.createQuery(hquery);
 		q.setParameter("owner_id", id);
+		List<Property> propertyList = (List<Property>) q.getResultList();
+		return propertyList;
+	}
+	
+	@Override
+	public List<Property> getAllPropertiesAvailable() {
+		String hquery = "from com.revature.beans.Property where availability = :availability";
+		Query q = session.createQuery(hquery);
+		q.setParameter("availability", 1);
 		List<Property> propertyList = (List<Property>) q.getResultList();
 		return propertyList;
 	}

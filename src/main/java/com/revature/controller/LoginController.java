@@ -22,8 +22,6 @@ import com.revature.service.LoginService;
 @RequestMapping(value="/login")
 public class LoginController {
 	private ObjectMapper om = new ObjectMapper();
-	private Logger log = Logger.getLogger(LoginController.class);
-	
 	@Autowired
 	private LoginService login;
 	
@@ -34,7 +32,6 @@ public class LoginController {
 	
 	@RequestMapping(method=RequestMethod.GET)
 	public String goLogin(HttpSession session) {
-		log.trace(session);
 		if(session.getAttribute("user")!=null)
 			return "home";
 		return "login";
@@ -44,8 +41,6 @@ public class LoginController {
 	@ResponseBody
 	public String login(@RequestBody User user, HttpSession session) throws JsonProcessingException {
 		User u = login.login(user.getEmail(), user.getPass());
-		log.error(session);
-		log.error(u);
 		if(u == null) {
 			return null;
 		} else {

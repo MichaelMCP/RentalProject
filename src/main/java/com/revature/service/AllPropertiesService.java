@@ -6,7 +6,7 @@ import com.revature.beans.Property;
 
 public interface AllPropertiesService {
 	
-	public List<Property> getAllProperties();
+	public List<Property> getAllPropertiesAvailable();
 	
 	public void rentProperty(Property P);
 

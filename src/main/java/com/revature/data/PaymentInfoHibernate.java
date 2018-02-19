@@ -7,10 +7,12 @@ import org.hibernate.Session;
 import org.hibernate.Transaction;
 import org.hibernate.query.Query;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
 
 import com.revature.beans.PaymentInfo;
 import com.revature.util.HibernateUtil;
 
+@Repository
 public class PaymentInfoHibernate implements PaymentInfoDao, HibernateSession{
 	
 	private Session session;
