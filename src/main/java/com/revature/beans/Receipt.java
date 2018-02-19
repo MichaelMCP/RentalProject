@@ -40,6 +40,24 @@ public class Receipt
 	@OneToOne(fetch=FetchType.EAGER, cascade=CascadeType.ALL)
 	@JoinColumn(name="property_id")
 	private Property property;
+	
+	public Receipt() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	
+	public Receipt(int receiptId, Timestamp paymentsTime, User user, User owner, int userRating, double amount,
+			Property property) {
+		super();
+		this.receiptId = receiptId;
+		this.paymentsTime = paymentsTime;
+		this.user = user;
+		this.owner = owner;
+		this.userRating = userRating;
+		this.amount = amount;
+		this.property = property;
+	}
+	
 	public int getReceiptId() {
 		return receiptId;
 	}
@@ -139,20 +157,7 @@ public class Receipt
 		return "Receipt [receiptId=" + receiptId + ", paymentsTime=" + paymentsTime + ", user=" + user + ", owner="
 				+ owner + ", userRating=" + userRating + ", amount=" + amount + ", property=" + property + "]";
 	}
-	public Receipt(int receiptId, Timestamp paymentsTime, User user, User owner, int userRating, double amount,
-			Property property) {
-		super();
-		this.receiptId = receiptId;
-		this.paymentsTime = paymentsTime;
-		this.user = user;
-		this.owner = owner;
-		this.userRating = userRating;
-		this.amount = amount;
-		this.property = property;
-	}
-	public Receipt() {
-		super();
-		// TODO Auto-generated constructor stub
-	}
+	
+	
  
 }
