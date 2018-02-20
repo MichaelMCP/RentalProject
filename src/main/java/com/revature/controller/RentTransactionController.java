@@ -36,8 +36,8 @@ public class RentTransactionController
 	@RequestMapping(method=RequestMethod.POST)
 	@ResponseBody
 	public String register(@RequestBody RentTransaction rentT, HttpSession session) throws JsonProcessingException {
-		RentTransaction v = register.registerRentTransaction(rentT.getStartdate(), rentT.getEnddate(), rentT.getRenterId(), rentT.getPropId()
-				, rentT.getApproval(),rentT.getPaymentinfoId());
+		RentTransaction v = register.registerRentTransaction(rentT.getStartdate(), rentT.getEnddate(), rentT.getRenter(), rentT.getProperty()
+				, rentT.getApproval(),rentT.getPayment());
 		log.error(session);
 		log.error(v);
 		if(v == null) {

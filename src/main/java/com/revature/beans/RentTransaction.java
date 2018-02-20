@@ -27,118 +27,49 @@ public class RentTransaction
 	private String startdate;
 	@Column(name="end_date")
 	private String enddate;
-	@Column(name="renter_id")
 	@OneToOne(fetch=FetchType.EAGER)
 	@JoinColumn(name="renter_id")
-	private int renterId;
-	@Column(name="property_id")
+	private User renter;
 	@OneToOne(fetch=FetchType.EAGER)
 	@JoinColumn(name="property_id")
-	private int propId;
+	private Property property;
 	private int approval;
-	@Column(name="payment_info_id")
 	@OneToOne(fetch=FetchType.EAGER)
 	@JoinColumn(name="payment_info_id")
-	private int paymentinfoId;
-	
+	private PaymentInfo payment;
 	public RentTransaction() {
 		super();
+		// TODO Auto-generated constructor stub
 	}
-
-	
-
-	public RentTransaction(int rentId, String startdate, String enddate, int renterId, int propId, int approval,
-			int paymentinfoId) {
+	public RentTransaction(int rentId, String startdate, String enddate, User renter, Property property, int approval,
+			PaymentInfo payment) {
 		super();
 		this.rentId = rentId;
 		this.startdate = startdate;
 		this.enddate = enddate;
-		this.renterId = renterId;
-		this.propId = propId;
+		this.renter = renter;
+		this.property = property;
 		this.approval = approval;
-		this.paymentinfoId = paymentinfoId;
+		this.payment = payment;
 	}
-
-
-
-	public int getRentId() {
-		return rentId;
+	@Override
+	public String toString() {
+		return "RentTransaction [rentId=" + rentId + ", startdate=" + startdate + ", enddate=" + enddate + ", renter="
+				+ renter + ", property=" + property + ", approval=" + approval + ", payment=" + payment + "]";
 	}
-
-
-
-	public void setRentId(int rentId) {
-		this.rentId = rentId;
-	}
-
-
-
-	public int getRenterId() {
-		return renterId;
-	}
-
-
-
-	public void setRenterId(int renterId) {
-		this.renterId = renterId;
-	}
-
-
-
-	public String getStartdate() {
-		return startdate;
-	}
-
-	public void setStartdate(String startdate) {
-		this.startdate = startdate;
-	}
-
-	public String getEnddate() {
-		return enddate;
-	}
-
-	public void setEnddate(String enddate) {
-		this.enddate = enddate;
-	}
-	
-	public int getPropId() {
-		return propId;
-	}
-
-	public void setPropId(int propId) {
-		this.propId = propId;
-	}
-
-	public int getApproval() {
-		return approval;
-	}
-
-	public void setApproval(int approval) {
-		this.approval = approval;
-	}
-
-	public int getPaymentinfoId() {
-		return paymentinfoId;
-	}
-
-	public void setPaymentinfoId(int paymentinfoId) {
-		this.paymentinfoId = paymentinfoId;
-	}
-
 	@Override
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
 		result = prime * result + approval;
 		result = prime * result + ((enddate == null) ? 0 : enddate.hashCode());
-		result = prime * result + paymentinfoId;
-		result = prime * result + propId;
+		result = prime * result + ((payment == null) ? 0 : payment.hashCode());
+		result = prime * result + ((property == null) ? 0 : property.hashCode());
 		result = prime * result + rentId;
-		result = prime * result + renterId;
+		result = prime * result + ((renter == null) ? 0 : renter.hashCode());
 		result = prime * result + ((startdate == null) ? 0 : startdate.hashCode());
 		return result;
 	}
-
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
@@ -155,13 +86,22 @@ public class RentTransaction
 				return false;
 		} else if (!enddate.equals(other.enddate))
 			return false;
-		if (paymentinfoId != other.paymentinfoId)
+		if (payment == null) {
+			if (other.payment != null)
+				return false;
+		} else if (!payment.equals(other.payment))
 			return false;
-		if (propId != other.propId)
+		if (property == null) {
+			if (other.property != null)
+				return false;
+		} else if (!property.equals(other.property))
 			return false;
 		if (rentId != other.rentId)
 			return false;
-		if (renterId != other.renterId)
+		if (renter == null) {
+			if (other.renter != null)
+				return false;
+		} else if (!renter.equals(other.renter))
 			return false;
 		if (startdate == null) {
 			if (other.startdate != null)
@@ -170,27 +110,49 @@ public class RentTransaction
 			return false;
 		return true;
 	}
-
-	@Override
-	public String toString() {
-		StringBuilder builder = new StringBuilder();
-		builder.append("RentTransaction [rentId=");
-		builder.append(rentId);
-		builder.append(", startdate=");
-		builder.append(startdate);
-		builder.append(", enddate=");
-		builder.append(enddate);
-		builder.append(", renterId=");
-		builder.append(renterId);
-		builder.append(", propId=");
-		builder.append(propId);
-		builder.append(", approval=");
-		builder.append(approval);
-		builder.append(", paymentinfoId=");
-		builder.append(paymentinfoId);
-		builder.append("]");
-		return builder.toString();
+	public int getRentId() {
+		return rentId;
 	}
+	public void setRentId(int rentId) {
+		this.rentId = rentId;
+	}
+	public String getStartdate() {
+		return startdate;
+	}
+	public void setStartdate(String startdate) {
+		this.startdate = startdate;
+	}
+	public String getEnddate() {
+		return enddate;
+	}
+	public void setEnddate(String enddate) {
+		this.enddate = enddate;
+	}
+	public User getRenter() {
+		return renter;
+	}
+	public void setRenter(User renter) {
+		this.renter = renter;
+	}
+	public Property getProperty() {
+		return property;
+	}
+	public void setProperty(Property property) {
+		this.property = property;
+	}
+	public int getApproval() {
+		return approval;
+	}
+	public void setApproval(int approval) {
+		this.approval = approval;
+	}
+	public PaymentInfo getPayment() {
+		return payment;
+	}
+	public void setPayment(PaymentInfo payment) {
+		this.payment = payment;
+	}
+
 	
 	
 

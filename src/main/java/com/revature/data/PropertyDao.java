@@ -30,6 +30,7 @@ public interface PropertyDao {
 	 * 
 	 * @param id the id of an owner object
 	 */
+	public Property getPropertyByPropertyId(int id);
 	public List<Property> getAllProperties();
 	public List<Property> getAllPropertiesAvailable();
 	/**

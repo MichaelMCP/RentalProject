@@ -37,7 +37,7 @@ public class RegisterPropertyController {
 	public String registerProperty(@RequestBody Property property, HttpSession session) throws JsonProcessingException {
 		
 		User u = (User)session.getAttribute("user");
-		Property props = rps.registerProperty(u , property.getAddress1(), property.getAddress2(), property.getAddress2(), property.getCity(),
+		Property props = rps.registerProperty(u , property.getAddress1(), property.getAddress2(), property.getCity(),property.getState(),
 				property.getZipcode(), property.getCurrentRentPrice(), property.getRating(), property.getAvailability());
 
 		rps.updateRole(u);
