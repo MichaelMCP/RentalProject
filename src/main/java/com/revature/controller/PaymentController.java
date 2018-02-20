@@ -13,7 +13,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.revature.beans.PaymentInfo;
-import com.revature.beans.User;
 import com.revature.service.PaymentService;
 
 @Controller
@@ -31,11 +30,7 @@ public class PaymentController {
 	@RequestMapping(method=RequestMethod.POST)
 	@ResponseBody
 	public String addPayment(@RequestBody PaymentInfo paymentInfo, HttpSession session) throws JsonProcessingException {
-		User u = null;
-		u = (User) session.getAttribute("user");
-		PaymentInfo pyInfo = null;
-		pyInfo.setUser(u);
-		pyInfo= payment.savePaymentInfo(paymentInfo);
+		PaymentInfo pyInfo= payment.savePaymentInfo(paymentInfo);
 		return om.writeValueAsString(pyInfo);
 			
 	}
