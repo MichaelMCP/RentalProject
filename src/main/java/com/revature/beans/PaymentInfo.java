@@ -26,12 +26,13 @@ public class PaymentInfo
 	@SequenceGenerator(name="payment", sequenceName="payment_info_key", allocationSize=1)
 	private int id;
 	
-	@OneToOne(fetch=FetchType.EAGER, cascade=CascadeType.ALL)
+	@OneToOne(fetch=FetchType.EAGER)
 	@JoinColumn(name="user_id")
 	private User user;
 	@Column(name="credit_card_number")
 	private String cc;
-	private String experationDate;
+	@Column(name="experationdate")
+	private String ed;
 	private int cvv;
 	
 	public PaymentInfo() 
@@ -39,12 +40,12 @@ public class PaymentInfo
 		super();
 	}
 
-	public PaymentInfo(int id, User user, String cc, String experationDate, int cvv) {
+	public PaymentInfo(int id, User user, String cc, String ed, int cvv) {
 		super();
 		this.id = id;
 		this.user = user;
 		this.cc = cc;
-		this.experationDate = experationDate;
+		this.ed = ed;
 		this.cvv = cvv;
 	}
 
@@ -72,12 +73,12 @@ public class PaymentInfo
 		this.cc = cc;
 	}
 
-	public String getExperationDate() {
-		return experationDate;
+	public String getEd() {
+		return ed;
 	}
 
-	public void setExperationDate(String experationDate) {
-		this.experationDate = experationDate;
+	public void setEd(String ed) {
+		this.ed = ed;
 	}
 
 	public int getCvv() {
@@ -94,7 +95,7 @@ public class PaymentInfo
 		int result = 1;
 		result = prime * result + ((cc == null) ? 0 : cc.hashCode());
 		result = prime * result + cvv;
-		result = prime * result + ((experationDate == null) ? 0 : experationDate.hashCode());
+		result = prime * result + ((ed == null) ? 0 : ed.hashCode());
 		result = prime * result + id;
 		result = prime * result + ((user == null) ? 0 : user.hashCode());
 		return result;
@@ -116,10 +117,10 @@ public class PaymentInfo
 			return false;
 		if (cvv != other.cvv)
 			return false;
-		if (experationDate == null) {
-			if (other.experationDate != null)
+		if (ed == null) {
+			if (other.ed != null)
 				return false;
-		} else if (!experationDate.equals(other.experationDate))
+		} else if (!ed.equals(other.ed))
 			return false;
 		if (id != other.id)
 			return false;
@@ -140,15 +141,13 @@ public class PaymentInfo
 		builder.append(user);
 		builder.append(", cc=");
 		builder.append(cc);
-		builder.append(", experationDate=");
-		builder.append(experationDate);
+		builder.append(", ed=");
+		builder.append(ed);
 		builder.append(", cvv=");
 		builder.append(cvv);
 		builder.append("]");
 		return builder.toString();
 	}
-	
-	
-	
+
 	
 }
