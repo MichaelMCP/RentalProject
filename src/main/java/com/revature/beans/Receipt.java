@@ -43,7 +43,6 @@ public class Receipt
 	
 	public Receipt() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 	
 	public Receipt(int receiptId, Timestamp paymentsTime, User user, User owner, int userRating, double amount,
