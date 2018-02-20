@@ -26,12 +26,11 @@ public class PaymentInfo
 	@SequenceGenerator(name="payment", sequenceName="payment_info_key", allocationSize=1)
 	private int id;
 	
-	@Column(name="user_id")
 	@OneToOne(fetch=FetchType.EAGER, cascade=CascadeType.ALL)
 	@JoinColumn(name="user_id")
-	private int userid;
+	private User user;
 	@Column(name="credit_card_number")
-	private int cc;
+	private String cc;
 	private String experationDate;
 	private int cvv;
 	
@@ -40,10 +39,10 @@ public class PaymentInfo
 		super();
 	}
 
-	public PaymentInfo(int id, int userid, int cc, String experationDate, int cvv) {
+	public PaymentInfo(int id, User user, String cc, String experationDate, int cvv) {
 		super();
 		this.id = id;
-		this.userid = userid;
+		this.user = user;
 		this.cc = cc;
 		this.experationDate = experationDate;
 		this.cvv = cvv;
@@ -57,19 +56,19 @@ public class PaymentInfo
 		this.id = id;
 	}
 
-	public int getUserid() {
-		return userid;
+	public User getUser() {
+		return user;
 	}
 
-	public void setUserid(int userid) {
-		this.userid = userid;
+	public void setUser(User user) {
+		this.user = user;
 	}
 
-	public int getCc() {
+	public String getCc() {
 		return cc;
 	}
 
-	public void setCc(int cc) {
+	public void setCc(String cc) {
 		this.cc = cc;
 	}
 
@@ -93,11 +92,11 @@ public class PaymentInfo
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
-		result = prime * result + cc;
+		result = prime * result + ((cc == null) ? 0 : cc.hashCode());
 		result = prime * result + cvv;
 		result = prime * result + ((experationDate == null) ? 0 : experationDate.hashCode());
 		result = prime * result + id;
-		result = prime * result + userid;
+		result = prime * result + ((user == null) ? 0 : user.hashCode());
 		return result;
 	}
 
@@ -110,7 +109,10 @@ public class PaymentInfo
 		if (getClass() != obj.getClass())
 			return false;
 		PaymentInfo other = (PaymentInfo) obj;
-		if (cc != other.cc)
+		if (cc == null) {
+			if (other.cc != null)
+				return false;
+		} else if (!cc.equals(other.cc))
 			return false;
 		if (cvv != other.cvv)
 			return false;
@@ -121,7 +123,10 @@ public class PaymentInfo
 			return false;
 		if (id != other.id)
 			return false;
-		if (userid != other.userid)
+		if (user == null) {
+			if (other.user != null)
+				return false;
+		} else if (!user.equals(other.user))
 			return false;
 		return true;
 	}
@@ -131,8 +136,8 @@ public class PaymentInfo
 		StringBuilder builder = new StringBuilder();
 		builder.append("PaymentInfo [id=");
 		builder.append(id);
-		builder.append(", userid=");
-		builder.append(userid);
+		builder.append(", user=");
+		builder.append(user);
 		builder.append(", cc=");
 		builder.append(cc);
 		builder.append(", experationDate=");
@@ -144,5 +149,6 @@ public class PaymentInfo
 	}
 	
 	
-
+	
+	
 }
