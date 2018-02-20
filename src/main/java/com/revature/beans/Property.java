@@ -91,7 +91,7 @@ public class Property
 	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="prop_id")
 	@SequenceGenerator(name="prop_id", sequenceName="properties_key", allocationSize=1)
 	private int propertyId;
-	@ManyToOne(fetch=FetchType.LAZY)
+	@ManyToOne(fetch=FetchType.EAGER)
 	@JoinColumn(name="owner_id")
 	private User owner;
 	@Column(name="address1")
