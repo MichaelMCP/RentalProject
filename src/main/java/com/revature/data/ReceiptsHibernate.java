@@ -3,7 +3,6 @@ package com.revature.data;
 import java.util.List;
 
 
-import org.apache.log4j.Logger;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 import org.hibernate.query.Query;
@@ -21,7 +20,7 @@ public class ReceiptsHibernate implements ReceiptsDao, HibernateSession {
 
 	@Override
 	public Receipt createReceipt(Receipt receipt){
-		int i = (Integer) session.save(receipt);
+		session.save(receipt);
 		return receipt;
 	}
 
@@ -44,15 +43,13 @@ public class ReceiptsHibernate implements ReceiptsDao, HibernateSession {
 
 	@Override
 	public Receipt getReceiptByReceiptId(int i) {
-		Receipt receipt = (Receipt) session.get(Receipt.class, i);
-		return receipt;
+		return (Receipt) session.get(Receipt.class, i);
 	}
 
 	@Override
 	public List<Receipt> getAllReceipts() {
 		String query = "from com.revature.beans.Receipt";
-		List<Receipt> receiptList = (List<Receipt>) session.createQuery(query).list();
-		return receiptList;
+		return (List<Receipt>) session.createQuery(query).list();
 	}
 
 	@Override

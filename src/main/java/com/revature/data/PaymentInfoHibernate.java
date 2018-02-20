@@ -2,7 +2,6 @@ package com.revature.data;
 
 import java.util.List;
 
-import org.apache.log4j.Logger;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 import org.hibernate.query.Query;
@@ -19,21 +18,19 @@ public class PaymentInfoHibernate implements PaymentInfoDao, HibernateSession{
 
 	@Override
 	public PaymentInfo createPaymentInfo(PaymentInfo p){
-		int i = (Integer) session.save(p);
+		session.save(p);
 		return p;
 	}
 
 	@Override
 	public PaymentInfo getPaymentInfoById(int i) {
-		PaymentInfo p = (PaymentInfo) session.get(PaymentInfo.class, i);
-		return p;
+		return (PaymentInfo) session.get(PaymentInfo.class, i);
 	}
 
 	@Override
 	public List<PaymentInfo> getAllPaymentInfo() {
 		String query = "from com.revature.beans.PaymentInfo";
-		List<PaymentInfo> q = (List<PaymentInfo>) session.createQuery(query, PaymentInfo.class);
-		return q;
+		return (List<PaymentInfo>) session.createQuery(query, PaymentInfo.class);
 	}
 
 	@Override
