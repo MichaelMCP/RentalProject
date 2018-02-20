@@ -34,10 +34,9 @@ public class PaymentInfo
 	@Column(name="experationdate")
 	private String ed;
 	private int cvv;
-	
-	public PaymentInfo() 
-	{
+	public PaymentInfo() {
 		super();
+		// TODO Auto-generated constructor stub
 	}
 
 	public PaymentInfo(int id, User user, String cc, String ed, int cvv) {
@@ -88,7 +87,6 @@ public class PaymentInfo
 	public void setCvv(int cvv) {
 		this.cvv = cvv;
 	}
-
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -100,7 +98,6 @@ public class PaymentInfo
 		result = prime * result + ((user == null) ? 0 : user.hashCode());
 		return result;
 	}
-
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)

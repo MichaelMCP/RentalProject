@@ -60,4 +60,10 @@ public class PropertyHibernate implements PropertyDao, HibernateSession {
 		this.session = session;
 		
 	}
+
+	@Override
+	public Property getPropertyByPropertyId(int id) {
+		Property p = (Property) session.get(Property.class, id);
+		return p;
+	}
 }
