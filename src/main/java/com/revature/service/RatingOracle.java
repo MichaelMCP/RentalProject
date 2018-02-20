@@ -29,4 +29,10 @@ public class RatingOracle implements RatingService{
 		return pList;
 	}
 
+	@Override
+	public Property rateProperty(Property p) {
+		pd.updateProperty(p);
+		return p;
+	}
+
 }

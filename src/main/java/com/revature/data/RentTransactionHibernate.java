@@ -32,16 +32,16 @@ public class RentTransactionHibernate implements RentTransactionDao, HibernateSe
 
 	@Override
 	public List<RentTransaction> getRentTransactionByOwnerId(int i) {
-		String query = "from com.revature.beans.RentTransaction where renter_id =: renter_id";
+		String query = "from com.revature.beans.RentTransaction where renter_id = :renter_id";
 		Query q = session.createQuery(query);
 		q.setParameter("renter_id", i);
-		List<RentTransaction> rtList = (List<RentTransaction>) session.createQuery(query).list();
+		List<RentTransaction> rtList = (List<RentTransaction>) q.getResultList();
 		return rtList;
 	}
 
 	@Override
 	public List<RentTransaction> getAllRentTransactions() {
-		String query = "from com.revature.beans.RentTransactions";
+		String query = "from com.revature.beans.RentTransaction";
 		List<RentTransaction> rtList = (List<RentTransaction>) session.createQuery(query).list();
 		return rtList;
 	}

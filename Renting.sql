@@ -40,7 +40,7 @@ references users (id);
 create table payment_info(
     payment_id number(20) primary key,
     user_id number(20) not null,
-    credit_Card_Number varchar2(16) not null,
+    credit_Card_Number varchar2(20) not null,
     experationDate varchar(50),
     cvv number(3)
 );
@@ -132,5 +132,10 @@ insert into Properties (property_id, owner_id, address1, city, states, zipcode, 
     
 insert into Properties (property_id, owner_id, address1, city, states, zipcode, current_Rent_Price, rating, availability)
     values (3, 2, '8888 Computer', 'New York', 'New York', '99999', 1200, 3, 1);
+    
+insert into payment_info (payment_id, user_id, credit_Card_Number, experationDate, cvv) values (1, 1, '3333333333333333', 'August 15, 2030', 333);
+
+insert into rent_transaction (rent_id, start_date, end_date, renter_id, property_id, approval, payment_info_id)
+    values (1, '02-21-2018', '02-28-2018', 1, 3, 1, 1);
 
 commit;
