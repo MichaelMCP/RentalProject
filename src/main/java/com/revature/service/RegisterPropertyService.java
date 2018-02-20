@@ -8,4 +8,6 @@ public interface RegisterPropertyService {
 	public Property registerProperty(User user, String address1, String address2, String city,
 			String states, int zipcode, double currentRentPrice, double rating, int availability);
 	
+	public User updateRole(User user);
+	
 }

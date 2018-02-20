@@ -36,22 +36,18 @@ public class RegisterPropertyController {
 	@ResponseBody
 	public String registerProperty(@RequestBody Property property, HttpSession session) throws JsonProcessingException {
 		
-//		System.out.println("Made it to this point!");
-//		return null;
-		
 		User u = (User)session.getAttribute("user");
 		Property props = rps.registerProperty(u , property.getAddress1(), property.getAddress2(), property.getAddress2(), property.getCity(),
 				property.getZipcode(), property.getCurrentRentPrice(), property.getRating(), property.getAvailability());
 
-//		Property prop = rps.registerProperty(user.getEmail(), user.getPass(), user.getFullName(), user.getRole());
+		rps.updateRole(u);
+		
 		log.error(session);
 		log.error(props);
 		if(u == null) {
 			return null;
 		} else {
-			return om.writeValueAsString(props);
-			
-		}
-			
+			return om.writeValueAsString(props);	
+		}	
 	}
 }
