@@ -1,11 +1,13 @@
 package com.revature.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.revature.beans.Property;
 import com.revature.beans.User;
 import com.revature.data.PropertyDao;
 
+@Service
 public class RegisterPropertyOracle implements RegisterPropertyService {
 	
 	@Autowired
