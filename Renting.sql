@@ -39,9 +39,10 @@ references users (id);
 
 create table payment_info(
     payment_id number(20) primary key,
-    cost number(20,2) not null,
     user_id number(20) not null,
-    credit_Card_Number number(20) not null
+    credit_Card_Number varchar2(16) not null,
+    experationDate varchar(50),
+    cvv number(3)
 );
 
 create table services(
@@ -118,5 +119,18 @@ drop sequence receipts_key;
 create sequence receipts_key;
 drop sequence rent_transaction_key;
 create sequence rent_transaction_key;
+
+insert into users (id, role, full_name, email, pass) values (1, 1, 'Randal', 'test@test.com', '123');
+insert into users (id, role, full_name, email, pass) values (2, 1, 'Michael', 'test2@test.com', '123');
+insert into users (id, role, full_name, email, pass) values (3, 1, 'King', 'test3@test.com', '123');
+
+insert into Properties (property_id, owner_id, address1, city, states, zipcode, current_Rent_Price, rating, availability)
+    values (1, 1, '1111 Technology', 'Reston', 'Virginia', '22222', 600, 4, 1);
+
+insert into Properties (property_id, owner_id, address1, city, states, zipcode, current_Rent_Price, rating, availability)
+    values (2, 1, '3333 Computer', 'New York', 'New York', '44444', 800, 6, 1);
+    
+insert into Properties (property_id, owner_id, address1, city, states, zipcode, current_Rent_Price, rating, availability)
+    values (3, 2, '8888 Computer', 'New York', 'New York', '99999', 1200, 3, 1);
 
 commit;

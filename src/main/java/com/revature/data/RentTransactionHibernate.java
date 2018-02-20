@@ -3,6 +3,7 @@ package com.revature.data;
 import java.util.List;
 
 import org.hibernate.Session;
+import org.hibernate.query.Query;
 import org.springframework.stereotype.Repository;
 
 import com.revature.beans.RentTransaction;
@@ -31,8 +32,11 @@ public class RentTransactionHibernate implements RentTransactionDao, HibernateSe
 
 	@Override
 	public List<RentTransaction> getRentTransactionByOwnerId(int i) {
-		// TODO Auto-generated method stub
-		return null;
+		String query = "from com.revature.beans.RentTransaction where renter_id =: renter_id";
+		Query q = session.createQuery(query);
+		q.setParameter("renter_id", i);
+		List<RentTransaction> rtList = (List<RentTransaction>) session.createQuery(query).list();
+		return rtList;
 	}
 
 	@Override
