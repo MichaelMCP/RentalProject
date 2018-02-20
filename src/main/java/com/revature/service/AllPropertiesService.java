@@ -8,6 +8,6 @@ public interface AllPropertiesService {
 	
 	public List<Property> getAllPropertiesAvailable();
 	
-	public void rentProperty(Property P);
+	public void rentProperty(Property p);
 
 }

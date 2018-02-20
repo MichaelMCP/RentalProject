@@ -14,9 +14,7 @@ public class MyPropertiesOracle implements MyPropertiesService {
 	PropertyDao pd;
 	@Override
 	public List<Property> getMyProperties(int id) {
-		List<Property> propertiesList = pd.getAllPropertiesByOwnerId(id);
-		
-		return propertiesList;
+		return pd.getAllPropertiesByOwnerId(id);
 	}
 	@Override
 	public void deleteMyProperty(Property property) {

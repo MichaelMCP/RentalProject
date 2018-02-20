@@ -16,8 +16,8 @@ public class AllPropertiesOracle implements AllPropertiesService{
 	
 	@Override
 	public List<Property> getAllPropertiesAvailable() {
-		List<Property> pList = pd.getAllPropertiesAvailable();
-		return pList;
+		return pd.getAllPropertiesAvailable();
+		
 	}
 
 	@Override

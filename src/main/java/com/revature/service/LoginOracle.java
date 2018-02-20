@@ -14,8 +14,7 @@ public class LoginOracle implements LoginService{
 	
 	@Override
 	public User login(String user, String pass) {
-		User u = ud.getUser(user, pass);		
-		return u;
+		return ud.getUser(user, pass);	
 	}
 
 }

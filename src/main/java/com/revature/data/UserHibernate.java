@@ -15,16 +15,14 @@ public class UserHibernate implements UserDao, HibernateSession
 	private Session session;
 
 	@Override
-	public User createUser(User user)
-	{
+	public User createUser(User user){
 		int i = (Integer) session.save(user);
 		return user;
 
 	}
 
 	@Override
-	public User getUser(String email, String pass) 
-	{
+	public User getUser(String email, String pass) {
 		String query = "from com.revature.beans.User u where u.email=:email and u.pass=:pass";
 		Query q = session.createQuery(query);
 		q.setParameter("email", email);
@@ -34,37 +32,29 @@ public class UserHibernate implements UserDao, HibernateSession
 	}
 	
 	@Override
-	public User getUserById(int i) 
-	{
-		User u = (User) session.get(User.class, i);
-		return u;
+	public User getUserById(int i) {
+		return (User) session.get(User.class, i);
 	}
 
 	@Override
-	public void deleteUser(User user) 
-	{
+	public void deleteUser(User user) {
 		session.delete(user);
 	}
 
 	@Override
-	public User updateUser(User user) 
-	{
+	public User updateUser(User user) {
 		session.update(user);
 		return user;
 	}
 
 	@Override
 	public List<User> getAllUsers() {
-		
 		String query = "from com.revature.beans.User";
-		List<User> userList = (List<User>) session.createQuery(query).list();
-		return userList;
-
+		return (List<User>) session.createQuery(query).list();
 	}
 
 	@Override
 	public void setSession(Session session) {
-		
 		this.session = session;
 	}
 }
