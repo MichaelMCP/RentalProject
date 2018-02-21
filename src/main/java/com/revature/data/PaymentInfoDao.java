@@ -9,6 +9,7 @@ public interface PaymentInfoDao {
 	public PaymentInfo createPaymentInfo(PaymentInfo p);
 	
 	public PaymentInfo getPaymentInfoById(int i);
+	public PaymentInfo getPaymentInfoByUserId(int i);
 	
 	public List<PaymentInfo> getAllPaymentInfo();
 	

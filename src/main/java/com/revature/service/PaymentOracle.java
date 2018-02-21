@@ -1,7 +1,7 @@
 package com.revature.service;
 
 
-import java.util.ArrayList;
+import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -16,21 +16,34 @@ public class PaymentOracle implements PaymentService {
 
 	@Override
 	public PaymentInfo savePaymentInfo(PaymentInfo paymentInfo) {
+		
+		
 		boolean b = false;
-		ArrayList<PaymentInfo> pi = (ArrayList<PaymentInfo>) pd.getAllPaymentInfo();
-		for(int i = 0; i < pi.size(); i++)
+		List<PaymentInfo> pi = pd.getAllPaymentInfo();
+		
+		if(pi == null)
 		{
-			if(pi.get(i).getUser().getId() == paymentInfo.getUser().getId())
+			pd.createPaymentInfo(paymentInfo);
+			b = true;
+		}
+		else
+		{
+			for(int i = 0; i < pi.size(); i++)
 			{
-				pd.updatePaymentInfo(paymentInfo);
-				b = true;
+				if(pi.get(i).getUser().getId() == paymentInfo.getUser().getId())
+				{
+					paymentInfo.setId(pi.get(i).getId());
+					pd.updatePaymentInfo(paymentInfo);
+					b = true;
+				}
+			}
+			
+			if(b == false)
+			{
+				pd.createPaymentInfo(paymentInfo);
 			}
 		}
 		
-		if(b == false)
-		{
-			pd.createPaymentInfo(paymentInfo);
-		}
 		
 		return paymentInfo;
 	}

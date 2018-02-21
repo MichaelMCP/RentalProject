@@ -24,7 +24,6 @@ import com.revature.service.RentTransactionService;
 public class RentTransactionController 
 {
 	private ObjectMapper om = new ObjectMapper();
-	private Logger log = Logger.getLogger(RegisterUserController.class);
 	@Autowired
 	private RentTransactionService register;
 	
@@ -36,10 +35,7 @@ public class RentTransactionController
 	@RequestMapping(method=RequestMethod.POST)
 	@ResponseBody
 	public String register(@RequestBody RentTransaction rentT, HttpSession session) throws JsonProcessingException {
-		RentTransaction v = register.registerRentTransaction(rentT.getStartdate(), rentT.getEnddate(), rentT.getRenter(), rentT.getProperty()
-				, rentT.getApproval(),rentT.getPayment());
-		log.error(session);
-		log.error(v);
+		RentTransaction v = register.registerRentTransaction(rentT);
 		if(v == null) {
 			return null;
 		} else {

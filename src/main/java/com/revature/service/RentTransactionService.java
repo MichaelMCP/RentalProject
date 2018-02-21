@@ -6,6 +6,5 @@ import com.revature.beans.RentTransaction;
 import com.revature.beans.User;
 
 public interface RentTransactionService {
-	public RentTransaction registerRentTransaction(String startdate, String enddate, User user, Property property, int approval,
-			PaymentInfo paymentInfo);
+	public RentTransaction registerRentTransaction(RentTransaction rt);
 }

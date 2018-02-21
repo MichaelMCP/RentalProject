@@ -2,15 +2,11 @@ package com.revature.data;
 
 import java.util.List;
 
-import org.apache.log4j.Logger;
 import org.hibernate.Session;
-import org.hibernate.Transaction;
 import org.hibernate.query.Query;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import com.revature.beans.PaymentInfo;
-import com.revature.util.HibernateUtil;
 
 @Repository
 public class PaymentInfoHibernate implements PaymentInfoDao, HibernateSession{
@@ -31,9 +27,9 @@ public class PaymentInfoHibernate implements PaymentInfoDao, HibernateSession{
 
 	@Override
 	public List<PaymentInfo> getAllPaymentInfo() {
-		String query = "from com.revature.beans.PaymentInfo";
-		List<PaymentInfo> q = (List<PaymentInfo>) session.createQuery(query, PaymentInfo.class);
-		return q;
+		String hquery = "from com.revature.beans.PaymentInfo";
+		List<PaymentInfo> pl = (List<PaymentInfo>) session.createQuery(hquery).list();
+		return pl;
 	}
 
 	@Override
@@ -50,6 +46,15 @@ public class PaymentInfoHibernate implements PaymentInfoDao, HibernateSession{
 	@Override
 	public void setSession(Session session) {
 		this.session = session;
+	}
+
+	@Override
+	public PaymentInfo getPaymentInfoByUserId(int i) {
+		String hquery = "from com.revature.beans.PaymentInfo where user_id = :user_id";
+		Query q = session.createQuery(hquery);
+		q.setParameter("user_id", i);
+		PaymentInfo p = (PaymentInfo) q.uniqueResult();
+		return p;
 	}
 
 }

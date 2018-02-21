@@ -7,19 +7,41 @@ import com.revature.beans.PaymentInfo;
 import com.revature.beans.Property;
 import com.revature.beans.RentTransaction;
 import com.revature.beans.User;
+import com.revature.data.PaymentInfoDao;
+import com.revature.data.PropertyDao;
 import com.revature.data.RentTransactionDao;
+import com.revature.data.UserDao;
 
 @Service
 public class RentTransactionOracle implements RentTransactionService {
 	
 	@Autowired
-	RentTransactionDao ud;
+	RentTransactionDao rtd;
+	@Autowired
+	UserDao ud;
+	@Autowired
+	PropertyDao pd;
+	@Autowired
+	PaymentInfoDao pid;
+	
 	@Override
-	public RentTransaction registerRentTransaction(String startdate, String enddate, User user, Property property, int approval,
-			PaymentInfo paymentInfo) {
-		RentTransaction nu = new RentTransaction(0, startdate,  enddate,  user,  property, approval,  paymentInfo );
-		ud.createRentTransaction(nu);
-		return nu;
+	public RentTransaction registerRentTransaction(RentTransaction rt) {
+		User u = rt.getRenter();
+		User newu = ud.getUserById(u.getId());
+		rt.setRenter(newu);
+		
+		Property prop = rt.getProperty();
+		Property newprop = pd.getPropertyByPropertyId(prop.getPropertyId());
+		newprop.setAvailability(0);
+		
+		pd.updateProperty(newprop);
+		
+		PaymentInfo pi = pid.getPaymentInfoByUserId(newu.getId());
+		rt.setPayment(pi);
+		
+		rt.setApproval(1);
+		rtd.createRentTransaction(rt);
+		return rt;
 	}
 
 }
